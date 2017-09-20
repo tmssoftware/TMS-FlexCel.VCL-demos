@@ -1,0 +1,732 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{D35FCABB-EA70-4F04-BBAC-9BA132DCE23D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="MainDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\10.API\10.GettingStarted\GettingStarted.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\10.API\12.Advanced API\AdvancedAPI.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\10.API\20.Reading Files\ReadingFiles.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\10.API\22.Virtual Mode\VirtualMode.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\10.API\25.Encrypted Files\EncryptedFiles.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\10.API\72.Intelligent Page Breaks\IntelligentPageBreaks.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\10.API\75.Validate Recalc\ValidateRecalc.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\10.API\77.Recalculation Of Linked Files\RecalculationOfLinkedFiles.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\10.API\78.Excel User Defined Functions\ExcelUserDefinedFunctions.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\10.API\80.Consolidating Files\ConsolidatingFiles.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\10.API\40.Copy And Paste\CopyAndPaste.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\10.API\A0.Creating Pdf Files With PDF API\CreatingPdfFilesWithPDFAPI.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\10.API\X0.Handling Errors\HandlingErrors.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\25.Printing And Exporting\20.CustomPreview\CustomPreview.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\25.Printing and Exporting\30.ExportPdf\ExportPdf.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\25.Printing and Exporting\32.PDFA\PDFA.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\25.Printing and Exporting\40.Export HTML\ExportHTML.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\25.Printing and Exporting\42.Export SVG\ExportSVG.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\25.Printing and Exporting\45.Render Objects\RenderObjects.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\10.Getting Started Reports\GettingStartedReports.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\20.Range Reports\RangeReports.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\21.RecordCount\RecordCount.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\22.Reports From Lists\ReportsFromLists.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\25.Multiple sheet report\Multiplesheetreport.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\27.Exporting Web Services\ExportingWebServices.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\40.Includes\Includes.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\42.Bidirectional Reports\BidirectionalReports.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\45.Lookups\Lookups.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\46.Aggregates\Aggregates.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\47.Regular Expressions In Reports\RegularExpressionsInReports.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\48.Manual Formulas\ManualFormulas.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\50.Expression Parameters\ExpressionParameters.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\51.Intelligent Page Breaks In Reports\IntelligentPageBreaksInReports.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\52.Debugging Reports\DebuggingReports.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\55.Fixed Forms With Datasets\FixedFormsWithDatasets.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\57.Balanced Columns\BalancedColumns.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\58.Join and Union\JoinAndUnion.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\60.Templates On The Exe\TemplatesOnTheExe.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\65.Images\Images.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\70.Charts\Charts.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\80.Pivot Tables\PivotTables.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\83.HTML\HTML.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\85.Autofit\Autofit.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\88.Generic Reports\GenericReports.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\89.Generic Reports 2\GenericReports2.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\90.Meta Templates\MetaTemplates.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\91.User Tables\UserTables.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\92.Direct SQL\DirectSQL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\93.Master Detail on one Table\MasterDetailononeTable.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\94.Split Datasets\SplitDatasets.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\94b.Overflow sheets\Overflowsheets.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\95.User Defined Functions\UserDefinedFunctions.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\95b.User Defined Formats\UserDefinedFormats.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\98.Encryption And Subtotals\EncryptionAndSubtotals.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\935.Merging Similar Cells\MergingSimilarCells.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\A1.TMS Aurelius\TMSAurelius.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reports\B0.Features Page\FeaturesPage.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\25.Printing and Exporting\35.Signing Pdfs\SigningPdfs.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="MainDemo">
+        <MSBuild Projects="MainDemo.dproj"/>
+    </Target>
+    <Target Name="MainDemo:Clean">
+        <MSBuild Projects="MainDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MainDemo:Make">
+        <MSBuild Projects="MainDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GettingStarted">
+        <MSBuild Projects="Modules\10.API\10.GettingStarted\GettingStarted.dproj"/>
+    </Target>
+    <Target Name="GettingStarted:Clean">
+        <MSBuild Projects="Modules\10.API\10.GettingStarted\GettingStarted.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GettingStarted:Make">
+        <MSBuild Projects="Modules\10.API\10.GettingStarted\GettingStarted.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="AdvancedAPI">
+        <MSBuild Projects="Modules\10.API\12.Advanced API\AdvancedAPI.dproj"/>
+    </Target>
+    <Target Name="AdvancedAPI:Clean">
+        <MSBuild Projects="Modules\10.API\12.Advanced API\AdvancedAPI.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AdvancedAPI:Make">
+        <MSBuild Projects="Modules\10.API\12.Advanced API\AdvancedAPI.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ReadingFiles">
+        <MSBuild Projects="Modules\10.API\20.Reading Files\ReadingFiles.dproj"/>
+    </Target>
+    <Target Name="ReadingFiles:Clean">
+        <MSBuild Projects="Modules\10.API\20.Reading Files\ReadingFiles.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ReadingFiles:Make">
+        <MSBuild Projects="Modules\10.API\20.Reading Files\ReadingFiles.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="VirtualMode">
+        <MSBuild Projects="Modules\10.API\22.Virtual Mode\VirtualMode.dproj"/>
+    </Target>
+    <Target Name="VirtualMode:Clean">
+        <MSBuild Projects="Modules\10.API\22.Virtual Mode\VirtualMode.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VirtualMode:Make">
+        <MSBuild Projects="Modules\10.API\22.Virtual Mode\VirtualMode.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="EncryptedFiles">
+        <MSBuild Projects="Modules\10.API\25.Encrypted Files\EncryptedFiles.dproj"/>
+    </Target>
+    <Target Name="EncryptedFiles:Clean">
+        <MSBuild Projects="Modules\10.API\25.Encrypted Files\EncryptedFiles.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EncryptedFiles:Make">
+        <MSBuild Projects="Modules\10.API\25.Encrypted Files\EncryptedFiles.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IntelligentPageBreaks">
+        <MSBuild Projects="Modules\10.API\72.Intelligent Page Breaks\IntelligentPageBreaks.dproj"/>
+    </Target>
+    <Target Name="IntelligentPageBreaks:Clean">
+        <MSBuild Projects="Modules\10.API\72.Intelligent Page Breaks\IntelligentPageBreaks.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IntelligentPageBreaks:Make">
+        <MSBuild Projects="Modules\10.API\72.Intelligent Page Breaks\IntelligentPageBreaks.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ValidateRecalc">
+        <MSBuild Projects="Modules\10.API\75.Validate Recalc\ValidateRecalc.dproj"/>
+    </Target>
+    <Target Name="ValidateRecalc:Clean">
+        <MSBuild Projects="Modules\10.API\75.Validate Recalc\ValidateRecalc.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ValidateRecalc:Make">
+        <MSBuild Projects="Modules\10.API\75.Validate Recalc\ValidateRecalc.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RecalculationOfLinkedFiles">
+        <MSBuild Projects="Modules\10.API\77.Recalculation Of Linked Files\RecalculationOfLinkedFiles.dproj"/>
+    </Target>
+    <Target Name="RecalculationOfLinkedFiles:Clean">
+        <MSBuild Projects="Modules\10.API\77.Recalculation Of Linked Files\RecalculationOfLinkedFiles.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RecalculationOfLinkedFiles:Make">
+        <MSBuild Projects="Modules\10.API\77.Recalculation Of Linked Files\RecalculationOfLinkedFiles.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ExcelUserDefinedFunctions">
+        <MSBuild Projects="Modules\10.API\78.Excel User Defined Functions\ExcelUserDefinedFunctions.dproj"/>
+    </Target>
+    <Target Name="ExcelUserDefinedFunctions:Clean">
+        <MSBuild Projects="Modules\10.API\78.Excel User Defined Functions\ExcelUserDefinedFunctions.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ExcelUserDefinedFunctions:Make">
+        <MSBuild Projects="Modules\10.API\78.Excel User Defined Functions\ExcelUserDefinedFunctions.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ConsolidatingFiles">
+        <MSBuild Projects="Modules\10.API\80.Consolidating Files\ConsolidatingFiles.dproj"/>
+    </Target>
+    <Target Name="ConsolidatingFiles:Clean">
+        <MSBuild Projects="Modules\10.API\80.Consolidating Files\ConsolidatingFiles.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ConsolidatingFiles:Make">
+        <MSBuild Projects="Modules\10.API\80.Consolidating Files\ConsolidatingFiles.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CopyAndPaste">
+        <MSBuild Projects="Modules\10.API\40.Copy And Paste\CopyAndPaste.dproj"/>
+    </Target>
+    <Target Name="CopyAndPaste:Clean">
+        <MSBuild Projects="Modules\10.API\40.Copy And Paste\CopyAndPaste.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CopyAndPaste:Make">
+        <MSBuild Projects="Modules\10.API\40.Copy And Paste\CopyAndPaste.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CreatingPdfFilesWithPDFAPI">
+        <MSBuild Projects="Modules\10.API\A0.Creating Pdf Files With PDF API\CreatingPdfFilesWithPDFAPI.dproj"/>
+    </Target>
+    <Target Name="CreatingPdfFilesWithPDFAPI:Clean">
+        <MSBuild Projects="Modules\10.API\A0.Creating Pdf Files With PDF API\CreatingPdfFilesWithPDFAPI.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CreatingPdfFilesWithPDFAPI:Make">
+        <MSBuild Projects="Modules\10.API\A0.Creating Pdf Files With PDF API\CreatingPdfFilesWithPDFAPI.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="HandlingErrors">
+        <MSBuild Projects="Modules\10.API\X0.Handling Errors\HandlingErrors.dproj"/>
+    </Target>
+    <Target Name="HandlingErrors:Clean">
+        <MSBuild Projects="Modules\10.API\X0.Handling Errors\HandlingErrors.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HandlingErrors:Make">
+        <MSBuild Projects="Modules\10.API\X0.Handling Errors\HandlingErrors.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CustomPreview">
+        <MSBuild Projects="Modules\25.Printing And Exporting\20.CustomPreview\CustomPreview.dproj"/>
+    </Target>
+    <Target Name="CustomPreview:Clean">
+        <MSBuild Projects="Modules\25.Printing And Exporting\20.CustomPreview\CustomPreview.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CustomPreview:Make">
+        <MSBuild Projects="Modules\25.Printing And Exporting\20.CustomPreview\CustomPreview.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ExportPdf">
+        <MSBuild Projects="Modules\25.Printing and Exporting\30.ExportPdf\ExportPdf.dproj"/>
+    </Target>
+    <Target Name="ExportPdf:Clean">
+        <MSBuild Projects="Modules\25.Printing and Exporting\30.ExportPdf\ExportPdf.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ExportPdf:Make">
+        <MSBuild Projects="Modules\25.Printing and Exporting\30.ExportPdf\ExportPdf.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PDFA">
+        <MSBuild Projects="Modules\25.Printing and Exporting\32.PDFA\PDFA.dproj"/>
+    </Target>
+    <Target Name="PDFA:Clean">
+        <MSBuild Projects="Modules\25.Printing and Exporting\32.PDFA\PDFA.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PDFA:Make">
+        <MSBuild Projects="Modules\25.Printing and Exporting\32.PDFA\PDFA.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ExportHTML">
+        <MSBuild Projects="Modules\25.Printing and Exporting\40.Export HTML\ExportHTML.dproj"/>
+    </Target>
+    <Target Name="ExportHTML:Clean">
+        <MSBuild Projects="Modules\25.Printing and Exporting\40.Export HTML\ExportHTML.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ExportHTML:Make">
+        <MSBuild Projects="Modules\25.Printing and Exporting\40.Export HTML\ExportHTML.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ExportSVG">
+        <MSBuild Projects="Modules\25.Printing and Exporting\42.Export SVG\ExportSVG.dproj"/>
+    </Target>
+    <Target Name="ExportSVG:Clean">
+        <MSBuild Projects="Modules\25.Printing and Exporting\42.Export SVG\ExportSVG.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ExportSVG:Make">
+        <MSBuild Projects="Modules\25.Printing and Exporting\42.Export SVG\ExportSVG.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RenderObjects">
+        <MSBuild Projects="Modules\25.Printing and Exporting\45.Render Objects\RenderObjects.dproj"/>
+    </Target>
+    <Target Name="RenderObjects:Clean">
+        <MSBuild Projects="Modules\25.Printing and Exporting\45.Render Objects\RenderObjects.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RenderObjects:Make">
+        <MSBuild Projects="Modules\25.Printing and Exporting\45.Render Objects\RenderObjects.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GettingStartedReports">
+        <MSBuild Projects="Modules\20.Reports\10.Getting Started Reports\GettingStartedReports.dproj"/>
+    </Target>
+    <Target Name="GettingStartedReports:Clean">
+        <MSBuild Projects="Modules\20.Reports\10.Getting Started Reports\GettingStartedReports.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GettingStartedReports:Make">
+        <MSBuild Projects="Modules\20.Reports\10.Getting Started Reports\GettingStartedReports.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RangeReports">
+        <MSBuild Projects="Modules\20.Reports\20.Range Reports\RangeReports.dproj"/>
+    </Target>
+    <Target Name="RangeReports:Clean">
+        <MSBuild Projects="Modules\20.Reports\20.Range Reports\RangeReports.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RangeReports:Make">
+        <MSBuild Projects="Modules\20.Reports\20.Range Reports\RangeReports.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RecordCount">
+        <MSBuild Projects="Modules\20.Reports\21.RecordCount\RecordCount.dproj"/>
+    </Target>
+    <Target Name="RecordCount:Clean">
+        <MSBuild Projects="Modules\20.Reports\21.RecordCount\RecordCount.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RecordCount:Make">
+        <MSBuild Projects="Modules\20.Reports\21.RecordCount\RecordCount.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ReportsFromLists">
+        <MSBuild Projects="Modules\20.Reports\22.Reports From Lists\ReportsFromLists.dproj"/>
+    </Target>
+    <Target Name="ReportsFromLists:Clean">
+        <MSBuild Projects="Modules\20.Reports\22.Reports From Lists\ReportsFromLists.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ReportsFromLists:Make">
+        <MSBuild Projects="Modules\20.Reports\22.Reports From Lists\ReportsFromLists.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Multiplesheetreport">
+        <MSBuild Projects="Modules\20.Reports\25.Multiple sheet report\Multiplesheetreport.dproj"/>
+    </Target>
+    <Target Name="Multiplesheetreport:Clean">
+        <MSBuild Projects="Modules\20.Reports\25.Multiple sheet report\Multiplesheetreport.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Multiplesheetreport:Make">
+        <MSBuild Projects="Modules\20.Reports\25.Multiple sheet report\Multiplesheetreport.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ExportingWebServices">
+        <MSBuild Projects="Modules\20.Reports\27.Exporting Web Services\ExportingWebServices.dproj"/>
+    </Target>
+    <Target Name="ExportingWebServices:Clean">
+        <MSBuild Projects="Modules\20.Reports\27.Exporting Web Services\ExportingWebServices.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ExportingWebServices:Make">
+        <MSBuild Projects="Modules\20.Reports\27.Exporting Web Services\ExportingWebServices.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Includes">
+        <MSBuild Projects="Modules\20.Reports\40.Includes\Includes.dproj"/>
+    </Target>
+    <Target Name="Includes:Clean">
+        <MSBuild Projects="Modules\20.Reports\40.Includes\Includes.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Includes:Make">
+        <MSBuild Projects="Modules\20.Reports\40.Includes\Includes.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="BidirectionalReports">
+        <MSBuild Projects="Modules\20.Reports\42.Bidirectional Reports\BidirectionalReports.dproj"/>
+    </Target>
+    <Target Name="BidirectionalReports:Clean">
+        <MSBuild Projects="Modules\20.Reports\42.Bidirectional Reports\BidirectionalReports.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BidirectionalReports:Make">
+        <MSBuild Projects="Modules\20.Reports\42.Bidirectional Reports\BidirectionalReports.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Lookups">
+        <MSBuild Projects="Modules\20.Reports\45.Lookups\Lookups.dproj"/>
+    </Target>
+    <Target Name="Lookups:Clean">
+        <MSBuild Projects="Modules\20.Reports\45.Lookups\Lookups.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Lookups:Make">
+        <MSBuild Projects="Modules\20.Reports\45.Lookups\Lookups.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Aggregates">
+        <MSBuild Projects="Modules\20.Reports\46.Aggregates\Aggregates.dproj"/>
+    </Target>
+    <Target Name="Aggregates:Clean">
+        <MSBuild Projects="Modules\20.Reports\46.Aggregates\Aggregates.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Aggregates:Make">
+        <MSBuild Projects="Modules\20.Reports\46.Aggregates\Aggregates.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RegularExpressionsInReports">
+        <MSBuild Projects="Modules\20.Reports\47.Regular Expressions In Reports\RegularExpressionsInReports.dproj"/>
+    </Target>
+    <Target Name="RegularExpressionsInReports:Clean">
+        <MSBuild Projects="Modules\20.Reports\47.Regular Expressions In Reports\RegularExpressionsInReports.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RegularExpressionsInReports:Make">
+        <MSBuild Projects="Modules\20.Reports\47.Regular Expressions In Reports\RegularExpressionsInReports.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ManualFormulas">
+        <MSBuild Projects="Modules\20.Reports\48.Manual Formulas\ManualFormulas.dproj"/>
+    </Target>
+    <Target Name="ManualFormulas:Clean">
+        <MSBuild Projects="Modules\20.Reports\48.Manual Formulas\ManualFormulas.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ManualFormulas:Make">
+        <MSBuild Projects="Modules\20.Reports\48.Manual Formulas\ManualFormulas.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ExpressionParameters">
+        <MSBuild Projects="Modules\20.Reports\50.Expression Parameters\ExpressionParameters.dproj"/>
+    </Target>
+    <Target Name="ExpressionParameters:Clean">
+        <MSBuild Projects="Modules\20.Reports\50.Expression Parameters\ExpressionParameters.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ExpressionParameters:Make">
+        <MSBuild Projects="Modules\20.Reports\50.Expression Parameters\ExpressionParameters.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IntelligentPageBreaksInReports">
+        <MSBuild Projects="Modules\20.Reports\51.Intelligent Page Breaks In Reports\IntelligentPageBreaksInReports.dproj"/>
+    </Target>
+    <Target Name="IntelligentPageBreaksInReports:Clean">
+        <MSBuild Projects="Modules\20.Reports\51.Intelligent Page Breaks In Reports\IntelligentPageBreaksInReports.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IntelligentPageBreaksInReports:Make">
+        <MSBuild Projects="Modules\20.Reports\51.Intelligent Page Breaks In Reports\IntelligentPageBreaksInReports.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DebuggingReports">
+        <MSBuild Projects="Modules\20.Reports\52.Debugging Reports\DebuggingReports.dproj"/>
+    </Target>
+    <Target Name="DebuggingReports:Clean">
+        <MSBuild Projects="Modules\20.Reports\52.Debugging Reports\DebuggingReports.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DebuggingReports:Make">
+        <MSBuild Projects="Modules\20.Reports\52.Debugging Reports\DebuggingReports.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FixedFormsWithDatasets">
+        <MSBuild Projects="Modules\20.Reports\55.Fixed Forms With Datasets\FixedFormsWithDatasets.dproj"/>
+    </Target>
+    <Target Name="FixedFormsWithDatasets:Clean">
+        <MSBuild Projects="Modules\20.Reports\55.Fixed Forms With Datasets\FixedFormsWithDatasets.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FixedFormsWithDatasets:Make">
+        <MSBuild Projects="Modules\20.Reports\55.Fixed Forms With Datasets\FixedFormsWithDatasets.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="BalancedColumns">
+        <MSBuild Projects="Modules\20.Reports\57.Balanced Columns\BalancedColumns.dproj"/>
+    </Target>
+    <Target Name="BalancedColumns:Clean">
+        <MSBuild Projects="Modules\20.Reports\57.Balanced Columns\BalancedColumns.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BalancedColumns:Make">
+        <MSBuild Projects="Modules\20.Reports\57.Balanced Columns\BalancedColumns.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="JoinAndUnion">
+        <MSBuild Projects="Modules\20.Reports\58.Join and Union\JoinAndUnion.dproj"/>
+    </Target>
+    <Target Name="JoinAndUnion:Clean">
+        <MSBuild Projects="Modules\20.Reports\58.Join and Union\JoinAndUnion.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="JoinAndUnion:Make">
+        <MSBuild Projects="Modules\20.Reports\58.Join and Union\JoinAndUnion.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TemplatesOnTheExe">
+        <MSBuild Projects="Modules\20.Reports\60.Templates On The Exe\TemplatesOnTheExe.dproj"/>
+    </Target>
+    <Target Name="TemplatesOnTheExe:Clean">
+        <MSBuild Projects="Modules\20.Reports\60.Templates On The Exe\TemplatesOnTheExe.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TemplatesOnTheExe:Make">
+        <MSBuild Projects="Modules\20.Reports\60.Templates On The Exe\TemplatesOnTheExe.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Images">
+        <MSBuild Projects="Modules\20.Reports\65.Images\Images.dproj"/>
+    </Target>
+    <Target Name="Images:Clean">
+        <MSBuild Projects="Modules\20.Reports\65.Images\Images.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Images:Make">
+        <MSBuild Projects="Modules\20.Reports\65.Images\Images.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Charts">
+        <MSBuild Projects="Modules\20.Reports\70.Charts\Charts.dproj"/>
+    </Target>
+    <Target Name="Charts:Clean">
+        <MSBuild Projects="Modules\20.Reports\70.Charts\Charts.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Charts:Make">
+        <MSBuild Projects="Modules\20.Reports\70.Charts\Charts.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PivotTables">
+        <MSBuild Projects="Modules\20.Reports\80.Pivot Tables\PivotTables.dproj"/>
+    </Target>
+    <Target Name="PivotTables:Clean">
+        <MSBuild Projects="Modules\20.Reports\80.Pivot Tables\PivotTables.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PivotTables:Make">
+        <MSBuild Projects="Modules\20.Reports\80.Pivot Tables\PivotTables.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="HTML">
+        <MSBuild Projects="Modules\20.Reports\83.HTML\HTML.dproj"/>
+    </Target>
+    <Target Name="HTML:Clean">
+        <MSBuild Projects="Modules\20.Reports\83.HTML\HTML.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HTML:Make">
+        <MSBuild Projects="Modules\20.Reports\83.HTML\HTML.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Autofit">
+        <MSBuild Projects="Modules\20.Reports\85.Autofit\Autofit.dproj"/>
+    </Target>
+    <Target Name="Autofit:Clean">
+        <MSBuild Projects="Modules\20.Reports\85.Autofit\Autofit.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Autofit:Make">
+        <MSBuild Projects="Modules\20.Reports\85.Autofit\Autofit.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GenericReports">
+        <MSBuild Projects="Modules\20.Reports\88.Generic Reports\GenericReports.dproj"/>
+    </Target>
+    <Target Name="GenericReports:Clean">
+        <MSBuild Projects="Modules\20.Reports\88.Generic Reports\GenericReports.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GenericReports:Make">
+        <MSBuild Projects="Modules\20.Reports\88.Generic Reports\GenericReports.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GenericReports2">
+        <MSBuild Projects="Modules\20.Reports\89.Generic Reports 2\GenericReports2.dproj"/>
+    </Target>
+    <Target Name="GenericReports2:Clean">
+        <MSBuild Projects="Modules\20.Reports\89.Generic Reports 2\GenericReports2.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GenericReports2:Make">
+        <MSBuild Projects="Modules\20.Reports\89.Generic Reports 2\GenericReports2.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MetaTemplates">
+        <MSBuild Projects="Modules\20.Reports\90.Meta Templates\MetaTemplates.dproj"/>
+    </Target>
+    <Target Name="MetaTemplates:Clean">
+        <MSBuild Projects="Modules\20.Reports\90.Meta Templates\MetaTemplates.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MetaTemplates:Make">
+        <MSBuild Projects="Modules\20.Reports\90.Meta Templates\MetaTemplates.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="UserTables">
+        <MSBuild Projects="Modules\20.Reports\91.User Tables\UserTables.dproj"/>
+    </Target>
+    <Target Name="UserTables:Clean">
+        <MSBuild Projects="Modules\20.Reports\91.User Tables\UserTables.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="UserTables:Make">
+        <MSBuild Projects="Modules\20.Reports\91.User Tables\UserTables.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DirectSQL">
+        <MSBuild Projects="Modules\20.Reports\92.Direct SQL\DirectSQL.dproj"/>
+    </Target>
+    <Target Name="DirectSQL:Clean">
+        <MSBuild Projects="Modules\20.Reports\92.Direct SQL\DirectSQL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DirectSQL:Make">
+        <MSBuild Projects="Modules\20.Reports\92.Direct SQL\DirectSQL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MasterDetailononeTable">
+        <MSBuild Projects="Modules\20.Reports\93.Master Detail on one Table\MasterDetailononeTable.dproj"/>
+    </Target>
+    <Target Name="MasterDetailononeTable:Clean">
+        <MSBuild Projects="Modules\20.Reports\93.Master Detail on one Table\MasterDetailononeTable.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MasterDetailononeTable:Make">
+        <MSBuild Projects="Modules\20.Reports\93.Master Detail on one Table\MasterDetailononeTable.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SplitDatasets">
+        <MSBuild Projects="Modules\20.Reports\94.Split Datasets\SplitDatasets.dproj"/>
+    </Target>
+    <Target Name="SplitDatasets:Clean">
+        <MSBuild Projects="Modules\20.Reports\94.Split Datasets\SplitDatasets.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SplitDatasets:Make">
+        <MSBuild Projects="Modules\20.Reports\94.Split Datasets\SplitDatasets.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Overflowsheets">
+        <MSBuild Projects="Modules\20.Reports\94b.Overflow sheets\Overflowsheets.dproj"/>
+    </Target>
+    <Target Name="Overflowsheets:Clean">
+        <MSBuild Projects="Modules\20.Reports\94b.Overflow sheets\Overflowsheets.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Overflowsheets:Make">
+        <MSBuild Projects="Modules\20.Reports\94b.Overflow sheets\Overflowsheets.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="UserDefinedFunctions">
+        <MSBuild Projects="Modules\20.Reports\95.User Defined Functions\UserDefinedFunctions.dproj"/>
+    </Target>
+    <Target Name="UserDefinedFunctions:Clean">
+        <MSBuild Projects="Modules\20.Reports\95.User Defined Functions\UserDefinedFunctions.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="UserDefinedFunctions:Make">
+        <MSBuild Projects="Modules\20.Reports\95.User Defined Functions\UserDefinedFunctions.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="UserDefinedFormats">
+        <MSBuild Projects="Modules\20.Reports\95b.User Defined Formats\UserDefinedFormats.dproj"/>
+    </Target>
+    <Target Name="UserDefinedFormats:Clean">
+        <MSBuild Projects="Modules\20.Reports\95b.User Defined Formats\UserDefinedFormats.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="UserDefinedFormats:Make">
+        <MSBuild Projects="Modules\20.Reports\95b.User Defined Formats\UserDefinedFormats.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="EncryptionAndSubtotals">
+        <MSBuild Projects="Modules\20.Reports\98.Encryption And Subtotals\EncryptionAndSubtotals.dproj"/>
+    </Target>
+    <Target Name="EncryptionAndSubtotals:Clean">
+        <MSBuild Projects="Modules\20.Reports\98.Encryption And Subtotals\EncryptionAndSubtotals.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EncryptionAndSubtotals:Make">
+        <MSBuild Projects="Modules\20.Reports\98.Encryption And Subtotals\EncryptionAndSubtotals.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MergingSimilarCells">
+        <MSBuild Projects="Modules\20.Reports\935.Merging Similar Cells\MergingSimilarCells.dproj"/>
+    </Target>
+    <Target Name="MergingSimilarCells:Clean">
+        <MSBuild Projects="Modules\20.Reports\935.Merging Similar Cells\MergingSimilarCells.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MergingSimilarCells:Make">
+        <MSBuild Projects="Modules\20.Reports\935.Merging Similar Cells\MergingSimilarCells.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TMSAurelius">
+        <MSBuild Projects="Modules\20.Reports\A1.TMS Aurelius\TMSAurelius.dproj"/>
+    </Target>
+    <Target Name="TMSAurelius:Clean">
+        <MSBuild Projects="Modules\20.Reports\A1.TMS Aurelius\TMSAurelius.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TMSAurelius:Make">
+        <MSBuild Projects="Modules\20.Reports\A1.TMS Aurelius\TMSAurelius.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FeaturesPage">
+        <MSBuild Projects="Modules\20.Reports\B0.Features Page\FeaturesPage.dproj"/>
+    </Target>
+    <Target Name="FeaturesPage:Clean">
+        <MSBuild Projects="Modules\20.Reports\B0.Features Page\FeaturesPage.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FeaturesPage:Make">
+        <MSBuild Projects="Modules\20.Reports\B0.Features Page\FeaturesPage.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SigningPdfs">
+        <MSBuild Projects="Modules\25.Printing and Exporting\35.Signing Pdfs\SigningPdfs.dproj"/>
+    </Target>
+    <Target Name="SigningPdfs:Clean">
+        <MSBuild Projects="Modules\25.Printing and Exporting\35.Signing Pdfs\SigningPdfs.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SigningPdfs:Make">
+        <MSBuild Projects="Modules\25.Printing and Exporting\35.Signing Pdfs\SigningPdfs.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="MainDemo;GettingStarted;AdvancedAPI;ReadingFiles;VirtualMode;EncryptedFiles;IntelligentPageBreaks;ValidateRecalc;RecalculationOfLinkedFiles;ExcelUserDefinedFunctions;ConsolidatingFiles;CopyAndPaste;CreatingPdfFilesWithPDFAPI;HandlingErrors;CustomPreview;ExportPdf;PDFA;ExportHTML;ExportSVG;RenderObjects;GettingStartedReports;RangeReports;RecordCount;ReportsFromLists;Multiplesheetreport;ExportingWebServices;Includes;BidirectionalReports;Lookups;Aggregates;RegularExpressionsInReports;ManualFormulas;ExpressionParameters;IntelligentPageBreaksInReports;DebuggingReports;FixedFormsWithDatasets;BalancedColumns;JoinAndUnion;TemplatesOnTheExe;Images;Charts;PivotTables;HTML;Autofit;GenericReports;GenericReports2;MetaTemplates;UserTables;DirectSQL;MasterDetailononeTable;SplitDatasets;Overflowsheets;UserDefinedFunctions;UserDefinedFormats;EncryptionAndSubtotals;MergingSimilarCells;TMSAurelius;FeaturesPage;SigningPdfs"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="MainDemo:Clean;GettingStarted:Clean;AdvancedAPI:Clean;ReadingFiles:Clean;VirtualMode:Clean;EncryptedFiles:Clean;IntelligentPageBreaks:Clean;ValidateRecalc:Clean;RecalculationOfLinkedFiles:Clean;ExcelUserDefinedFunctions:Clean;ConsolidatingFiles:Clean;CopyAndPaste:Clean;CreatingPdfFilesWithPDFAPI:Clean;HandlingErrors:Clean;CustomPreview:Clean;ExportPdf:Clean;PDFA:Clean;ExportHTML:Clean;ExportSVG:Clean;RenderObjects:Clean;GettingStartedReports:Clean;RangeReports:Clean;RecordCount:Clean;ReportsFromLists:Clean;Multiplesheetreport:Clean;ExportingWebServices:Clean;Includes:Clean;BidirectionalReports:Clean;Lookups:Clean;Aggregates:Clean;RegularExpressionsInReports:Clean;ManualFormulas:Clean;ExpressionParameters:Clean;IntelligentPageBreaksInReports:Clean;DebuggingReports:Clean;FixedFormsWithDatasets:Clean;BalancedColumns:Clean;JoinAndUnion:Clean;TemplatesOnTheExe:Clean;Images:Clean;Charts:Clean;PivotTables:Clean;HTML:Clean;Autofit:Clean;GenericReports:Clean;GenericReports2:Clean;MetaTemplates:Clean;UserTables:Clean;DirectSQL:Clean;MasterDetailononeTable:Clean;SplitDatasets:Clean;Overflowsheets:Clean;UserDefinedFunctions:Clean;UserDefinedFormats:Clean;EncryptionAndSubtotals:Clean;MergingSimilarCells:Clean;TMSAurelius:Clean;FeaturesPage:Clean;SigningPdfs:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="MainDemo:Make;GettingStarted:Make;AdvancedAPI:Make;ReadingFiles:Make;VirtualMode:Make;EncryptedFiles:Make;IntelligentPageBreaks:Make;ValidateRecalc:Make;RecalculationOfLinkedFiles:Make;ExcelUserDefinedFunctions:Make;ConsolidatingFiles:Make;CopyAndPaste:Make;CreatingPdfFilesWithPDFAPI:Make;HandlingErrors:Make;CustomPreview:Make;ExportPdf:Make;PDFA:Make;ExportHTML:Make;ExportSVG:Make;RenderObjects:Make;GettingStartedReports:Make;RangeReports:Make;RecordCount:Make;ReportsFromLists:Make;Multiplesheetreport:Make;ExportingWebServices:Make;Includes:Make;BidirectionalReports:Make;Lookups:Make;Aggregates:Make;RegularExpressionsInReports:Make;ManualFormulas:Make;ExpressionParameters:Make;IntelligentPageBreaksInReports:Make;DebuggingReports:Make;FixedFormsWithDatasets:Make;BalancedColumns:Make;JoinAndUnion:Make;TemplatesOnTheExe:Make;Images:Make;Charts:Make;PivotTables:Make;HTML:Make;Autofit:Make;GenericReports:Make;GenericReports2:Make;MetaTemplates:Make;UserTables:Make;DirectSQL:Make;MasterDetailononeTable:Make;SplitDatasets:Make;Overflowsheets:Make;UserDefinedFunctions:Make;UserDefinedFormats:Make;EncryptionAndSubtotals:Make;MergingSimilarCells:Make;TMSAurelius:Make;FeaturesPage:Make;SigningPdfs:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

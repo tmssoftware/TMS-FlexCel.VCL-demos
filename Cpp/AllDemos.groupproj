@@ -1,0 +1,72 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{299C513E-89F2-4438-B846-D63425E2A4F5}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="Modules\10.API\10.GettingStarted\GettingStarted.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Modules\10.API\12.Advanced API\AdvancedAPI.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Modules\10.API\20.Reading Files\ReadingFiles.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Modules\25.Printing and Exporting\20.CustomPreview\CustomPreview.cbproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="GettingStarted">
+			<MSBuild Projects="Modules\10.API\10.GettingStarted\GettingStarted.cbproj"/>
+		</Target>
+		<Target Name="GettingStarted:Clean">
+			<MSBuild Projects="Modules\10.API\10.GettingStarted\GettingStarted.cbproj" Targets="Clean"/>
+		</Target>
+		<Target Name="GettingStarted:Make">
+			<MSBuild Projects="Modules\10.API\10.GettingStarted\GettingStarted.cbproj" Targets="Make"/>
+		</Target>
+		<Target Name="AdvancedAPI">
+			<MSBuild Projects="Modules\10.API\12.Advanced API\AdvancedAPI.cbproj"/>
+		</Target>
+		<Target Name="AdvancedAPI:Clean">
+			<MSBuild Projects="Modules\10.API\12.Advanced API\AdvancedAPI.cbproj" Targets="Clean"/>
+		</Target>
+		<Target Name="AdvancedAPI:Make">
+			<MSBuild Projects="Modules\10.API\12.Advanced API\AdvancedAPI.cbproj" Targets="Make"/>
+		</Target>
+		<Target Name="ReadingFiles">
+			<MSBuild Projects="Modules\10.API\20.Reading Files\ReadingFiles.cbproj"/>
+		</Target>
+		<Target Name="ReadingFiles:Clean">
+			<MSBuild Projects="Modules\10.API\20.Reading Files\ReadingFiles.cbproj" Targets="Clean"/>
+		</Target>
+		<Target Name="ReadingFiles:Make">
+			<MSBuild Projects="Modules\10.API\20.Reading Files\ReadingFiles.cbproj" Targets="Make"/>
+		</Target>
+		<Target Name="CustomPreview">
+			<MSBuild Projects="Modules\25.Printing and Exporting\20.CustomPreview\CustomPreview.cbproj"/>
+		</Target>
+		<Target Name="CustomPreview:Clean">
+			<MSBuild Projects="Modules\25.Printing and Exporting\20.CustomPreview\CustomPreview.cbproj" Targets="Clean"/>
+		</Target>
+		<Target Name="CustomPreview:Make">
+			<MSBuild Projects="Modules\25.Printing and Exporting\20.CustomPreview\CustomPreview.cbproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="GettingStarted;AdvancedAPI;ReadingFiles;CustomPreview"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="GettingStarted:Clean;AdvancedAPI:Clean;ReadingFiles:Clean;CustomPreview:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="GettingStarted:Make;AdvancedAPI:Make;ReadingFiles:Make;CustomPreview:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>

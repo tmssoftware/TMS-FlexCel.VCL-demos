@@ -1,0 +1,2 @@
+OFFLINE_DATA RCDATA "OfflineData\\OfflineData.json"
+REPORT_TEMPLATE RCDATA "Templates\\report.template.xls"

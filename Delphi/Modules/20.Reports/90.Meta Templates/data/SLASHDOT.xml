@@ -1,0 +1,241 @@
+<?xml version="1.0" standalone="yes"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <channel rdf:about="http://slashdot.org/" xmlns="http://purl.org/rss/1.0/">
+    <title>Slashdot</title>
+    <link>http://slashdot.org/</link>
+    <description>News for nerds, stuff that matters</description>
+    <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">en-us</dc:language>
+    <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Copyright 1997-2006, OSTG - Open Source Technology Group, Inc.  All Rights Reserved.</dc:rights>
+    <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2007-08-09T03:40:21+00:00</dc:date>
+    <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">OSTG</dc:publisher>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">pater@slashdot.org</dc:creator>
+    <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Technology</dc:subject>
+    <syn:updatePeriod xmlns:syn="http://purl.org/rss/1.0/modules/syndication/">hourly</syn:updatePeriod>
+    <syn:updateFrequency xmlns:syn="http://purl.org/rss/1.0/modules/syndication/">1</syn:updateFrequency>
+    <syn:updateBase xmlns:syn="http://purl.org/rss/1.0/modules/syndication/">1970-01-01T00:00+00:00</syn:updateBase>
+    <items />
+    <image rdf:resource="http://images.slashdot.org/topics/topicslashdot.gif" />
+    <textinput rdf:resource="http://slashdot.org/search.pl" />
+  </channel>
+  <image rdf:about="http://images.slashdot.org/topics/topicslashdot.gif" xmlns="http://purl.org/rss/1.0/">
+    <title>Slashdot</title>
+    <url>http://images.slashdot.org/topics/topicslashdot.gif</url>
+    <link>http://slashdot.org/</link>
+  </image>
+  <textinput rdf:about="http://slashdot.org/search.pl" xmlns="http://purl.org/rss/1.0/">
+    <title>Search Slashdot</title>
+    <description>Search Slashdot stories</description>
+    <name>query</name>
+    <link>http://slashdot.org/search.pl</link>
+  </textinput>
+  <item rdf:about="http://developers.slashdot.org/article.pl?sid=07/08/08/2246230&amp;from=rss" xmlns="http://purl.org/rss/1.0/">
+    <title>BitTorrent Closes Source Code</title>
+    <link>http://rss.slashdot.org/~r/Slashdot/slashdot/~3/142222613/article.pl</link>
+    <description>An anonymous reader writes ""There are two issues people need to come to grips with," BitTorrent CEO Ashwin Narvin told Slyck.com. "Developers who produce open source products will often have their product repackaged and redistributed by businesses with malicious intent. They repackage the software with spyware or charge for the product. We often receive phone calls from people who complain they have paid for the BitTorrent client." As for the protocol itself, that too is closed, but is available by obtaining an SDK license."&lt;p&gt;&lt;a href="http://developers.slashdot.org/article.pl?sid=07/08/08/2246230&amp;from=rss"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://rss.slashdot.org/~a/Slashdot/slashdot?a=jTmESb"&gt;&lt;img src="http://rss.slashdot.org/~a/Slashdot/slashdot?i=jTmESb" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://rss.slashdot.org/~r/Slashdot/slashdot/~4/142222613" height="1" width="1"/&gt;</description>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">samzenpus</dc:creator>
+    <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2007-08-09T02:34:00+00:00</dc:date>
+    <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">software</dc:subject>
+    <slash:department xmlns:slash="http://purl.org/rss/1.0/modules/slash/">taking-my-toys-and-going-home</slash:department>
+    <slash:section xmlns:slash="http://purl.org/rss/1.0/modules/slash/">developers</slash:section>
+    <slash:comments xmlns:slash="http://purl.org/rss/1.0/modules/slash/">64</slash:comments>
+    <slash:hit_parade xmlns:slash="http://purl.org/rss/1.0/modules/slash/">64,62,48,38,10,6,4</slash:hit_parade>
+    <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://developers.slashdot.org/article.pl?sid=07/08/08/2246230&amp;from=rss</feedburner:origLink>
+  </item>
+  <item rdf:about="http://yro.slashdot.org/article.pl?sid=07/08/08/2243215&amp;from=rss" xmlns="http://purl.org/rss/1.0/">
+    <title>Privacy Winning Search Engine War</title>
+    <link>http://rss.slashdot.org/~r/Slashdot/slashdot/~3/142193669/article.pl</link>
+    <description>amigoro writes "Privacy is emerging as the real winner of the Internet search engine war as companies aggressively compete with one another by offering stronger protections for user records, a report published today by the Center for Democracy and Technology (CDT) concluded. The report notes that until recently, most of the major Internet search engines kept detailed and potentially personally identifiable records of their customers' searches for as indefinitely. But today the companies are trying to outdo each other in privacy protection by announcing steps to delete old user data, strip the personally identifiable information out of stored search records, and, in one case, give users the option to have all of their search records deleted."&lt;p&gt;&lt;a href="http://yro.slashdot.org/article.pl?sid=07/08/08/2243215&amp;from=rss"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://rss.slashdot.org/~a/Slashdot/slashdot?a=PzQY04"&gt;&lt;img src="http://rss.slashdot.org/~a/Slashdot/slashdot?i=PzQY04" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://rss.slashdot.org/~r/Slashdot/slashdot/~4/142193669" height="1" width="1"/&gt;</description>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">samzenpus</dc:creator>
+    <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2007-08-09T01:13:00+00:00</dc:date>
+    <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">privacy</dc:subject>
+    <slash:department xmlns:slash="http://purl.org/rss/1.0/modules/slash/">I-don't-even-know-who-you-are-anymore</slash:department>
+    <slash:section xmlns:slash="http://purl.org/rss/1.0/modules/slash/">yro</slash:section>
+    <slash:comments xmlns:slash="http://purl.org/rss/1.0/modules/slash/">40</slash:comments>
+    <slash:hit_parade xmlns:slash="http://purl.org/rss/1.0/modules/slash/">40,40,32,21,9,5,1</slash:hit_parade>
+    <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://yro.slashdot.org/article.pl?sid=07/08/08/2243215&amp;from=rss</feedburner:origLink>
+  </item>
+  <item rdf:about="http://hardware.slashdot.org/article.pl?sid=07/08/08/2236255&amp;from=rss" xmlns="http://purl.org/rss/1.0/">
+    <title>NSF Announces Supercomputer Grant Winners</title>
+    <link>http://rss.slashdot.org/~r/Slashdot/slashdot/~3/142176335/article.pl</link>
+    <description>An anonymous reader writes "The NSF has tentatively announced that the Track 1 leadership class supercomputer will be awarded to the National Center for Supercomputing Applications (NCSA) at the University of Illinois at Urbana-Champaign. The Track 2 award winner is University of Tennessee-Knoxville and its partners." From the article: "In the first award, the University of Illinois at Urbana-Champaign (UIUC) will receive $208 million over 4.5 years to acquire and make available a petascale computer it calls "Blue Waters," which is 500 times more powerful than today's typical supercomputers. The system is expected to go online in 2011. The second award will fund the deployment and operation of an extremely powerful supercomputer at the University of Tennessee at Knoxville Joint Institute for Computational Science (JICS). The $65 million, 5-year project will include partners at Oak Ridge National Laboratory, the Texas Advanced Computing Center, and the National Center for Atmospheric Research."&lt;p&gt;&lt;a href="http://hardware.slashdot.org/article.pl?sid=07/08/08/2236255&amp;from=rss"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://rss.slashdot.org/~a/Slashdot/slashdot?a=f97oaZ"&gt;&lt;img src="http://rss.slashdot.org/~a/Slashdot/slashdot?i=f97oaZ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://rss.slashdot.org/~r/Slashdot/slashdot/~4/142176335" height="1" width="1"/&gt;</description>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">samzenpus</dc:creator>
+    <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2007-08-09T00:01:00+00:00</dc:date>
+    <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">supercomputing</dc:subject>
+    <slash:department xmlns:slash="http://purl.org/rss/1.0/modules/slash/">I-can't-allow-you-to-do-that-dave</slash:department>
+    <slash:section xmlns:slash="http://purl.org/rss/1.0/modules/slash/">hardware</slash:section>
+    <slash:comments xmlns:slash="http://purl.org/rss/1.0/modules/slash/">49</slash:comments>
+    <slash:hit_parade xmlns:slash="http://purl.org/rss/1.0/modules/slash/">49,47,34,18,3,3,2</slash:hit_parade>
+    <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://hardware.slashdot.org/article.pl?sid=07/08/08/2236255&amp;from=rss</feedburner:origLink>
+  </item>
+  <item rdf:about="http://it.slashdot.org/article.pl?sid=07/08/08/222223&amp;from=rss" xmlns="http://purl.org/rss/1.0/">
+    <title>Beautiful Code Interview</title>
+    <link>http://rss.slashdot.org/~r/Slashdot/slashdot/~3/142157922/article.pl</link>
+    <description>An anonymous reader writes "Safari Books Online has just posted an interview with Andy Oram and Greg Wilson, the two editors who put together the recent O'Reilly book, Beautiful Code. "Beautiful Code" features 33 different case studies about challenging coding scenarios from some of today's most high-profile developers and OS project leaders. There's also a new Beautiful Code web site based on the book where many of the authors are blogging about their work and coding practices."&lt;p&gt;&lt;a href="http://it.slashdot.org/article.pl?sid=07/08/08/222223&amp;from=rss"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://rss.slashdot.org/~a/Slashdot/slashdot?a=rDBvDc"&gt;&lt;img src="http://rss.slashdot.org/~a/Slashdot/slashdot?i=rDBvDc" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://rss.slashdot.org/~r/Slashdot/slashdot/~4/142157922" height="1" width="1"/&gt;</description>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">ScuttleMonkey</dc:creator>
+    <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2007-08-08T22:49:00+00:00</dc:date>
+    <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">programming</dc:subject>
+    <slash:department xmlns:slash="http://purl.org/rss/1.0/modules/slash/">painting-with-text</slash:department>
+    <slash:section xmlns:slash="http://purl.org/rss/1.0/modules/slash/">it</slash:section>
+    <slash:comments xmlns:slash="http://purl.org/rss/1.0/modules/slash/">122</slash:comments>
+    <slash:hit_parade xmlns:slash="http://purl.org/rss/1.0/modules/slash/">122,120,98,64,18,14,11</slash:hit_parade>
+    <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://it.slashdot.org/article.pl?sid=07/08/08/222223&amp;from=rss</feedburner:origLink>
+  </item>
+  <item rdf:about="http://science.slashdot.org/article.pl?sid=07/08/08/1830257&amp;from=rss" xmlns="http://purl.org/rss/1.0/">
+    <title>Rare Meteor Event to Inform on Dangerous Comets</title>
+    <link>http://rss.slashdot.org/~r/Slashdot/slashdot/~3/142157923/article.pl</link>
+    <description>David Shiga writes "September 1, 2007 may be a once in a lifetime opportunity to see a rare meteor shower called the alpha Aurigids, New Scientist reports. Unlike better-known displays like the Perseids that occur every year on the same date, the alpha Aurigids have only been spotted three times before, in 1935, 1986, and 1994. NASA's Peter Jenniskens predicts they will return again this year, only to disappear again for the next 50 years. Meteor showers are caused by debris shed from comets, and the rarity of the alpha Aurigids is due to the exceptionally infrequent passes of its parent comet through the inner solar system, just once every 2000 years. Studying the alpha Aurigids could help astronomers turn these rare showers into an advance warning system for long period comets with potentially dangerous orbits, which would be hard to spot ahead of a collision with Earth."&lt;p&gt;&lt;a href="http://science.slashdot.org/article.pl?sid=07/08/08/1830257&amp;from=rss"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://rss.slashdot.org/~a/Slashdot/slashdot?a=tFdbfj"&gt;&lt;img src="http://rss.slashdot.org/~a/Slashdot/slashdot?i=tFdbfj" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://rss.slashdot.org/~r/Slashdot/slashdot/~4/142157923" height="1" width="1"/&gt;</description>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">ScuttleMonkey</dc:creator>
+    <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2007-08-08T22:03:00+00:00</dc:date>
+    <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">space</dc:subject>
+    <slash:department xmlns:slash="http://purl.org/rss/1.0/modules/slash/">lucifer's-nails-before-his-hammer</slash:department>
+    <slash:section xmlns:slash="http://purl.org/rss/1.0/modules/slash/">science</slash:section>
+    <slash:comments xmlns:slash="http://purl.org/rss/1.0/modules/slash/">39</slash:comments>
+    <slash:hit_parade xmlns:slash="http://purl.org/rss/1.0/modules/slash/">39,37,25,18,7,3,3</slash:hit_parade>
+    <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://science.slashdot.org/article.pl?sid=07/08/08/1830257&amp;from=rss</feedburner:origLink>
+  </item>
+  <item rdf:about="http://linux.slashdot.org/article.pl?sid=07/08/08/1810243&amp;from=rss" xmlns="http://purl.org/rss/1.0/">
+    <title>Replacing Atime With Relatime in the Kernel</title>
+    <link>http://rss.slashdot.org/~r/Slashdot/slashdot/~3/142133638/article.pl</link>
+    <description>eldavojohn writes "Our friend Jeremy at the Kernal Trap has dug up some interesting criticism of atime from Linus Torvalds. As Linus submitted patches to improve relatime he noted: 'I cannot over-emphasize how much of a deal it is in practice. Atime updates are by far the biggest IO performance deficiency that Linux has today. Getting rid of atime updates would give us more everyday Linux performance than all the pagecache speedups of the past 10 years, _combined_.' And later severely beat atime about the head with a pointed stick: 'It's also perhaps the most stupid Unix design idea of all times. Unix is really nice and well done, but think about this a bit: 'For every file that is read from the disk, lets do a ... write to the disk! And, for every file that is already cached and which we read from the cache ... do a write to the disk!'" Well, I guess I can expect my Linux machine to become a little bit faster!"&lt;p&gt;&lt;a href="http://linux.slashdot.org/article.pl?sid=07/08/08/1810243&amp;from=rss"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://rss.slashdot.org/~a/Slashdot/slashdot?a=N7P5S5"&gt;&lt;img src="http://rss.slashdot.org/~a/Slashdot/slashdot?i=N7P5S5" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://rss.slashdot.org/~r/Slashdot/slashdot/~4/142133638" height="1" width="1"/&gt;</description>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">ScuttleMonkey</dc:creator>
+    <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2007-08-08T21:08:00+00:00</dc:date>
+    <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">os</dc:subject>
+    <slash:department xmlns:slash="http://purl.org/rss/1.0/modules/slash/">results-apparently-too-much-to-ask-for</slash:department>
+    <slash:section xmlns:slash="http://purl.org/rss/1.0/modules/slash/">linux</slash:section>
+    <slash:comments xmlns:slash="http://purl.org/rss/1.0/modules/slash/">226</slash:comments>
+    <slash:hit_parade xmlns:slash="http://purl.org/rss/1.0/modules/slash/">226,221,183,143,56,27,20</slash:hit_parade>
+    <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://linux.slashdot.org/article.pl?sid=07/08/08/1810243&amp;from=rss</feedburner:origLink>
+  </item>
+  <item rdf:about="http://slashdot.org/article.pl?sid=07/08/08/1659223&amp;from=rss" xmlns="http://purl.org/rss/1.0/">
+    <title>Amazon Invests in Dynamic Pricing Model for MP3s</title>
+    <link>http://rss.slashdot.org/~r/Slashdot/slashdot/~3/142133640/article.pl</link>
+    <description>NittanyTuring writes "Amazon recently closed a Series A financing deal with Amiestreet.com, a startup selling DRM-free MP3s with a demand-based pricing model. All music starts out free, and prices increase for popular tracks. Jeff Blackburn, Senior Vice President for Business Development, Amazon.com. 'The idea of having customers directly influence the price of songs is an interesting and novel approach to selling digital music.' What does this mean for Amazon's own intentions to sell music?"&lt;p&gt;&lt;a href="http://slashdot.org/article.pl?sid=07/08/08/1659223&amp;from=rss"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://rss.slashdot.org/~a/Slashdot/slashdot?a=66J68p"&gt;&lt;img src="http://rss.slashdot.org/~a/Slashdot/slashdot?i=66J68p" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://rss.slashdot.org/~r/Slashdot/slashdot/~4/142133640" height="1" width="1"/&gt;</description>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">ScuttleMonkey</dc:creator>
+    <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2007-08-08T20:16:00+00:00</dc:date>
+    <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">music</dc:subject>
+    <slash:department xmlns:slash="http://purl.org/rss/1.0/modules/slash/">fun-models-to-play-with</slash:department>
+    <slash:section xmlns:slash="http://purl.org/rss/1.0/modules/slash/">mainpage</slash:section>
+    <slash:comments xmlns:slash="http://purl.org/rss/1.0/modules/slash/">204</slash:comments>
+    <slash:hit_parade xmlns:slash="http://purl.org/rss/1.0/modules/slash/">204,203,184,140,38,17,10</slash:hit_parade>
+    <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://slashdot.org/article.pl?sid=07/08/08/1659223&amp;from=rss</feedburner:origLink>
+  </item>
+  <item rdf:about="http://science.slashdot.org/article.pl?sid=07/08/08/1651251&amp;from=rss" xmlns="http://purl.org/rss/1.0/">
+    <title>Imaging Breakthrough "Sees" Lung Disease</title>
+    <link>http://rss.slashdot.org/~r/Slashdot/slashdot/~3/142133641/article.pl</link>
+    <description>Roland Piquepaille writes "According to BusinessWeek, an Israeli startup, aptly named Deep Breeze, has developed a high-tech replacement for the 200-year-old stethoscope. This noninvasive device can draw, in seconds, an image of your lungs by listening to its vibrations. The Vibration Response Imaging (VRI) system could already be used in Israel, Europe and South Korea. Last month, the U.S. Food and Drug Administration (FDA) approved its introduction in the U.S. But don't expect to see one of these systems used by your local physician anytime soon. This VRI system will carry a price tag of over $40K."&lt;p&gt;&lt;a href="http://science.slashdot.org/article.pl?sid=07/08/08/1651251&amp;from=rss"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://rss.slashdot.org/~a/Slashdot/slashdot?a=hnrwgZ"&gt;&lt;img src="http://rss.slashdot.org/~a/Slashdot/slashdot?i=hnrwgZ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://rss.slashdot.org/~r/Slashdot/slashdot/~4/142133641" height="1" width="1"/&gt;</description>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">ScuttleMonkey</dc:creator>
+    <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2007-08-08T19:25:00+00:00</dc:date>
+    <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">graphics</dc:subject>
+    <slash:department xmlns:slash="http://purl.org/rss/1.0/modules/slash/">good-vibrations</slash:department>
+    <slash:section xmlns:slash="http://purl.org/rss/1.0/modules/slash/">science</slash:section>
+    <slash:comments xmlns:slash="http://purl.org/rss/1.0/modules/slash/">92</slash:comments>
+    <slash:hit_parade xmlns:slash="http://purl.org/rss/1.0/modules/slash/">92,90,76,56,21,10,5</slash:hit_parade>
+    <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://science.slashdot.org/article.pl?sid=07/08/08/1651251&amp;from=rss</feedburner:origLink>
+  </item>
+  <item rdf:about="http://books.slashdot.org/article.pl?sid=07/08/08/1412257&amp;from=rss" xmlns="http://purl.org/rss/1.0/">
+    <title>OpenGL SuperBible</title>
+    <link>http://rss.slashdot.org/~r/Slashdot/slashdot/~3/142090999/article.pl</link>
+    <description>Martin Ecker writes "The OpenGL SuperBible, in its vastly expanded fourth edition, is the latest addition to the Addison-Wesley Professional OpenGL series. According to the authors it 'strives to provide the world's best introduction to not only OpenGL, but 3D graphics programming in general.' A tough goal to achieve." Read the rest of Martin's review to see if the book keeps its promise.&lt;p&gt;&lt;a href="http://books.slashdot.org/article.pl?sid=07/08/08/1412257&amp;from=rss"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://rss.slashdot.org/~a/Slashdot/slashdot?a=2lpx04"&gt;&lt;img src="http://rss.slashdot.org/~a/Slashdot/slashdot?i=2lpx04" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://rss.slashdot.org/~r/Slashdot/slashdot/~4/142090999" height="1" width="1"/&gt;</description>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">samzenpus</dc:creator>
+    <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2007-08-08T18:37:00+00:00</dc:date>
+    <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">bookreview</dc:subject>
+    <slash:department xmlns:slash="http://purl.org/rss/1.0/modules/slash/">draw-it-better</slash:department>
+    <slash:section xmlns:slash="http://purl.org/rss/1.0/modules/slash/">books</slash:section>
+    <slash:comments xmlns:slash="http://purl.org/rss/1.0/modules/slash/">104</slash:comments>
+    <slash:hit_parade xmlns:slash="http://purl.org/rss/1.0/modules/slash/">104,99,81,53,19,14,11</slash:hit_parade>
+    <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://books.slashdot.org/article.pl?sid=07/08/08/1412257&amp;from=rss</feedburner:origLink>
+  </item>
+  <item rdf:about="http://developers.slashdot.org/article.pl?sid=07/08/08/1558225&amp;from=rss" xmlns="http://purl.org/rss/1.0/">
+    <title>Finally We Get New Elements in HTML 5</title>
+    <link>http://rss.slashdot.org/~r/Slashdot/slashdot/~3/142076299/article.pl</link>
+    <description>An anonymous reader writes "Pure HTML enhancements hardly grew at all in the last eight years. It basically stopped in 1999 with HTML 4. Now the future looks bright. Recently, HTML has come back to life with HTML 5. Tons of new elements are available for structure (article, nav, section, etc), block semantic elements (aside, figure, dialog), and several other various functions."&lt;p&gt;&lt;a href="http://developers.slashdot.org/article.pl?sid=07/08/08/1558225&amp;from=rss"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://rss.slashdot.org/~a/Slashdot/slashdot?a=fz5mbT"&gt;&lt;img src="http://rss.slashdot.org/~a/Slashdot/slashdot?i=fz5mbT" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://rss.slashdot.org/~r/Slashdot/slashdot/~4/142076299" height="1" width="1"/&gt;</description>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">ScuttleMonkey</dc:creator>
+    <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2007-08-08T17:49:00+00:00</dc:date>
+    <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">internet</dc:subject>
+    <slash:department xmlns:slash="http://purl.org/rss/1.0/modules/slash/">not-so-patiently-waiting</slash:department>
+    <slash:section xmlns:slash="http://purl.org/rss/1.0/modules/slash/">developers</slash:section>
+    <slash:comments xmlns:slash="http://purl.org/rss/1.0/modules/slash/">307</slash:comments>
+    <slash:hit_parade xmlns:slash="http://purl.org/rss/1.0/modules/slash/">307,306,274,204,64,33,20</slash:hit_parade>
+    <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://developers.slashdot.org/article.pl?sid=07/08/08/1558225&amp;from=rss</feedburner:origLink>
+  </item>
+  <item rdf:about="http://science.slashdot.org/article.pl?sid=07/08/08/1514230&amp;from=rss" xmlns="http://purl.org/rss/1.0/">
+    <title>Largest-Known Planet Befuddles Scientists</title>
+    <link>http://rss.slashdot.org/~r/Slashdot/slashdot/~3/142076300/article.pl</link>
+    <description>langelgjm writes to mention that scientists are quite puzzled over the discovery of the largest planet yet. According to study-leader Georgi Mandushev it should theoretically not even be able to exist. 'Dubbed TrES-4, the planet is about 1.7 times the size of Jupiter and belongs to a small subclass of "puffy" planets that have extremely low densities. The finding will be detailed in an upcoming issue of Astrophysical Journal. [...] "TrES-4 is way bigger than it's supposed to be," Mandushev told Space.com. "For its mass, it should be much smaller. It basically should be about the size of Jupiter and instead it's almost twice as big." "TrES-4 appears to be something of a theoretical problem," said study team member Edward Dunham, also of the Lowell Observatory. "Problems are good, though, since we learn new things by solving them."'"&lt;p&gt;&lt;a href="http://science.slashdot.org/article.pl?sid=07/08/08/1514230&amp;from=rss"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://rss.slashdot.org/~a/Slashdot/slashdot?a=EGzw2y"&gt;&lt;img src="http://rss.slashdot.org/~a/Slashdot/slashdot?i=EGzw2y" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://rss.slashdot.org/~r/Slashdot/slashdot/~4/142076300" height="1" width="1"/&gt;</description>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">ScuttleMonkey</dc:creator>
+    <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2007-08-08T17:01:00+00:00</dc:date>
+    <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">space</dc:subject>
+    <slash:department xmlns:slash="http://purl.org/rss/1.0/modules/slash/">still-a-lot-of-ground-to-cover</slash:department>
+    <slash:section xmlns:slash="http://purl.org/rss/1.0/modules/slash/">science</slash:section>
+    <slash:comments xmlns:slash="http://purl.org/rss/1.0/modules/slash/">300</slash:comments>
+    <slash:hit_parade xmlns:slash="http://purl.org/rss/1.0/modules/slash/">300,294,240,172,36,20,13</slash:hit_parade>
+    <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://science.slashdot.org/article.pl?sid=07/08/08/1514230&amp;from=rss</feedburner:origLink>
+  </item>
+  <item rdf:about="http://slashdot.org/article.pl?sid=07/08/08/1421223&amp;from=rss" xmlns="http://purl.org/rss/1.0/">
+    <title>Microsoft Says "War on Terror" is Overblown</title>
+    <link>http://rss.slashdot.org/~r/Slashdot/slashdot/~3/142053076/article.pl</link>
+    <description>SlinkySausage writes "The endless security measures imposed on society as a result of the "war on terror" have become overblown and intrusive, according to Microsoft Redmond senior security analyst Steve Riley. He made the comments in a talk at day one of Tech.Ed Australia about software security. Riley also fessed up that Microsoft cocked up XP from a security perspective. "We let you down with XP," he said. Microsoft also showed a very interesting new desktop virtualisation technology called SoftGrid, which allows applications to be virtualised individually, rather than a whole OS. Think Virtual PC or VMware, but instead of virtualising an OS, just a single application is virtualised."&lt;p&gt;&lt;a href="http://slashdot.org/article.pl?sid=07/08/08/1421223&amp;from=rss"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://rss.slashdot.org/~a/Slashdot/slashdot?a=V8NZHS"&gt;&lt;img src="http://rss.slashdot.org/~a/Slashdot/slashdot?i=V8NZHS" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://rss.slashdot.org/~r/Slashdot/slashdot/~4/142053076" height="1" width="1"/&gt;</description>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">CmdrTaco</dc:creator>
+    <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2007-08-08T16:09:00+00:00</dc:date>
+    <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">microsoft</dc:subject>
+    <slash:department xmlns:slash="http://purl.org/rss/1.0/modules/slash/">also-sugar-is-sweet</slash:department>
+    <slash:section xmlns:slash="http://purl.org/rss/1.0/modules/slash/">mainpage</slash:section>
+    <slash:comments xmlns:slash="http://purl.org/rss/1.0/modules/slash/">537</slash:comments>
+    <slash:hit_parade xmlns:slash="http://purl.org/rss/1.0/modules/slash/">537,530,420,301,67,44,25</slash:hit_parade>
+    <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://slashdot.org/article.pl?sid=07/08/08/1421223&amp;from=rss</feedburner:origLink>
+  </item>
+  <item rdf:about="http://it.slashdot.org/article.pl?sid=07/08/08/1416243&amp;from=rss" xmlns="http://purl.org/rss/1.0/">
+    <title>Storm Worm Rising</title>
+    <link>http://rss.slashdot.org/~r/Slashdot/slashdot/~3/142028520/article.pl</link>
+    <description>The Storm worm has been an increasing problem in the last few months, but a change in tactics may mean something big is going to happen. The article discusses a bit of back story about the worm, including the somewhat frightening numbers about the millions of spam emails carrying the worm payload. They estimate between a quarter and a million infected systems usable for spam or DDOS attacks.&lt;p&gt;&lt;a href="http://it.slashdot.org/article.pl?sid=07/08/08/1416243&amp;from=rss"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://rss.slashdot.org/~a/Slashdot/slashdot?a=LsF9jO"&gt;&lt;img src="http://rss.slashdot.org/~a/Slashdot/slashdot?i=LsF9jO" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://rss.slashdot.org/~r/Slashdot/slashdot/~4/142028520" height="1" width="1"/&gt;</description>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">CmdrTaco</dc:creator>
+    <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2007-08-08T15:33:00+00:00</dc:date>
+    <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">worms</dc:subject>
+    <slash:department xmlns:slash="http://purl.org/rss/1.0/modules/slash/">goggles-do-nothing</slash:department>
+    <slash:section xmlns:slash="http://purl.org/rss/1.0/modules/slash/">it</slash:section>
+    <slash:comments xmlns:slash="http://purl.org/rss/1.0/modules/slash/">198</slash:comments>
+    <slash:hit_parade xmlns:slash="http://purl.org/rss/1.0/modules/slash/">198,195,165,113,34,21,13</slash:hit_parade>
+    <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://it.slashdot.org/article.pl?sid=07/08/08/1416243&amp;from=rss</feedburner:origLink>
+  </item>
+  <item rdf:about="http://slashdot.org/article.pl?sid=07/08/08/138259&amp;from=rss" xmlns="http://purl.org/rss/1.0/">
+    <title>Bank Run in Second Life</title>
+    <link>http://rss.slashdot.org/~r/Slashdot/slashdot/~3/142017543/article.pl</link>
+    <description>Jamie found an interesting bit about a bank run in Second Life. The recent ban on gambling combined with a $12k theft from the 2L stock market has caused people to try to get their money back. The article mentions that this could supposedly affect 8.5M players even tho most estimates of actual hard core players in the system are in the 5 to low 6 figure range.&lt;p&gt;&lt;a href="http://slashdot.org/article.pl?sid=07/08/08/138259&amp;from=rss"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://rss.slashdot.org/~a/Slashdot/slashdot?a=2uHnpL"&gt;&lt;img src="http://rss.slashdot.org/~a/Slashdot/slashdot?i=2uHnpL" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://rss.slashdot.org/~r/Slashdot/slashdot/~4/142017543" height="1" width="1"/&gt;</description>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">CmdrTaco</dc:creator>
+    <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2007-08-08T14:48:00+00:00</dc:date>
+    <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">internet</dc:subject>
+    <slash:department xmlns:slash="http://purl.org/rss/1.0/modules/slash/">just-like-in-the-first-one</slash:department>
+    <slash:section xmlns:slash="http://purl.org/rss/1.0/modules/slash/">mainpage</slash:section>
+    <slash:comments xmlns:slash="http://purl.org/rss/1.0/modules/slash/">255</slash:comments>
+    <slash:hit_parade xmlns:slash="http://purl.org/rss/1.0/modules/slash/">255,247,202,146,52,30,18</slash:hit_parade>
+    <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://slashdot.org/article.pl?sid=07/08/08/138259&amp;from=rss</feedburner:origLink>
+  </item>
+  <item rdf:about="http://science.slashdot.org/article.pl?sid=07/08/08/1247206&amp;from=rss" xmlns="http://purl.org/rss/1.0/">
+    <title>Humanity's Genetic Diversity on the Decline</title>
+    <link>http://rss.slashdot.org/~r/Slashdot/slashdot/~3/142007026/article.pl</link>
+    <description>jd writes "In a study covering five different periods of history, from 300 AD to the present day, and geographically spread across much of Europe, scientists have extracted the mitochondrial DNA from a sizable number of individuals in an effort to examine changes in diversity. The results, published in the Royal Society journal is intriguing to say the least. 1700 years ago, three out of every four individuals belonged to a different haplotype. In modern Europe, the number is only one in three. The researchers blame a combination of plague, selection of dominant lineages and culturally-inflicted distortions. The researchers say more work needs to be done, but are unclear if this involves archaeology or experiments involving skewing the data in the local female population."&lt;p&gt;&lt;a href="http://science.slashdot.org/article.pl?sid=07/08/08/1247206&amp;from=rss"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://rss.slashdot.org/~a/Slashdot/slashdot?a=OLtCjo"&gt;&lt;img src="http://rss.slashdot.org/~a/Slashdot/slashdot?i=OLtCjo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://rss.slashdot.org/~r/Slashdot/slashdot/~4/142007026" height="1" width="1"/&gt;</description>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">CmdrTaco</dc:creator>
+    <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2007-08-08T14:06:00+00:00</dc:date>
+    <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">biotech</dc:subject>
+    <slash:department xmlns:slash="http://purl.org/rss/1.0/modules/slash/">meanwhile-my-beer-gut-it-on-the-incline</slash:department>
+    <slash:section xmlns:slash="http://purl.org/rss/1.0/modules/slash/">science</slash:section>
+    <slash:comments xmlns:slash="http://purl.org/rss/1.0/modules/slash/">245</slash:comments>
+    <slash:hit_parade xmlns:slash="http://purl.org/rss/1.0/modules/slash/">245,236,200,140,39,17,11</slash:hit_parade>
+    <feedburner:origLink xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://science.slashdot.org/article.pl?sid=07/08/08/1247206&amp;from=rss</feedburner:origLink>
+  </item>
+</rdf:RDF>
