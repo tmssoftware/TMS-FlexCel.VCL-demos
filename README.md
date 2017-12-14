@@ -8,26 +8,34 @@ You can find a description of each demo in the [documentation](http://www.tmssof
 **:book: Note** We update this repository automatically every time we release a new FlexCel version. So if you have notifications integrated with github, you can subscribe to this feed to be notified of new releases.
 
 
-## New on v 6.17.4.0 - November 2017
+## New on v 6.18.0.0 - December 2017
 
 
-- **Breaking Change: Subtotal command allows more customization.** Now the [Subtotal](http://www.tmssoftware.biz/flexcel/doc/vcl/api/FlexCel.Core/TExcelFile/Subtotal.html) command provides more parameters in the callbacks to allow for more customization. In addition, by default it will write a better text for non sum aggregates (like for example "Customers Average" instead of "Customers Total" if you are using the Average to aggregate). There is also a new example on how to use the command. **Note**: This is a breaking change if you are using the callbacks since now the callbacks have more parameters. But it is easy to fix at compile time, just add those parameters to the callbacks and recompile.
+- **Support for Rad Studio 10.2.2.** Rad Studio 10.2.2 introduced some changes that prevented FlexCel from compiling.
 
-- **New SubtotalDefaultEnglishString command.** Now the [SubtotalDefaultEnglishString](http://www.tmssoftware.biz/flexcel/doc/vcl/api/FlexCel.Core/TExcelFile/SubtotalDefaultEnglishString.html) provides the string used by the different aggregate functions used in [Subtotal](http://www.tmssoftware.biz/flexcel/doc/vcl/api/FlexCel.Core/TExcelFile/Subtotal.html) . You can use this method as a parameter to subtotal to calculate the grand total and subtotal labels.
+- **Support for default CryptoAPI xls encrypted files.** Now FlexCel can read and write xls files encrypted with the CryptoAPI encryption. This is the default encryption algorithm for files created by Excel 2003 or newer. With this addition, all modes and encryption algorithms in both xls and xlsx are now supported.
 
-- **Ability to copy OLE objects between different files while using xlsx file format.** Now the restriction that you can't copy sheets from one file to another if they have embedded OLE object has been removed for xlsx files. It is still not possible to copy sheets between different files with embedded OLE objects in xls.
+- **Full support for manipulating XML Mappings in xlsx files.** Now XML Mappings will be preserved when opening and saving xlsx/m files, and there are two new commands in the API to set them or read them with code. The new commands are [GetXmlMap](http://www.tmssoftware.biz/flexcel/doc/vcl/api/FlexCel.Core/TExcelFile/GetXmlMap.html) and [SetXmlMap](http://www.tmssoftware.biz/flexcel/doc/vcl/api/FlexCel.Core/TExcelFile/SetXmlMap.html) . As usual, APIMate will show how to use `SetXmlMap`. **Note**: The new API only works in xlsx/x files, not xls. Xml mappings inside xls files will still be preserved when opening and saving xls files, but not converted between xls and xlsx.
 
-- **Ability to read custom document properties in xls files.** Up to now FlexCel could only read custom document properties in xlsx files. Now it can also read them in xls files. And now custom properties are migrated from xls files to xlsx too.
+- **Bug Fix.** Images made transparent with Excel tools might not preserve their transparency when saved as xlsx.
 
-- **Better handling of URL encoding when encoding some filenames.** Now some filenames containing some characters like "#" will be correctly encoded when linked from FlexCel. The events that allow you to manually define the links have a new parameter "UrlNeedsEncoding" which you can set to false to avoid all encoding by FlexCel if you provide an already encoded URL to the event.
+- **Bug Fix.** When rendering shapes with semi-transparent gradients to PDF or SVG the gradients were exported as fully opaque.
 
-- **Bug Fix.** The **Last print time** document property wasn't read in xlsx files.
+- **Bug Fix.** Files with table slicers saved by FlexCel might not open in Excel 2013. (They already worked fine in Excel 2016, and Excel 2010 doesn't support table slicers).
 
-- **Bug Fix.** There was an error when linking **localized** projects using FlexCelReport.
+- **Bug Fix.** Rotated shapes inside groups in xlsx files could be rendered wrong.
 
-- **Bug Fix.** When copying cells from one file to another autofilters would be copied even if they were not in the range being copied.
+- **Bug Fix.** Groups that were flipped horizontally or vertically weren't flipped when rendering. Objects inside were flipped, but the groups themselves weren't.
 
-- **Bug Fix.** Formulas referencing sheets which could be interpreted like a R1C1 cell reference (like "R3C5") were saved without quotes in the sheet name, and thus became invalid formulas.
+- **Bug Fix.** Filled polygons could be exported wrong to PDF in  some border cases.
 
-- **Bug Fix.** In some very complex bidirectional reports with sorting in the template the fields might end up not being sorted correctly, and some might appear twice.
+- **Bug Fix.** Filled polygons could be exported wrong to images with the SKIA backend used in Linux.
+
+- **Bug Fix.** Legacy system colors in drawings inside xls files could be rendered as transparent instead of the correct color in border cases.
+
+- **Bug Fix.** Xlsx files with complex gradients where the stops were not sorted could cause invalid PDF files.
+
+- **Bug Fix.** Textboxes with more than 8224 characters would corrupt the file when saved as xls.
+
+- **Bug Fix.** Very complex and images could cause a GDI+ error when previewing them.
 
