@@ -6,6 +6,7 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.StdCtrls, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.Layouts, FMX.Grid,
   FMX.TabControl, FMX.Objects, System.Math, System.Rtti,
+  {$if CompilerVersion >= 31.0}FMX.Grid.Style, {$IFEND}
   FMX.FlexCel.Core, FlexCel.XlsAdapter, FMX.Edit;
 
 type

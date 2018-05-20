@@ -8,22 +8,26 @@ You can find a description of each demo in the [documentation](http://www.tmssof
 **:book: Note** We update this repository automatically every time we release a new FlexCel version. So if you have notifications integrated with github, you can subscribe to this feed to be notified of new releases.
 
 
-## New on v 6.19.0 - March 2018
+## New on v 6.19.5 - May 2018
 
 
-- **Support for Khmer language when exporting to pdf.** The PDF engine in FlexCel now includes a Khmer shaper which is able to correctly create Khmer documents, as long as the Khmer fonts you are using are OpenType (that is they contain GSUB and GPOS tables).
+- **Now functions CUMIPMT and CUMPRINC are supported when recalculating.** Now FlexCel can recalculate the functions [CUMIPMT](https://support.office.com/en-us/article/cumipmt-function-61067bb0-9016-427d-b95b-1a752af0e606) and [CUMPRINC](https://support.office.com/en-us/article/cumprinc-function-94a4516d-bd65-41a1-bc16-053a6af4c04d)
 
-- **Reduced memory usage when exporting.** Exporting to PDF and SVG were tweaked to consume less memory in high-performance environments where many threads are exporting at the same time. Also the performance of the pdf engine was improved.
+- **New methods GetTokens and SetTokens in ExcelFile allow you to parse arbitrary text.** The new methods [GetTokens](http://www.tmssoftware.biz/flexcel/doc/vcl/api/FlexCel.Core/TExcelFile/GetTokens.html) and  [SetTokens](http://www.tmssoftware.biz/flexcel/doc/vcl/api/FlexCel.Core/TExcelFile/SetTokens.html) allow you to parse any text into tokens and then convert those tokens back into a string. Those methods complement the existing [GetFormulaTokens](http://www.tmssoftware.biz/flexcel/doc/vcl/api/FlexCel.Core/TExcelFile/GetFormulaTokens.html) and [SetFormulaTokens](http://www.tmssoftware.biz/flexcel/doc/vcl/api/FlexCel.Core/TExcelFile/SetFormulaTokens.html)
 
-- **Images made transparent with Excel now are converted between xls and xlsx files.** Now FlexCel will convert the transparent color parameter between xls and xlsx files.
+- **The XlsChart object now returns the 3D properties for xls charts.** Now you can read the 3D properties in charts inside xls files.
 
-- **Bug Fix.** In some cases after copying rows, then deleting sheets and then inserting or deleting rows, the formula bounds cache could be invalid and formulas would fail to update in the lase deleting of the rows.
+- **Improved Excel 95 compatibility.** Now FlexCel can read some Excel 95 files which would throw errors before.
 
-- **Bug Fix.** The round function now behaves more like Excel and not like C# in some border cases.
+- **Now FlexCel preserves "new style" sheet and workbook protections in xlsx files.** Both FlexCel and Excel use an old algorithm to compute sheet and workbook protections, and they both keep doing it this way as it is the only way to port the protections between xlsx and xls files. But some third party generated files could have a newer style of protections which are incompatible with xls and FlexCel wasn't understanding them. Now FlexCel will preserve those new style protections in xlsx files too. The new style protections will be lost if you save as xls, but that happens in Excel too.
 
-- **Bug Fix.** A file with too many objects with the same name could cause an stack overflow.
+- **When wrapping text, now FlexCel recognizes different kind of unicode spaces.** Now other spaces in addition of character 32 are used as separators when rendering the file and wrapping the text. Note that not breaking spaces (char 160) are still not used as separators as they aren't supposed to break a line.
 
-- **Bug Fix.** Formulas with intersections of a name with a 3d range would be interpreted as #name instead of the correct formula.
+- **Bug Fix.** SetCellFormat with ApplyFormat could format the cells wrong if the cells were empty and there was column or  row format applied.
 
-- **Bug Fix.** In some invalid cases the indirect function would throw exceptions that would be later processed. While the result was still ok, those exceptions could slow down a lot recalculation in a file with thousands of formulas.
+- **Bug Fix.** Sometimes when copying sheets form different files, some named ranges would not be copied.
+
+- **Bug Fix.** Khmer text could be rendered wrong is some rare cases.
+
+- **Bug Fix.** When exporting to pdf you could get an error if a character didn't exist and fallbackfonts was empty.
 

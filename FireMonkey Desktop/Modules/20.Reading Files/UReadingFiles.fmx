@@ -275,12 +275,12 @@ object FReadingFiles: TFReadingFiles
     StyleLookup = 'scrollboxstyle'
     TabOrder = 2
     object Tabs: TTabControl
-      Align = Bottom
+      Align = Client
       FullSize = True
       Size.Width = 600.000000000000000000
       Size.Height = 24.000000000000000000
       Size.PlatformDefault = False
-      TabHeight = 49.000000000000000000
+      TabHeight = 22.000000000000000000
       TabOrder = 0
       TabPosition = Top
     end
