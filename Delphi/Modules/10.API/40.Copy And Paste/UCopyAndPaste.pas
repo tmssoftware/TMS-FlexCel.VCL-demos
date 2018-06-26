@@ -150,8 +150,17 @@ begin
 
     Clipboard.Open;
     try
-      Df := TFlexCelDataFormats.GetString(DataFormat);
-      Clipboard.SetAsHandle(RegisterClipboardFormat(PChar(Df)), MyHandle);
+      //Text format is standard, must be handled differently.
+      if DataFormat = TFlexCelClipboardFormat.Text then
+      begin
+         //Setting CF_UNICODE_TEXT will also set CF_TEXT and CF_OEMTEXT
+         Clipboard.SetAsHandle(CF_UNICODETEXT, MyHandle);
+      end else
+      begin
+        //Other formats than TEXT must be registered with RegisterClipboardFormat.
+        Df := TFlexCelDataFormats.GetString(DataFormat);
+        Clipboard.SetAsHandle(RegisterClipboardFormat(PChar(Df)), MyHandle);
+      end;
       FreeHandle := false;       //Note that we dont have to free MyHandle if the clipboard takes care of it
     finally
       Clipboard.Close;
