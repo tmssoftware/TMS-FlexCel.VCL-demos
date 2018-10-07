@@ -238,7 +238,7 @@ begin
 
   Xls := TXlsFile.Create(true);
   try
-    Xls.NewFile(1);
+    Xls.NewFile(1, TExcelFileFormat.v2019);
     Xls.SetColWidth(1, 78 * 256);  //;make longer lines wrap in the cell.
     fmt := Xls.GetFormat(Xls.GetColFormat(1));
     fmt.WrapText := true;

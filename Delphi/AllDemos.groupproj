@@ -75,6 +75,9 @@
         <Projects Include="Modules\20.Reports\22.Reports From Lists\ReportsFromLists.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="Modules\20.Reports\23.Tables As Datasources\TablesAsDatasources.dproj">
+            <Dependencies/>
+        </Projects>
         <Projects Include="Modules\20.Reports\25.Multiple sheet report\Multiplesheetreport.dproj">
             <Dependencies/>
         </Projects>

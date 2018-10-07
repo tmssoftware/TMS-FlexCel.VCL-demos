@@ -68,7 +68,7 @@ begin
   try
     XlsOut := TXlsFile.Create(true);
     try
-      XlsOut.NewFile(1);
+      XlsOut.NewFile(1, TExcelFileFormat.v2019);
       if (Length(fileNames) > 1) and cbOnlyData.Checked then
         XlsOut.InsertAndCopySheets(1, 2, Length(fileNames) - 1);
 

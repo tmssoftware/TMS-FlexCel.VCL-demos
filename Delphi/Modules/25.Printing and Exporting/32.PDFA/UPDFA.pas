@@ -163,7 +163,7 @@ var
 begin
   xls := TXlsFile.Create;
   try
-    xls.NewFile(1, TExcelFileFormat.v2010);
+    xls.NewFile(1, TExcelFileFormat.v2019);
     xls.SetCellValue(1, 1, 'This is a test from FlexCel!');
     xls.SetCellValue(2, 1, 'Here is some emoji to show unicode surrogate support: '#$D83D#$DC1C#$D83D#$DC0F);
     xls.SetCellValue(3, 1, 'You might need a font able to show emoji for those characters to show');

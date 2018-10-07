@@ -87,7 +87,7 @@ begin
 
   if (not Restoring) then
   begin
-    xls.NewFile(1);
+    xls.NewFile(1, TExcelFileFormat.v2019);
 
     for k := 0 to Length(Predefined) - 1 do
     begin

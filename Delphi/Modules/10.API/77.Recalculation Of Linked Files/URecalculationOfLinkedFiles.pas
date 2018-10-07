@@ -57,14 +57,14 @@ begin
    //Set up the files.
   try
     xls1 := TXlsFile.Create;
-    xls1.NewFile;
+    xls1.NewFile(1, TExcelFileFormat.v2019);
     xls1.SetCellValue(1, 1, GetValue(CellA1.Text));
     xls1.SetCellValue(2, 1, TFormula.Create('=[Third File.xls]Sheet1!A1 + 7'));
     xls2 := TXlsFile.Create;
-    xls2.NewFile;
+    xls2.NewFile(1, TExcelFileFormat.v2019);
     xls2.SetCellValue(1, 1, TFormula.Create('=[First File.xls]Sheet1!A1 * 2'));
     xls3 := TXlsFile.Create;
-    xls3.NewFile;
+    xls3.NewFile(1, TExcelFileFormat.v2019);
     xls3.SetCellValue(1, 1, TFormula.Create('=[Second File.xls]Sheet1!A1 * 5'));
      //Create a workspace to recalculate them.
      //In this case, as we know what files we need in advance, we will just add them to the workspace

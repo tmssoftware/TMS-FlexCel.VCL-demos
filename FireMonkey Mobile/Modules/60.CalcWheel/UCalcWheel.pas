@@ -145,7 +145,7 @@ begin
       Workbook.Open(DocFolder + AItem.Text + '.xls');
     except
       ShowMessage('Invalid file: ' + AItem.Text);
-      Workbook.NewFile(1);
+      Workbook.NewFile(1, TExcelFileFormat.v2019);
     end;
 
     CreateConfig;

@@ -50,7 +50,7 @@ var
   XF, XF2: integer;
 begin
 	//Create a new file. We could also open an existing file with Xls.Open
-	Xls.NewFile(1);
+	Xls.NewFile(1, TExcelFileFormat.v2019);
 
   //Set some cell values.
   Xls.SetCellValue(1, 1, 'Hello to the world');

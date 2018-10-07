@@ -109,7 +109,7 @@ var
 begin
   xls := TXlsFile.Create(true);
   try
-    xls.NewFile(1);
+    xls.NewFile(1, TExcelFileFormat.v2019);
     for r := 1 to 1999 do
     begin
       xls.InsertHPageBreak(r);  //This won't throw an exception here, since FlexCel allows to have more than 1025 page breaks, but at the moment of saving. (since an xls file can't have more than that)

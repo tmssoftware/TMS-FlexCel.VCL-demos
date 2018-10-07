@@ -114,7 +114,7 @@ void __fastcall TFCustomPreview::LoadFile(String FileName)
 	ActionAutofit->Enabled = false;
 	ActionOpen->Enabled = true;
 	PanelSelectPage->Visible = false;
-	Xls->NewFile(1);
+	Xls->NewFile(1, TExcelFileFormat::v2019);
 	Caption = "Custom Preview";
 	ShowMessage("Error opening file: " + ex->Message);
 	MainPreview->InvalidatePreview();
