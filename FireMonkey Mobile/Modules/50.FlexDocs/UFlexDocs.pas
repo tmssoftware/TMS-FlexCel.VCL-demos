@@ -59,17 +59,11 @@ begin
     exit;
   end;
 
-  //IMPORTANT: Android needs the file to be in external storage in order to share it. You can't share a file in GetDocumentsPath, it must be GetSHAREDDocumentsPath.
-  //In order to access the external storage, you need to add permissions for external storage in the Application Properties.
-  {$IFDEF Android}
-    DestFolder := TPath.GetSHAREDDocumentsPath;
-  {$ELSE}
-    DestFolder := TPath.GetDocumentsPath;
-  {$ENDIF}
+  DestFolder := TPath.GetDocumentsPath;
 
   if DestFolder = '' then
   begin
-    ShowMessage('This device doesn''t have external storage');
+    ShowMessage('This device doesn''t have internal storage');
     exit;
   end;
 
@@ -88,7 +82,9 @@ begin
   pdf.EndExport;
   fs.Free;
 
-  FlexCelDocExport.ExportFile(btnShare, TmpFileName);
+   // To send the file, we need to define a file provider in AndrodiManifest.xml
+  // See http://www.tmssoftware.biz/flexcel/doc/vcl/guides/android-guide.html#sharing-files
+   FlexCelDocExport.ExportFile(btnShare, TmpFileName);
 end;
 
 end.

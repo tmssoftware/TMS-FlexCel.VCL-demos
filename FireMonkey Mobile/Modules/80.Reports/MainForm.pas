@@ -9,7 +9,7 @@ uses
   DataModel, Generics.Defaults,
   FMX.FlexCel.Core, FlexCel.XlsAdapter, FlexCel.Report, FlexCel.Render, FlexCel.Pdf,
   REST.Client, Data.Bind.Components, Data.Bind.ObjectScope, FMX.StdCtrls,
-  FMX.WebBrowser, FMX.FlexCel.DocExport;
+  FMX.WebBrowser, FMX.FlexCel.DocExport, REST.Types, FMX.Controls.Presentation;
 
 type
   TFMainForm = class(TForm)
@@ -26,8 +26,6 @@ type
     procedure btnShareClick(Sender: TObject);
   private
     PdfPath: string;
-
-    function UncompressResponse: string;
     function LoadData(ResponseStr: string): TVersionList;
     function CreateReport(const Versions: TVersionList): TExcelFile;
     function ExportToHtml(const Xls: TExcelFile): string;
@@ -48,32 +46,6 @@ implementation
 {$R *.fmx}
 {$R *.SmXhdpiPh.fmx ANDROID}
 
-function TFMainForm.UncompressResponse: string;
-var
-  InStream, OutStream: TMemoryStream;
-  ZStream: TZDecompressionStream;
-  OutBytes: tbytes;
-begin
-  OutStream := TMemoryStream.Create;
-  try
-    InStream := TMemoryStream.Create;
-    try
-      InStream.Write(SORESTResponse.RawBytes[0], length(SORESTResponse.RawBytes));
-      InStream.Position := 0;
-      ZStream := TZDecompressionStream.Create(InStream, 15 + 32);
-      OutStream.CopyFrom(ZStream, -1);
-      OutStream.Position := 0;
-      SetLength(OutBytes, OutStream.Size);
-      OutStream.Read(OutBytes[0], Length(OutBytes));
-    finally
-      InStream.Free;
-    end;
-  finally
-    OutStream.Free;
-  end;
-  Result := TEncoding.UTF8.GetString(OutBytes);
-end;
-
 function TFMainForm.LoadData(ResponseStr: string): TVersionList;
 var
   Response: TJSONValue;
@@ -90,8 +62,10 @@ begin
   begin
     Name := Item.GetValue<string>('name');
     Name := Name.Substring('delphi-'.Length);
-    if not (Name.StartsWith('XE', true)) then
+    if not (Name.StartsWith('XE', true)) and not (Name.StartsWith('10.', true)) then
       continue;
+    if (Result.Count > 10) then break;
+
     Count := Item.GetValue<integer>('count');
     Result.Add(TVersion.Create(Name, Count));
   end;
@@ -125,7 +99,7 @@ begin
   end else
   begin
     SORESTRequest.Execute;
-    ResponseStr := UncompressResponse;
+    ResponseStr := SORESTResponse.Content;
   end;
 
   Versions := LoadData(ResponseStr);
@@ -147,6 +121,9 @@ begin
     ShowMessage('Please run the app first');
     exit;
   end;
+
+  // To send the file, we need to define a file provider in AndrodiManifest.xml
+  // See http://www.tmssoftware.biz/flexcel/doc/vcl/guides/android-guide.html#sharing-files
   FlexCelDocExport.ExportFile(btnShare, PdfPath);
 end;
 
@@ -188,17 +165,10 @@ var
   Pdf: TFlexCelPdfExport;
 begin
   Pdf := TFlexCelPdfExport.Create(Xls, true);
-  //Pdf.PdfType := TPdfType.PDFA2; //just because we can...
   Pdf.FontEmbed := TFontEmbed.None;
   Pdf.FontMapping := TFontMapping.ReplaceAllFonts;
 
-   //IMPORTANT: Android needs the file to be in external storage in order to share it. You can't share a file in GetDocumentsPath, it must be GetSHAREDDocumentsPath.
-  //In order to access the external storage, you need to add permissions for external storage in the Application Properties.
-  {$IFDEF ANDROID}
-  Result := TPath.Combine(TPath.GetSHAREDDocumentsPath, 'delphiversions.pdf');
-  {$ELSE}
   Result := TPath.Combine(TPath.GetDocumentsPath, 'delphiversions.pdf');
-  {$ENDIF}
   Pdf.Export(Result);
 end;
 

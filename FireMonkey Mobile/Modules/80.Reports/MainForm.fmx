@@ -54,9 +54,8 @@ object FMainForm: TFMainForm
   object SORESTClient: TRESTClient
     Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
     AcceptCharset = 'UTF-8, *;q=0.8'
-    BaseURL = 'http://api.stackexchange.com'
+    BaseURL = 'http://api.stackexchange.com/'
     Params = <>
-    HandleRedirects = True
     Left = 40
     Top = 32
   end
