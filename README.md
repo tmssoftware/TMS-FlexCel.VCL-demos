@@ -8,24 +8,18 @@ You can find a description of each demo in the [documentation](http://www.tmssof
 **:book: Note** We update this repository automatically every time we release a new FlexCel version. So if you have notifications integrated with github, you can subscribe to this feed to be notified of new releases.
 
 
-## New on v 6.24 - January 2019
+## New on v 6.25
 
 
-- **The INDIRECT function can now understand structured references in tables.** Now FlexCel can calculate formulas where INDIRECT references a table. For example if you have a table named "Table1", FlexCel will now understand a formula like =SUM(INDIRECT("Table1[Column1]"))
+- **New parameter in ATLEAST tag in reports allows for the number of rows of a dataset to be multiple of a number.** Now when using [ATLEAST](http://www.tmssoftware.biz/flexcel/doc/vcl/guides/reports-designer-guide.html#ensuring-a-table-has-at-least-n-records) you can specify that the number of rows must be a multiple of some number. That is, that the dataset must have for example 20, 40, 60... rows but not 30 or 45. Take a look at the new [Fixed Footer demo](http://www.tmssoftware.biz/flexcel/doc/vcl/samples/delphi/reports/fixed-footer/index.html)
 
-- **Breaking Change: Cell indent is now printed and rendered to pdf/images proportional to the print scale.** Before this version, FlexCel behaved just like Excel and kept the cell indent always the same no matter the print scale. Now we behave in a more logical way, and if the print scale is 50%, the cell indents will be 50% smaller. If you want to revert to the old behavior (which is how Excel behaves), there is a new property [CellIndentationRendering](http://www.tmssoftware.biz/flexcel/doc/vcl/api/FlexCel.XlsAdapter/TXlsFile/CellIndentationRendering.html) which allows to control this behavior and revert it back to what it was. For more information read the new [section about cell indentation in the API guide](http://www.tmssoftware.biz/flexcel/doc/vcl/guides/api-developer-guide.html#cell-indentation).
+- **Improved handling of invalid "," in numeric formats.** A comma in a numeric format means "thousands separator" if it goes after the 3rd digit, like in "#,000". But when a comma is at the end of the format, it means scale: A format like "0," means divide the number by 1000. FlexCel already handled those cases correctly, but there are some "impossible" cases like "0,0" which are not actually valid but might be saved to xlsx files. FlexCel was interpreting that the "," in some of those cases meant scale, while for the same cases Excel was interpreting "thousands separator". Now we should behave like Excel even in the invalid cases.
 
-- **Breaking Change: TFlexCelDocExport now uses a different way to share files in Android.** If you have existing apps using FlexCelDocExport, make sure to review them and add a provider to them so FlexCelDocExport will keep working. This was needed so new Android apps can comply with the new Play store rules. Please read the [Android guide](http://www.tmssoftware.biz/flexcel/doc/vcl/guides/android-guide.html#sharing-files) for more information.
+- **Improved rendering of TFlexCelPreview in FireMonkey in Windows when in High dpi.** While FlexCelPreview already handled most high-dpi cases correctly, it was failing to render correctly in Windows when using FireMonkey. Now it should work correctly as in the other cases.
 
-- **The examples for Android show a newer way to share the documents.** The revised examples for Android now use a sharing method that is compatible with Android Nougat or newer. TFlexCelDocExport will now use the new sharing method in Android. There is new documentation available at the [Android guide](http://www.tmssoftware.biz/flexcel/doc/vcl/guides/android-guide.html#sharing-files)
+- **Bug Fix.** FlexCelPreview wasn't working correctly in Android. Some changes in the Android API made some methods used by FlexCelPreview deprecated. Now we call the newer methods.
 
-- **New methods SetRange3DRef and TrySetRange3DRef in TXls3DRange.** The new methods  [SetRange3DRef](http://www.tmssoftware.biz/flexcel/doc/vcl/api/FlexCel.XlsAdapter/TXlsFile/SetRange3DRef.html) and [TrySetRange3DRef](http://www.tmssoftware.biz/flexcel/doc/vcl/api/FlexCel.XlsAdapter/TXlsFile/TrySetRange3DRef.html) allow you to set a 3D range from a string like "=Sheet1:Sheet2!A1:A3"
+- **FlexCel could fail when rendering cells with more than 32000 characters.** A cell in Excel is limited to 32767 characters, but a string in GDI+ is limited to 32000 characters. So if a cell had between 32000 and 32767 characters, FlexCel would raise an Exception when rendering the file becaus eGDI+ would fail to render the string. Now it should render correctly.
 
-- **DbValue in reports now supports fields with dots.** DbValue tag in reports will now work with fields with dots like "data.value"
-
-- **Bug Fix.** When deleting columns the data validations formulas could be adapted wrong.
-
-- **Bug Fix.** When a line in rich text inside a text box had a length 0 (an empty line), the font might not be preserved for that line.
-
-- **Bug Fix.** FlexCel considered some special characters like "°" in a name to be invalid when they are not. This could cause that opening and saving an xlsx file with names like that would make Excel crash opening the file.
+- **Improved APIMate.** ApiMate was reporting code that wouldn't compile for cells with hyperlinks.
 

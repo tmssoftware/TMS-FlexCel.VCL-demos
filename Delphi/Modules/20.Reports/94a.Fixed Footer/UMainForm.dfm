@@ -1,7 +1,7 @@
 object MainForm: TMainForm
   Left = 0
   Top = 0
-  Caption = 'Split Datasets'
+  Caption = 'Fixed Footer'
   ClientHeight = 122
   ClientWidth = 390
   Color = clBtnFace
@@ -20,9 +20,9 @@ object MainForm: TMainForm
   object Label1: TLabel
     Left = 24
     Top = 24
-    Width = 260
+    Width = 308
     Height = 13
-    Caption = 'Shows how to split a dataset into groups of n records.'
+    Caption = 'Shows how to create a report with a footer fixed at the bottom.'
   end
   object btnCancel: TButton
     Left = 307
@@ -34,8 +34,6 @@ object MainForm: TMainForm
     ModalResult = 2
     TabOrder = 1
     OnClick = btnCancelClick
-    ExplicitLeft = 331
-    ExplicitTop = 64
   end
   object btnGo: TButton
     Left = 226
@@ -48,13 +46,11 @@ object MainForm: TMainForm
     ModalResult = 1
     TabOrder = 0
     OnClick = btnGoClick
-    ExplicitLeft = 250
-    ExplicitTop = 64
   end
   object SaveDialog: TSaveDialog
     DefaultExt = 'xlsx'
     Filter = 'Excel 2007 or newer|*.xlsx|Excel 97-2003|*.xls'
-    Left = 376
+    Left = 344
     Top = 8
   end
   object ADOConnection: TADOConnection
@@ -72,29 +68,13 @@ object MainForm: TMainForm
     CursorType = ctStatic
     CommandText = 'select * from Customers'
     Parameters = <>
-    Left = 216
-    Top = 72
-  end
-  object Employees: TADODataSet
-    Connection = ADOConnection
-    CursorType = ctStatic
-    CommandText = 'select * from Employees'
-    Parameters = <>
-    Left = 32
-    Top = 72
-  end
-  object DsEmployees: TDataSource
-    DataSet = Employees
-    Left = 96
-    Top = 72
+    Left = 104
+    Top = 64
   end
   object Orders: TADODataSet
     Connection = ADOConnection
     CursorType = ctStatic
-    CommandText = 
-      'select * from Orders where EmployeeId = :EmployeeId order by ord' +
-      'erid'
-    DataSource = DsEmployees
+    CommandText = 'select * from Orders order by orderid'
     Parameters = <
       item
         Name = 'EmployeeId'
@@ -102,7 +82,7 @@ object MainForm: TMainForm
         Size = -1
         Value = Null
       end>
-    Left = 160
-    Top = 72
+    Left = 56
+    Top = 64
   end
 end
