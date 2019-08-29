@@ -115,7 +115,7 @@ object FCustomPreview: TFCustomPreview
         VertScrollBar.Position = 8
         VertScrollBar.Range = 84
         VertScrollBar.Tracking = True
-        Zoom = 0.100000000000000000
+        Zoom = 0.10000000000000000
         ThumbnailLarge = MainPreview
         Align = alClient
         TabOrder = 1
@@ -160,7 +160,7 @@ object FCustomPreview: TFCustomPreview
       VertScrollBar.Tracking = True
       OnStartPageChanged = MainPreviewStartPageChanged
       OnZoomChanged = MainPreviewZoomChanged
-      Zoom = 1.000000000000000000
+      Zoom = 1.00000000000000000
       ThumbnailSmall = Thumbs
       Align = alClient
       TabOrder = 0

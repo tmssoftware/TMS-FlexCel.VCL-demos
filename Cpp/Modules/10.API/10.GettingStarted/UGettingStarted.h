@@ -7,7 +7,7 @@
 #include <StdCtrls.hpp>
 #include <Forms.hpp>
 #include <Dialogs.hpp>
-#include <Vcl.FlexCel.Core.hpp>
+#include <VCL.FlexCel.Core.hpp>
 #include <FlexCel.XlsAdapter.hpp>
 
 //---------------------------------------------------------------------------

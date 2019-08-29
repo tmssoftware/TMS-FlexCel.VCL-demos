@@ -59,8 +59,8 @@ object MainForm: TMainForm
     Top = 72
     Width = 113
     Height = 21
-    Date = 35065.485357465280000000
-    Time = 35065.485357465280000000
+    Date = 35065.48535746528000000
+    Time = 35065.48535746528000000
     TabOrder = 2
   end
   object dtEndDate: TDateTimePicker
@@ -68,8 +68,8 @@ object MainForm: TMainForm
     Top = 72
     Width = 113
     Height = 21
-    Date = 35431.485357465280000000
-    Time = 35431.485357465280000000
+    Date = 35431.48535746528000000
+    Time = 35431.48535746528000000
     TabOrder = 3
   end
   object SaveDialog: TSaveDialog
