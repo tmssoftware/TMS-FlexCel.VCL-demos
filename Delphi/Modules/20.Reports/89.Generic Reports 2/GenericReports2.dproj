@@ -88,6 +88,7 @@
 			<FormType>dfm</FormType>
 		</DCCReference>
 		<DCCReference Include="..\..\..\Shared\UFlexCelHDPI.pas"/>
+		<DCCReference Include="UDataTypeImp.pas"/>
 		<BuildConfiguration Include="Release">
 			<Key>Cfg_2</Key>
 			<CfgParent>Base</CfgParent>

@@ -45,7 +45,7 @@ var
   MainForm: TMainForm;
 
 implementation
-uses IOUtils, USQLDialog, UFlexCelHDPI;
+uses IOUtils, USQLDialog, UFlexCelHDPI, UDataTypeImp;
 
 {$R *.dfm}
 
@@ -99,6 +99,7 @@ begin
 
     Report.SetValue('Date', Now);
     Report.SetValue('ReportCaption', Table.CommandText);
+    Report.SetUserFunction('datatype', TDataTypeImp.Create);
     Report.Run(
       TPath.Combine(GetDataPath, 'Generic Reports 2.template.xls'),
       SaveDialog.FileName);

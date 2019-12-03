@@ -4,7 +4,8 @@ uses
   Forms,
   UMainForm in 'UMainForm.pas' {MainForm},
   USQLDialog in 'USQLDialog.pas' {EnterSQL},
-  UFlexCelHDPI in '..\..\..\Shared\UFlexCelHDPI.pas';
+  UFlexCelHDPI in '..\..\..\Shared\UFlexCelHDPI.pas',
+  UDataTypeImp in 'UDataTypeImp.pas';
 
 {$R *.res}
 
