@@ -79,15 +79,13 @@ begin
   Title := TDataLabel_Create();
   Title.PositionZeroBased := nil;
 
-  // Constructors ending with "XE..." are needed because Rad Studio XE to XE3 have a bug that doesn't allow to call overloads with Nullables.
-  // If you are using Rad Studio XE4 or newer, you can use standard "Create" constructors.
-  TextFillOptions := TChartFillOptions_Create(TShapeFill_CreateXE(TSolidFill_Create(TDrawingColor.FromRgb($80, $80, $80)), true, TFormattingType.Subtle, TDrawingColor.FromRgb($00, $00, $00, TColorTransformArray.Create(TColorTransform.Create(TColorTransformType.Alpha, 0))), false));
+  TextFillOptions := TChartFillOptions_Create(TShapeFill_Create(TSolidFill_Create(TDrawingColor.FromRgb($80, $80, $80)), true, TFormattingType.Subtle, TDrawingColor.FromRgb($00, $00, $00, TColorTransformArray.Create(TColorTransform.Create(TColorTransformType.Alpha, 0))), false));
   LabelTextOptions := TChartTextOptions_Create(TFlxChartFont.Create('Calibri Light', 320, TExcelColor.FromArgb($80, $80, $80), [TFlxFontStyles.Bold], TFlxUnderline.None, TFontScheme.Major), THFlxAlignment.center, TVFlxAlignment.center, TBackgroundMode.Transparent, TextFillOptions);
   Title.TextOptions := LabelTextOptions;
   LabelOptions := TDataLabelOptions.Create();
   Title.LabelOptions := LabelOptions;
-  ChartLineOptions := TChartLineOptions_Create(TShapeLine_CreateXE(true, TLineStyle_CreateXE(TNoFill_Create(), nil), nil, TFormattingType.Subtle));
-  ChartFillOptions := TChartFillOptions_Create(TShapeFill_CreateXE(TNoFill_Create(), false, TFormattingType.Subtle, nil, false));
+  ChartLineOptions := TChartLineOptions_Create(TShapeLine_Create(true, TLineStyle_Create(TNoFill_Create(), nil), nil, TFormattingType.Subtle));
+  ChartFillOptions := TChartFillOptions_Create(TShapeFill_Create(TNoFill_Create(), false, TFormattingType.Subtle, nil, false));
   Title.Frame := TChartFrameOptions_Create(ChartLineOptions, ChartFillOptions, false);
 
   SetLength(Runs, 1);
@@ -109,10 +107,10 @@ begin
 
   Chart1.SetTitle(Title);
 
-  Chart1.Background := TChartFrameOptions_CreateXE(TDrawingColor.FromTheme(TThemeColor.Dark1, TColorTransformArray.Create(TColorTransform.Create(TColorTransformType.LumMod, 0.15), TColorTransform.Create(TColorTransformType.LumOff, 0.85))), 9525, TDrawingColor.FromTheme(TThemeColor.Light1), false);
+  Chart1.Background := TChartFrameOptions_Create(TDrawingColor.FromTheme(TThemeColor.Dark1, TColorTransformArray.Create(TColorTransform.Create(TColorTransformType.LumMod, 0.15), TColorTransform.Create(TColorTransformType.LumOff, 0.85))), 9525, TDrawingColor.FromTheme(TThemeColor.Light1), false);
 
-  ChartLineOptions := TChartLineOptions_Create(TShapeLine_CreateXE(true, TLineStyle_CreateXE(TNoFill_Create(), nil), nil, TFormattingType.Subtle));
-  ChartFillOptions := TChartFillOptions_Create(TShapeFill_CreateXE(TPatternFill_Create(TDrawingColor.FromTheme(TThemeColor.Dark1, TColorTransformArray.Create(TColorTransform.Create(TColorTransformType.LumMod, 0.15), TColorTransform.Create(TColorTransformType.LumOff, 0.85))), TDrawingColor.FromTheme(TThemeColor.Light1), TDrawingPattern.ltDnDiag), true, TFormattingType.Subtle, nil, false));
+  ChartLineOptions := TChartLineOptions_Create(TShapeLine_Create(true, TLineStyle_Create(TNoFill_Create(), nil), nil, TFormattingType.Subtle));
+  ChartFillOptions := TChartFillOptions_Create(TShapeFill_Create(TPatternFill_Create(TDrawingColor.FromTheme(TThemeColor.Dark1, TColorTransformArray.Create(TColorTransform.Create(TColorTransformType.LumMod, 0.15), TColorTransform.Create(TColorTransformType.LumOff, 0.85))), TDrawingColor.FromTheme(TThemeColor.Light1), TDrawingPattern.ltDnDiag), true, TFormattingType.Subtle, nil, false));
   PlotAreaFrame := TChartFrameOptions_Create(ChartLineOptions, ChartFillOptions, false);
   PlotAreaPos := TChartPlotAreaPosition.Create(true, TChartRelativeRectangle.Automatic, TChartLayoutTarget.Inner, true);
   Chart1.PlotArea := TChartPlotArea_Create(PlotAreaFrame, PlotAreaPos, false);
@@ -138,8 +136,8 @@ begin
     SeriesColor := TDrawingColor.FromTheme(TThemeColor(integer(TThemeColor.Accent1) + Year mod 6),
                     TColorTransformArray.Create(TColorTransform.Create(TColorTransformType.Shade, shade)));
 
-    SeriesFill := TChartSeriesFillOptions_Create(TShapeFill_CreateXE(TSolidFill_Create(SeriesColor), true, TFormattingType.Subtle, nil, false), nil, false, false);
-    SeriesLine := TChartSeriesLineOptions_Create(TShapeLine_CreateXE(true, TLineStyle_CreateXE(TNoFill_Create(), nil), nil, TFormattingType.Subtle), false);
+    SeriesFill := TChartSeriesFillOptions_Create(TShapeFill_Create(TSolidFill_Create(SeriesColor), true, TFormattingType.Subtle, nil, false), nil, false, false);
+    SeriesLine := TChartSeriesLineOptions_Create(TShapeLine_Create(true, TLineStyle_Create(TNoFill_Create(), nil), nil, TFormattingType.Subtle), false);
     Series.Options.Add(TChartSeriesOptions.CreateNoClone(-1, SeriesFill, SeriesLine, nil, nil, nil, true));
     Chart1.AddSeries(Series);
   end;
@@ -150,15 +148,15 @@ begin
 
   AxisFont := TFlxChartFont.Create('Calibri', 180, TExcelColor.FromArgb($59, $59, $59), [], TFlxUnderline.None, TFontScheme.Minor);
   AxisLine := TAxisLineOptions.Create();
-  AxisLine.MainAxis := TChartLineOptions_Create(TShapeLine_CreateXE(true, TLineStyle_CreateXE2(TSolidFill_Create(TDrawingColor.FromTheme(TThemeColor.Dark1, TColorTransformArray.Create(TColorTransform.Create(TColorTransformType.LumMod, 0.15), TColorTransform.Create(TColorTransformType.LumOff, 0.85)))), 9525, TPenAlignment.Center, TLineCap.Flat, TCompoundLineType.Single, NullableTLineDashing.Null, TLineJoin.Round, nil, nil, nil), nil, TFormattingType.Subtle));
+  AxisLine.MainAxis := TChartLineOptions_Create(TShapeLine_Create(true, TLineStyle_Create(TSolidFill_Create(TDrawingColor.FromTheme(TThemeColor.Dark1, TColorTransformArray.Create(TColorTransform.Create(TColorTransformType.LumMod, 0.15), TColorTransform.Create(TColorTransformType.LumOff, 0.85)))), 9525, TPenAlignment.Center, TLineCap.Flat, TCompoundLineType.Single, NullableTLineDashing.Null, TLineJoin.Round, nil, nil, nil), nil, TFormattingType.Subtle));
   AxisLine.DoNotDrawLabelsIfNotDrawingAxis := false;
   AxisTicks := TAxisTickOptions.Create(TTickType.Outside, TTickType.None, TAxisLabelPosition.NextToAxis, TBackgroundMode.Transparent, TDrawingColor.FromRgb($59, $59, $59), 0);
   AxisRangeOptions := TAxisRangeOptions.Create(12, 1, false, false, false);
   CatAxis := TCategoryAxis.Create(0, 0, 12, TDateUnits.Days, 12, TDateUnits.Days, TDateUnits.Months, 0, [TCategoryAxisOptions.AutoMin, TCategoryAxisOptions.AutoMax, TCategoryAxisOptions.DateAxis, TCategoryAxisOptions.AutoCrossDate, TCategoryAxisOptions.AutoDate], AxisFont, 'yyyy\-mm\-dd;@', true, AxisLine, AxisTicks, AxisRangeOptions, nil, TChartAxisPos.Bottom, 1);
   AxisFont := TFlxChartFont.Create('Calibri', 180, TExcelColor.FromArgb($59, $59, $59), [], TFlxUnderline.None, TFontScheme.Minor);
   AxisLine := TAxisLineOptions.Create();
-  AxisLine.MainAxis := TChartLineOptions_Create(TShapeLine_CreateXE(true, TLineStyle_CreateXE2(TSolidFill_Create(TDrawingColor.FromTheme(TThemeColor.Dark1, TColorTransformArray.Create(TColorTransform.Create(TColorTransformType.LumMod, 0.15), TColorTransform.Create(TColorTransformType.LumOff, 0.85)))), 9525, TPenAlignment.Center, TLineCap.Flat, TCompoundLineType.Single, NullableTLineDashing.Null, TLineJoin.Round, nil, nil, nil), nil, TFormattingType.Subtle));
-  AxisLine.MajorGridLines := TChartLineOptions_Create(TShapeLine_CreateXE(true, TLineStyle_CreateXE2(TSolidFill_Create(TDrawingColor.FromTheme(TThemeColor.Dark1, TColorTransformArray.Create(TColorTransform.Create(TColorTransformType.LumMod, 0.15), TColorTransform.Create(TColorTransformType.LumOff, 0.85)))), 9525, TPenAlignment.Center, TLineCap.Flat, TCompoundLineType.Single, NullableTLineDashing.Null, TLineJoin.Round, nil, nil, nil), nil, TFormattingType.Subtle));
+  AxisLine.MainAxis := TChartLineOptions_Create(TShapeLine_Create(true, TLineStyle_Create(TSolidFill_Create(TDrawingColor.FromTheme(TThemeColor.Dark1, TColorTransformArray.Create(TColorTransform.Create(TColorTransformType.LumMod, 0.15), TColorTransform.Create(TColorTransformType.LumOff, 0.85)))), 9525, TPenAlignment.Center, TLineCap.Flat, TCompoundLineType.Single, NullableTLineDashing.Null, TLineJoin.Round, nil, nil, nil), nil, TFormattingType.Subtle));
+  AxisLine.MajorGridLines := TChartLineOptions_Create(TShapeLine_Create(true, TLineStyle_Create(TSolidFill_Create(TDrawingColor.FromTheme(TThemeColor.Dark1, TColorTransformArray.Create(TColorTransform.Create(TColorTransformType.LumMod, 0.15), TColorTransform.Create(TColorTransformType.LumOff, 0.85)))), 9525, TPenAlignment.Center, TLineCap.Flat, TCompoundLineType.Single, NullableTLineDashing.Null, TLineJoin.Round, nil, nil, nil), nil, TFormattingType.Subtle));
   AxisLine.DoNotDrawLabelsIfNotDrawingAxis := false;
   AxisTicks := TAxisTickOptions.Create(TTickType.None, TTickType.None, TAxisLabelPosition.NextToAxis, TBackgroundMode.Transparent, TDrawingColor.FromRgb($59, $59, $59), 0);
   ValAxis := TValueAxis.Create(0, 0, 0, 0, 0, [TValueAxisOptions.AutoMin, TValueAxisOptions.AutoMax, TValueAxisOptions.AutoMajor, TValueAxisOptions.AutoMinor, TValueAxisOptions.AutoCross], AxisFont, 'General', true, AxisLine, AxisTicks, nil, TChartAxisPos.Left);
