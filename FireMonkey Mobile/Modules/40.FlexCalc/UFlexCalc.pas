@@ -124,6 +124,7 @@ end;
 procedure TFFlexCalc.FormDestroy(Sender: TObject);
 begin
   if xls <> nil then xls.Save(ConfigFile);
+  FreeAndNil(xls);
 end;
 
 procedure TFFlexCalc.FormResize(Sender: TObject);

@@ -454,8 +454,8 @@ object AboutForm: TAboutForm
     Width = 267
     Height = 19
     Caption = 
-      '<a href="http://www.tmssoftware.com/flexcel/tutorial.htm">http:/' +
-      '/www.tmssoftware.com/flexcel/tutorial.htm</a>'
+      '<a href="https://www.tmssoftware.com/flexcel/tutorial.htm">http:' +
+      '//www.tmssoftware.com/flexcel/tutorial.htm</a>'
     TabOrder = 1
     UseVisualStyle = True
     OnLinkClick = LinkLabel1LinkClick

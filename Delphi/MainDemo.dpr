@@ -8,7 +8,8 @@ uses
   UPaths in 'Shared\UPaths.pas',
   UProgressDialog in 'UProgressDialog.pas' {ProgressDialog},
   UCompileProgress in 'UCompileProgress.pas' {FCompiler},
-  UFlexCelHDPI in 'Shared\UFlexCelHDPI.pas';
+  UFlexCelHDPI in 'Shared\UFlexCelHDPI.pas',
+  URichEdit50 in 'URichEdit50.pas';
 
 {$R *.res}
 

@@ -46,7 +46,7 @@ implementation
 function GetFeeds: TArray<TFeedData>;
 begin
   SetLength(Result, 3);
-  Result[0] := TFeedData.Create('TMS', 'http://www.tmssoftware.com/rss/tms.xml', 'tms.gif', false);
+  Result[0] := TFeedData.Create('TMS', 'https://www.tmssoftware.com/rss/tms.xml', 'tms.gif', false);
 	Result[1] := TFeedData.Create('MSDN','http://sxpdata.microsoft.com/feeds/3.0/msdntn/MSDNMagazine_enus', 'msdn.jpg', true);
 	Result[2] := TFeedData.Create('SLASHDOT' , 'http://rss.slashdot.org/Slashdot/slashdot', 'slashdot.gif', false);
 end;

@@ -39,12 +39,14 @@ type
     procedure edExcelClick(Sender: TObject);
     procedure edPdfClick(Sender: TObject);
     procedure edSheetsChange(Sender: TObject);
+    procedure FormDestroy(Sender: TObject);
   private
     {$IFDEF IOS}
     function AppHandler(AAppEvent: TApplicationEvent; AContext: TObject): Boolean;
     function OpenFile(const aURL: string): boolean;
-    procedure LoadSheets(const xls: TXlsFile);
+    procedure LoadSheets(const xls: TExcelFile);
     {$endif}
+    procedure ClearPreviewer;
     procedure UpdateCellValue;
     function GetTmpPath: string;
   public
@@ -104,6 +106,18 @@ begin
   end;
 end;
 
+procedure TFormFlexView.ClearPreviewer;
+begin
+  if FlexCelPreviewer1.Document <> nil then
+  begin
+  {$IFNDEF NEXTGEN}
+    FlexCelPreviewer1.Document.Workbook.Free;
+    FlexCelPreviewer1.Document.Free;
+  {$ENDIF}
+    FlexCelPreviewer1.Document := nil;
+  end;
+end;
+
 procedure TFormFlexView.edAddressChange(Sender: TObject);
 begin
   UpdateCellValue;
@@ -131,13 +145,24 @@ procedure TFormFlexView.edPdfClick(Sender: TObject);
 var
   pdf: TFlexCelPdfExport;
   tmppdf: string;
+  st: TStream;
 begin
   PopShare.Visible := false;
-  pdf := TFlexCelPdfExport.Create(FlexCelPreviewer1.Document.Workbook, true);
-  tmppdf := GetTmpPath + '/tmpflexcel.pdf';
-  pdf.BeginExport(TFileStream.Create(tmppdf, fmCreate));
-  pdf.ExportAllVisibleSheets(false, 'Sheets');
-  pdf.EndExport;
+  st := TFileStream.Create(tmppdf, fmCreate);
+  try
+    pdf := TFlexCelPdfExport.Create(FlexCelPreviewer1.Document.Workbook, true);
+    try
+      tmppdf := GetTmpPath + '/tmpflexcel.pdf';
+      pdf.BeginExport(st);
+      pdf.ExportAllVisibleSheets(false, 'Sheets');
+      pdf.EndExport;
+    finally
+      pdf.Free;
+    end;
+  finally
+    st.Free;
+  end;
+
   FlexCelDocExport1.ExportFile(edShare, tmppdf);
 
 end;
@@ -185,6 +210,11 @@ begin
   FlexCelPreviewer1.InvalidatePreview;
 end;
 
+procedure TFormFlexView.FormDestroy(Sender: TObject);
+begin
+  ClearPreviewer;
+end;
+
 function TFormFlexView.GetTmpPath: string;
 begin
   Result := TPath.GetTempPath;
@@ -197,24 +227,37 @@ var
   ImgExport: TFlexCelImgExport;
 begin
   Result := true;
+  xls := nil;
   try
+    ImgExport := nil;
     try
-      xls := TXlsFile.Create(aURL, true);
-    finally
-      TFile.Delete(aURL); //We've already read it. Now we need to delete it or it would stay forever in the inbox.
-      //The file must be deleted even if it was invalid and FlexCel raised an Exception when opening it.
+      try
+        try
+          xls := TXlsFile.Create(aURL, true);
+        finally
+          TFile.Delete(aURL); //We've already read it. Now we need to delete it or it would stay forever in the inbox.
+          //The file must be deleted even if it was invalid and FlexCel raised an Exception when opening it.
 
+        end;
+        ImgExport := TFlexCelImgExport.Create(xls, true);
+        ClearPreviewer;
+        FlexCelPreviewer1.Document := ImgExport;
+        ImgExport := nil;
+        xls := nil;
+        LoadSheets(FlexCelPreviewer1.Document.Workbook);
+        FlexCelPreviewer1.InvalidatePreview;
+      except
+        Result := false;
+      end;
+    finally
+      ImgExport.Free;
     end;
-    ImgExport := TFlexCelImgExport.Create(xls, true);
-    FlexCelPreviewer1.Document := ImgExport;
-    LoadSheets(xls);
-    FlexCelPreviewer1.InvalidatePreview;
-  except
-    Result := false;
+  finally
+    xls.Free;
   end;
 end;
 
-procedure TFormFlexView.LoadSheets(const xls: TXlsFile);
+procedure TFormFlexView.LoadSheets(const xls: TExcelFile);
 var
   i: Integer;
 begin

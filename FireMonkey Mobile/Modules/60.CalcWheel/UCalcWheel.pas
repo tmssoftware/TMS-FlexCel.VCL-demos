@@ -38,6 +38,7 @@ type
     procedure TemplateSelectItemClick(const Sender: TObject;
       const AItem: TListViewItem);
     procedure PagesChange(Sender: TObject);
+    procedure FormDestroy(Sender: TObject);
   private
     Workbook: TXlsFile;
 
@@ -89,20 +90,26 @@ var
   sr: TStreamReader;
   fn: string;
 begin
+  FreeAndNil(Workbook);
+  sr := nil;
   try
-    if (TFile.Exists(ConfigFile)) then
-    begin
-      sr := TStreamReader.Create(ConfigFile);
-      fn := sr.ReadLine;
-    end else
-    begin
-      fn := DocFolder + 'default.xls';
+    try
+      if (TFile.Exists(ConfigFile)) then
+      begin
+        sr := TStreamReader.Create(ConfigFile);
+        fn := sr.ReadLine;
+      end else
+      begin
+        fn := DocFolder + 'default.xls';
+      end;
+      if fn = '' then Workbook := TXlsFile.Create(1, true) else Workbook := TXlsFile.Create(fn, true);
+    except on ex: Exception do
+      begin
+        Workbook := TXlsFile.Create(1, true);
+      end;
     end;
-    if fn = '' then Workbook := TXlsFile.Create(1, true) else Workbook := TXlsFile.Create(fn, true);
-  except on ex: Exception do
-  begin
-    Workbook := TXlsFile.Create(1, true);
-  end;
+  finally
+    sr.Free;
   end;
 
   lblCurrent.Text := TPath.GetFileNameWithoutExtension(Workbook.ActiveFileName);
@@ -161,7 +168,11 @@ var
 begin
      TDirectory.CreateDirectory(TPath.GetDirectoryName(ConfigFile));
      sw := TStreamWriter.Create(ConfigFile);
-     sw.WriteLine(Workbook.ActiveFileName);
+     try
+       sw.WriteLine(Workbook.ActiveFileName);
+     finally
+       sw.Free;
+     end;
 end;
 
 procedure TWheelForm.Calc;
@@ -202,9 +213,14 @@ begin
   LoadConfig;
 end;
 
+procedure TWheelForm.FormDestroy(Sender: TObject);
+begin
+  Workbook.Free;
+end;
+
 procedure TWheelForm.WheelClick(Sender: TObject);
 begin
-  PAges.ActiveTab := TabConfig;
+  Pages.ActiveTab := TabConfig;
 end;
 
 end.

@@ -6,6 +6,7 @@ uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics,
   Controls, Forms, Dialogs, ImgList, ActnList, Menus,
   ComCtrls, StdCtrls, ExtCtrls, ToolWin, USearchEngine, IOUtils, UPaths, UProgressDialog,
+  URichEdit50,
   Types, Generics.Collections;
 
 type
@@ -25,8 +26,7 @@ type
     Panel1: TPanel;
     PanelModules: TPanel;
     ModulesList: TTreeView;
-    Panel2: TPanel;
-    DescriptionText: TRichEdit;
+    PanelDescription: TPanel;
     StatusBar: TStatusBar;
     MainMenu1: TMainMenu;
     File1: TMenuItem;
@@ -75,6 +75,7 @@ type
     procedure ActionOpenFolderExecute(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
+    DescriptionText: TRichEdit50; //We will use a custom richedit to support hyperlinks.
     Finder: TSearchEngine;
     MainNode: TModuleData;
 
@@ -162,6 +163,11 @@ end;
 constructor TMainDemoForm.Create(aOwner: TComponent);
 begin
   inherited Create(aOwner);
+  DescriptionText := TRichEdit50.Create(aOwner);
+  DescriptionText.Parent := PanelDescription;
+  DescriptionText.ReadOnly := True;
+  DescriptionText.ScrollBars := ssVertical;
+  DescriptionText.Align := alClient;
   LoadModules;
   FilterTree(true, nil);
 end;
@@ -495,7 +501,7 @@ begin
   if ModulesList.Items.Count <= 1 then exit;
   
   if (Node.Data = nil) then DescriptionText.Clear
-  else DescriptionText.Lines.LoadFromFile(TModuleData(Node.Data).Path + '.rtf');
+  else DescriptionText.Lines.LoadFromFile(TPath.Combine(TPath.GetDirectoryName(TModuleData(Node.Data).Path), 'README.rtf'));
 
   if (Node.Data <> nil) then StatusBar.SimpleText := TModuleData(Node.Data).Path;
 
@@ -537,7 +543,7 @@ begin
     exit;
 
   NodePath := '';
-  if FileExists(TPath.Combine(modulePath, shortModule + '.rtf')) then
+  if FileExists(TPath.Combine(modulePath, 'README.rtf')) then
   begin
     NodePath := TPath.Combine(modulePath, shortModule);
   end;

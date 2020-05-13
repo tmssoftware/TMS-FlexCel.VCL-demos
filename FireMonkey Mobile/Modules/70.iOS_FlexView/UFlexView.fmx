@@ -8,6 +8,7 @@ object FormFlexView: TFormFlexView
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   OnCreate = FormCreate
+  OnDestroy = FormDestroy
   DesignerMasterStyle = 2
   object ToolBar1: TToolBar
     Size.Width = 320.000000000000000000

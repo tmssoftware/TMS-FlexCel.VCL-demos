@@ -15,7 +15,7 @@
         <Projects Include="Modules\70.iOS_FlexView\iOS_FlexView.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="Modules\80.Reports\Reports.dproj">
+        <Projects Include="Modules\80.LangWars\LangWars.dproj">
             <Dependencies/>
         </Projects>
     </ItemGroup>
@@ -62,23 +62,23 @@
     <Target Name="iOS_FlexView:Make">
         <MSBuild Projects="Modules\70.iOS_FlexView\iOS_FlexView.dproj" Targets="Make"/>
     </Target>
-    <Target Name="Reports">
-        <MSBuild Projects="Modules\80.Reports\Reports.dproj"/>
+    <Target Name="LangWars">
+        <MSBuild Projects="Modules\80.LangWars\LangWars.dproj"/>
     </Target>
-    <Target Name="Reports:Clean">
-        <MSBuild Projects="Modules\80.Reports\Reports.dproj" Targets="Clean"/>
+    <Target Name="LangWars:Clean">
+        <MSBuild Projects="Modules\80.LangWars\LangWars.dproj" Targets="Clean"/>
     </Target>
-    <Target Name="Reports:Make">
-        <MSBuild Projects="Modules\80.Reports\Reports.dproj" Targets="Make"/>
+    <Target Name="LangWars:Make">
+        <MSBuild Projects="Modules\80.LangWars\LangWars.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
-        <CallTarget Targets="FlexCalc;FlexDocs;CalcWheel;iOS_FlexView;Reports"/>
+        <CallTarget Targets="FlexCalc;FlexDocs;CalcWheel;iOS_FlexView;LangWars"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="FlexCalc:Clean;FlexDocs:Clean;CalcWheel:Clean;iOS_FlexView:Clean;Reports:Clean"/>
+        <CallTarget Targets="FlexCalc:Clean;FlexDocs:Clean;CalcWheel:Clean;iOS_FlexView:Clean;LangWars:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="FlexCalc:Make;FlexDocs:Make;CalcWheel:Make;iOS_FlexView:Make;Reports:Make"/>
+        <CallTarget Targets="FlexCalc:Make;FlexDocs:Make;CalcWheel:Make;iOS_FlexView:Make;LangWars:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

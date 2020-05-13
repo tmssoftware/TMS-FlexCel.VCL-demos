@@ -39,10 +39,22 @@ procedure TFFlexDocs.ActionOpenExecute(Sender: TObject);
 var
   Template: TResourceStream;
 begin
+  if (Previewer.Document <> nil) then
+  begin
+    {$IFNDEF NEXTGEN}
+    Previewer.Document.Workbook.Free;
+    Previewer.Document.Free;
+    {$ENDIF}
+    Previewer.Document := nil;
+  end;
   Previewer.Document := TFlexCelImgExport.Create();
   Template := TResourceStream.Create(HInstance, 'WeddingBudget', RT_RCDATA);
-  Previewer.Document.Workbook := TXlsFile.Create(true);
-  Previewer.Document.Workbook.Open(Template);
+  try
+    Previewer.Document.Workbook := TXlsFile.Create(true);
+    Previewer.Document.Workbook.Open(Template);
+  finally
+    Template.Free;
+  end;
   Previewer.InvalidatePreview;
 end;
 
@@ -70,20 +82,26 @@ begin
 
   TmpFileName := TPath.Combine(DestFolder, 'doc.pdf');
   pdf := TFlexCelPdfExport.Create(Previewer.Document.Workbook, true);
-
-  //Android only has 3 fonts by default, so we can't get too fancy with them.
-  //We will replace them all by standard pdf fonts. If we wanted to embed the fonts,
-  //we would have to provide an OnGetFontFolder or OnGetFontData event where we provide
-  //the ttf data for the fonts.
-  pdf.FontMapping := TFontMapping.ReplaceAllFonts;
-  fs := TFileStream.Create(TmpFileName, fmCreate);
-  pdf.BeginExport(fs);
-  pdf.ExportAllVisibleSheets(false, 'Sheets');
-  pdf.EndExport;
-  fs.Free;
+  try
+    //Android only has 3 fonts by default, so we can't get too fancy with them.
+    //We will replace them all by standard pdf fonts. If we wanted to embed the fonts,
+    //we would have to provide an OnGetFontFolder or OnGetFontData event where we provide
+    //the ttf data for the fonts.
+    pdf.FontMapping := TFontMapping.ReplaceAllFonts;
+    fs := TFileStream.Create(TmpFileName, fmCreate);
+    try
+      pdf.BeginExport(fs);
+      pdf.ExportAllVisibleSheets(false, 'Sheets');
+      pdf.EndExport;
+    finally
+      fs.Free;
+    end;
+  finally
+    pdf.Free;
+  end;
 
    // To send the file, we need to define a file provider in AndrodiManifest.xml
-  // See http://www.tmssoftware.biz/flexcel/doc/vcl/guides/android-guide.html#sharing-files
+  // See https://download.tmssoftware.com/flexcel/doc/vcl/guides/android-guide.html#sharing-files
    FlexCelDocExport.ExportFile(btnShare, TmpFileName);
 end;
 
