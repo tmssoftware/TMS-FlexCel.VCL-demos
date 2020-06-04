@@ -8,12 +8,14 @@ You can find a description of each demo in the [documentation](https://download.
 **:book: Note** We update this repository automatically every time we release a new FlexCel version. So if you have notifications integrated with github, you can subscribe to this feed to be notified of new releases.
 
 
-## New in v 7.6.1 - May 2020
+## New in v 7.6.2 - June 2020
 
 
-- **Support for Rad Studio 10.4 Sydney.** Official support for Delphi 10.4
+- **Bug Fix.** When adding a chart to a file via the API and immediately rendering it to PDF without saving it, the chart might not be rendered in the PDF file.
 
-- **Improved conversion from strings to numbers.** Now FlexCel will behave more like Excel when converting strings to numbers, and convert for example the string "(1)" to the number -1.
+- **Bug Fix.** Previously the last row in "X" Bands in reports was deleted before the detail bands were inserted. This could cause unwanted behavior if the details shared the same rows as the master. Now last rows in X Bands will be removed after the details are inserted.
 
-- **Bug Fix.** Deeply nested array formulas could return N/A results in some corner cases
+- **Bug Fix.** A fixed band inside a master-detail bidirectional report would behave as non fixed.
+
+- **Bug Fix.** DbValue could raise Exceptions in some cases.
 
