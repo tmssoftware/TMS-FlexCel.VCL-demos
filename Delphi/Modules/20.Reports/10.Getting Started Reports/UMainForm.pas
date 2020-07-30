@@ -129,7 +129,7 @@ begin
          TFile.Delete(FileName);  //As it is an xltx file, we can delete it even when it is open on Excel.
          end).Start; 
   {$ELSE}
-       //See https://download.tmssoftware.com/flexcel/doc/vcl/tips/automatically-open-generated-excel-files.html
+       //See https://doc.tmssoftware.com/flexcel/vcl/tips/automatically-open-generated-excel-files.html
        TTask.Run(procedure begin
          TThread.Sleep(30000); //wait for 30 secs to give Excel time to start.
          TFile.Delete(FileName);  //As it is an xltx file, we can delete it even when it is open on Excel.

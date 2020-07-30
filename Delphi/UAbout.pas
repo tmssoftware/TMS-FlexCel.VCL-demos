@@ -17,6 +17,8 @@ type
     Label3: TLabel;
     LinkLabel1: TLinkLabel;
     lblFlexCelVersion: TLabel;
+    Label4: TLabel;
+    LinkLabel2: TLinkLabel;
     procedure LinkLabel1LinkClick(Sender: TObject; const Link: string;
       LinkType: TSysLinkType);
     procedure FormCreate(Sender: TObject);

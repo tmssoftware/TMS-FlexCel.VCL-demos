@@ -8,12 +8,12 @@ used, only report variables.
 - A template is an Excel file with tags that will be replaced by
   report variables or fields from a dataset. Tags are always on the
   form **\<\#tag\>** If a tag has parameters, it always has the form
-  **\<\#tag(param1; param2\...)\>**. You can read the [FlexCel Reports Tag Reference.](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-tag-reference.html)
+  **\<\#tag(param1; param2\...)\>**. You can read the [FlexCel Reports Tag Reference.](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-tag-reference.html)
   for more information.
 
 - To set the value for report variable, use
-  [TFlexCelReport.SetValue](https://download.tmssoftware.com/flexcel/doc/vcl/api/FlexCel.Report/TFlexCelReport/SetValue.html). You can set any kind of object from
-  here, not just text. If you set it to a [TFormula](https://download.tmssoftware.com/flexcel/doc/vcl/api/FlexCel.Core/TFormula/index.html) object, you
+  [TFlexCelReport.SetValue](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Report/TFlexCelReport/SetValue.html). You can set any kind of object from
+  here, not just text. If you set it to a [TFormula](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TFormula/index.html) object, you
   will enter a formula.
 
 - \<\#Tags\> will be replaced inside **Cells**, **Comments**, **Sheet
@@ -65,7 +65,7 @@ used, only report variables.
 
 - You can use tags as usual on sheet names. But, as the maximum sheet
   name length is 32, it is kind of limited. You can use
-  [Equal](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-tag-reference.html#equal) tag \(**\<\#=(cell)\>**\) to solve this limitation.
+  [Equal](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-tag-reference.html#equal) tag \(**\<\#=(cell)\>**\) to solve this limitation.
 
 - You can **define reusable variables** on the config sheet. For
   example, here we define an expression containing the name and

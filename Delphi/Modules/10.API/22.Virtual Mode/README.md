@@ -1,7 +1,7 @@
 # Working in virtual mode
 
 This example shows how to read or write Excel files without fully loading them in memory.
-See the [FlexCel Performance Guide](https://download.tmssoftware.com/flexcel/doc/vcl/guides/performance-guide.html) for more information in how Virtual Mode
+See the [FlexCel Performance Guide](https://doc.tmssoftware.com/flexcel/vcl/guides/performance-guide.html) for more information in how Virtual Mode
 works.
 
 ## Concepts

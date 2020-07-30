@@ -21,7 +21,7 @@ data has to go in the template. Here, we use tables instead.
 - Tables will be renamed after the report runs, by removing the "\_"
   or "\_\_" from the start and the end. If you don't want them to be
   renamed, you can change the property
-  [TFlexCelReport.RenameExcelTablesUsedAsBands](https://download.tmssoftware.com/flexcel/doc/vcl/api/FlexCel.Report/TFlexCelReport/RenameExcelTablesUsedAsBands.html).
+  [TFlexCelReport.RenameExcelTablesUsedAsBands](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Report/TFlexCelReport/RenameExcelTablesUsedAsBands.html).
 
 - A \_\_Table\_\_ is just a shortcut for defining a \_\_Table\_\_X
   named range. In this example you could have got the same results

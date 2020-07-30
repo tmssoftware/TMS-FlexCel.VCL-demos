@@ -34,9 +34,9 @@ tables to be preserved.
   expand direct ranges and you don\'t need to use a name, even when
   it isn\'t a bad idea anyway.*
 
-- **[X ranges](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-designer-guide.html#x-ranges)** again! We need the pivot table range to be 2 rows at
+- **[X ranges](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-designer-guide.html#x-ranges)** again! We need the pivot table range to be 2 rows at
   least, but we don\'t want the second row to be on the generated
-  report. Same as in [Charts](https://download.tmssoftware.com/flexcel/doc/vcl/samples/delphi/reports/charts/index.html), we use an \"X\" range that will erase
+  report. Same as in [Charts](https://doc.tmssoftware.com/flexcel/vcl/samples/delphi/reports/charts/index.html), we use an \"X\" range that will erase
   the last row once it is done.
 
 - **\".\" Sheets and \"\_.\" ranges** . As FlexCel by default

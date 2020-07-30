@@ -29,5 +29,5 @@ vertically.
   insert as many columns as the maximum numbers of orders for any
   customer.
 
-- You can look at the [User Defined Functions](https://download.tmssoftware.com/flexcel/doc/vcl/samples/delphi/reports/user-defined-functions/index.html) example for another
+- You can look at the [User Defined Functions](https://doc.tmssoftware.com/flexcel/vcl/samples/delphi/reports/user-defined-functions/index.html) example for another
   demo on how bidirectional reports work.

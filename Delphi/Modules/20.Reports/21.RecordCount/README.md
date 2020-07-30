@@ -3,7 +3,7 @@
 FlexCel Reports need to know in advance how much records to insert. But
 some DataSet components in Delphi don\'t return the correct RecordCount,
 and we need to supply the number of rows to it. For more information read the section
-[About Record Count in DataSets](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-developer-guide.html#about-record-count-in-datasets) in the Report developer's guide.
+[About Record Count in DataSets](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-developer-guide.html#about-record-count-in-datasets) in the Report developer's guide.
 
 ## Concepts
 
@@ -17,8 +17,8 @@ and we need to supply the number of rows to it. For more information read the se
 
    2. By setting the parameter **recordCountMode** to 
     SlowCount when
-    calling [TFlexCelReport.AddTable](https://download.tmssoftware.com/flexcel/doc/vcl/api/FlexCel.Report/TFlexCelReport/AddTable.html) or
-    [TFlexCelReport.AddConnection](https://download.tmssoftware.com/flexcel/doc/vcl/api/FlexCel.Report/TFlexCelReport/AddConnection.html).
+    calling [TFlexCelReport.AddTable](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Report/TFlexCelReport/AddTable.html) or
+    [TFlexCelReport.AddConnection](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Report/TFlexCelReport/AddConnection.html).
 
 
 > [!Note]

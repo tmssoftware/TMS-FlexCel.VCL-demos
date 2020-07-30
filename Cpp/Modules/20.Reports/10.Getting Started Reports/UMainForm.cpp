@@ -127,7 +127,7 @@ void __fastcall TMainForm::AutoOpenRun()
 	}
 	 __finally
 	 {
-       //See https://download.tmssoftware.com/flexcel/doc/vcl/tips/automatically-open-generated-excel-files.html
+       //See https://doc.tmssoftware.com/flexcel/vcl/tips/automatically-open-generated-excel-files.html
 
 #ifdef __clang__
 	   TTask::Run([&]() {

@@ -2,7 +2,7 @@
 
 User defined tables allow you to specify the datasets 
 in the report part of the data
-layer. Different from [Direct SQL](https://download.tmssoftware.com/flexcel/doc/vcl/samples/delphi/reports/direct-sql/index.html), user tables
+layer. Different from [Direct SQL](https://doc.tmssoftware.com/flexcel/vcl/samples/delphi/reports/direct-sql/index.html), user tables
 work in a more controlled environment, where you can specifically deny or
 grant access to the data. User Tables also allow access not SQL
 databases.

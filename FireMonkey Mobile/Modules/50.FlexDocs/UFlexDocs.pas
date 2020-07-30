@@ -101,7 +101,7 @@ begin
   end;
 
    // To send the file, we need to define a file provider in AndrodiManifest.xml
-  // See https://download.tmssoftware.com/flexcel/doc/vcl/guides/android-guide.html#sharing-files
+  // See https://doc.tmssoftware.com/flexcel/vcl/guides/android-guide.html#sharing-files
    FlexCelDocExport.ExportFile(btnShare, TmpFileName);
 end;
 

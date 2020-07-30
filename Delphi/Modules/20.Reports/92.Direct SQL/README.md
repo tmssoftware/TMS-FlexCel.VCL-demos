@@ -7,13 +7,13 @@ presentation layer with Excel and without needing to modify the code.
 While this is a very good choice for most reports (as the data layer
 does not change much, and the presentation does), sometimes you might
 want to allow your users to directly modify the data layer from Excel.
-This is when you can use [Direct SQL in templates](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-designer-guide.html#direct-sql-in-templates).
+This is when you can use [Direct SQL in templates](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-designer-guide.html#direct-sql-in-templates).
 
 ## Concepts
 
 - By default, you **can\'t use Direct SQL on reports**. To be able to
   use it, you need to add a connection to the report with
-  [TFlexCelReport.AddConnection](https://download.tmssoftware.com/flexcel/doc/vcl/api/FlexCel.Report/TFlexCelReport/AddConnection.html) in the code.
+  [TFlexCelReport.AddConnection](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Report/TFlexCelReport/AddConnection.html) in the code.
 
 - Allowing the final user to specify the SQL directly on the report
   might carry **big security risks**.
@@ -69,6 +69,6 @@ This is when you can use [Direct SQL in templates](https://download.tmssoftware.
   template. The only supported syntax in templates is "@" parameters; FlexCel will convert the parameters to what's needed when calling the actual SQL.
 
 - You then can set the parameters in the code, by using
-  [TFlexCelReport.AddSqlParameter](https://download.tmssoftware.com/flexcel/doc/vcl/api/FlexCel.Report/TFlexCelReport/AddSqlParameter.html) This is not database
+  [TFlexCelReport.AddSqlParameter](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Report/TFlexCelReport/AddSqlParameter.html) This is not database
   independent, and you need to add the correct type of parameter for
   the actual database here.

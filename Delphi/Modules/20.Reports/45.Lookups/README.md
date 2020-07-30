@@ -7,7 +7,7 @@ can write the name of the supervisor, not only his EmployeeID.
 
 ## Concepts
 
-- How to use the **\<\#[Lookup](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-tag-reference.html#lookup)\>** tag to search for a field in another
+- How to use the **\<\#[Lookup](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-tag-reference.html#lookup)\>** tag to search for a field in another
   table.
 
 - Normally you will make **lookup on one field**, as in the example:
@@ -17,7 +17,7 @@ can write the name of the supervisor, not only his EmployeeID.
   sometimes you might want to **lookup on more than on field**.
   Imagine that you wanted to search on the table Employee, but the
   record that not only has EmployeeID = ReportsTo, but
-  Country=\"Spain\". You can use the **[Array](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-tag-reference.html#array)\>** tag to search here:
+  Country=\"Spain\". You can use the **[Array](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-tag-reference.html#array)\>** tag to search here:
   \<\#lookup(Employees;EmployeeID,Country;\<\#array(\<\#Employees.ReportsTo\>;Spain)\>;FirstName)\>
 
 - Unrelated to Lookups, we show two other Excel features you can use:

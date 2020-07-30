@@ -7,7 +7,7 @@ master-report (to avoid duplicate data). But if you already have the
 data joined into one table, the Distinct and Relationship tags can help
 you get it back into different tables.
 
-Look at [Grouping Tables](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-designer-guide.html#grouping-tables) 
+Look at [Grouping Tables](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-designer-guide.html#grouping-tables) 
 in the Report designer's guide for
 more information.
 
@@ -33,5 +33,5 @@ more information.
   can relate more than one field, with the syntax:
   MasterTableField1-\>CDetailTableField1;MasterTableField2-\>CDetailTableField2\...etc.
 
-- How to use the **\<\#[Merge Range](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-tag-reference.html#merge-range)\>** tag to merge all the cells in
+- How to use the **\<\#[Merge Range](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-tag-reference.html#merge-range)\>** tag to merge all the cells in
   the country column.

@@ -4,7 +4,7 @@ How to read and write Encrypted Excel files using FlexCel.
 
 ## Concepts
 
-- Concepts on this demo are similar to the ones shown in [Encryption And Subtotals](https://download.tmssoftware.com/flexcel/doc/vcl/samples/delphi/reports/encryption-and-subtotals/index.html) example, but are repeated here so you can see them
+- Concepts on this demo are similar to the ones shown in [Encryption And Subtotals](https://doc.tmssoftware.com/flexcel/vcl/samples/delphi/reports/encryption-and-subtotals/index.html) example, but are repeated here so you can see them
   even if you are not using reports.
 
 - There are **4 ways to protect data** in Excel:

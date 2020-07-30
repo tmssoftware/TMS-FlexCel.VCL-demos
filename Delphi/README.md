@@ -1,4 +1,4 @@
-# Welcome to the FlexCel Well
+# Welcome to the FlexCel Demo Browser
 
 Hi. This is the central entry point for the FlexCel examples.
 

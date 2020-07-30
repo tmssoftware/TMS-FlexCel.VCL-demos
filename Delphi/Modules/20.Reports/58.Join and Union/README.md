@@ -1,13 +1,13 @@
 # Join and Union
 
 Sometimes you want to run unrelated reports in columns. One option is to
-run them as "\_" ranges instead of "\_\_" (see the [Balanced Columns](https://download.tmssoftware.com/flexcel/doc/vcl/samples/delphi/reports/balanced-columns/index.html)
+run them as "\_" ranges instead of "\_\_" (see the [Balanced Columns](https://doc.tmssoftware.com/flexcel/vcl/samples/delphi/reports/balanced-columns/index.html)
 example). But this will break merged cells and ranges might not expand
-(see [Joining Tables](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-designer-guide.html#joining-tables) in the Report Designers guide). So other
+(see [Joining Tables](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-designer-guide.html#joining-tables) in the Report Designers guide). So other
 option is to "join" those unrelated tables into a single table, and run
 a single "\_\_" range.
 
-Also shown in this example is how to do a [Union of Tables](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-designer-guide.html#union-of-tables).
+Also shown in this example is how to do a [Union of Tables](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-designer-guide.html#union-of-tables).
 
 ## Concepts
 
@@ -44,4 +44,4 @@ Also shown in this example is how to do a [Union of Tables](https://download.tms
   into a single table.
 
 *For more information in balanced columns please take a look at the
-sections [Joining Tables](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-designer-guide.html#joining-tables) and [Union of Tables](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-designer-guide.html#union-of-tables) in the Report Designers guide.*
+sections [Joining Tables](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-designer-guide.html#joining-tables) and [Union of Tables](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-designer-guide.html#union-of-tables) in the Report Designers guide.*

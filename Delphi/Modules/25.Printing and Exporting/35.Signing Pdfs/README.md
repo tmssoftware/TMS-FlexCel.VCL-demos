@@ -27,5 +27,5 @@ to a generated PDF file.
   engine for other platforms by using a third party cryptography
   library or by calling the native crypto functions in that platform, 
   the same way we call CryptoAPI. This is explained in the section
-  [Signing PDF Files](https://download.tmssoftware.com/flexcel/doc/vcl/guides/pdf-exporting-guide.html#signing-pdf-files) in the 
+  [Signing PDF Files](https://doc.tmssoftware.com/flexcel/vcl/guides/pdf-exporting-guide.html#signing-pdf-files) in the 
   PDF exporting guide.

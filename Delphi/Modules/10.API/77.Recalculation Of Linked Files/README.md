@@ -15,12 +15,12 @@ recalculate them.
 
   2. If you don\'t know which files (if any) you are going to need, you
      can use an event to load them on demand. This is the approach we
-     use in the [Validate Recalc](https://download.tmssoftware.com/flexcel/doc/vcl/samples/delphi/api/validate-recalc/index.html) example, since it deals with arbitrary
+     use in the [Validate Recalc](https://doc.tmssoftware.com/flexcel/vcl/samples/delphi/api/validate-recalc/index.html) example, since it deals with arbitrary
      files. Whenever you know which files are needed, it is better to
      use the first method.
 
-- **Workspaces can take a lot of memory**. Make sure you VCLfree them{/vcl}} after recalculating, and also the XlsFiles used in it. If you
+- **Workspaces can take a lot of memory**. Make sure you free them after recalculating, and also the XlsFiles used in it. If you
   keep the files, those files will point to the workspace even if
-  you VCLfree it{/vcl}}, and it will not be released. You can also
-  Clear() the workspace before VCLfreeing it{/vcl}} to make sure you leave
+  you free it, and it will not be released. You can also
+  Clear() the workspace before freeing it to make sure you leave
   no references to it.

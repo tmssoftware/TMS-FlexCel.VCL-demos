@@ -14,13 +14,13 @@ have the same number of rows.
   the number is less, **the last cell of the column will be copied**
   to fill the missing rows, so all columns have the same height.
 
-- How to use [Fixed N Bands](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-designer-guide.html#fixed-n-bands) to avoid having empty rows at the
+- How to use [Fixed N Bands](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-designer-guide.html#fixed-n-bands) to avoid having empty rows at the
   end of each master record.
 
 - How to use the \"**ROWS**\" function in the config sheet (see 
-[Creating empty datasets with N rows](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-designer-guide.html#creating-empty-datasets-with-n-rows)) to create a
+[Creating empty datasets with N rows](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-designer-guide.html#creating-empty-datasets-with-n-rows)) to create a
   database with a single row, that you can use as a master from the
   main report, and so ensure balanced columns.
 
 *For more information in balanced columns please take a look at the
-section [Fixed N Bands](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-designer-guide.html#fixed-n-bands) in the Reports designer's guide.*
+section [Fixed N Bands](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-designer-guide.html#fixed-n-bands) in the Reports designer's guide.*

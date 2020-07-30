@@ -5,7 +5,7 @@ FlexCel has the capacity to add page breaks to your file, so you can keep
 interesting sections together.
 
 **Make sure to read the conceptual documentation 
-about [Intelligent Page Breaks](https://download.tmssoftware.com/flexcel/doc/vcl/guides/api-developer-guide.html#intelligent-page-breaks)
+about [Intelligent Page Breaks](https://doc.tmssoftware.com/flexcel/vcl/guides/api-developer-guide.html#intelligent-page-breaks)
 to better understand what we are doing here.**
 
 ## Concepts
@@ -23,6 +23,6 @@ to better understand what we are doing here.**
   Each **begin** sign in the source file means higher level of \"keep
   together\", and each **end** decreases the level.
 
-- The method [TExcelFile.AutoPageBreaks](https://download.tmssoftware.com/flexcel/doc/vcl/api/FlexCel.Core/TExcelFile/AutoPageBreaks.html) must be called after everything is
+- The method [TExcelFile.AutoPageBreaks](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/AutoPageBreaks.html) must be called after everything is
   done, so the sheet is in a final state when applying the page
   breaks.

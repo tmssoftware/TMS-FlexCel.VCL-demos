@@ -1,6 +1,6 @@
 # Includes
 
-The \<\#[Include](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-tag-reference.html#include)\> tag is very useful to keep your reports modular.
+The \<\#[Include](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-tag-reference.html#include)\> tag is very useful to keep your reports modular.
 
 ## Concepts
 

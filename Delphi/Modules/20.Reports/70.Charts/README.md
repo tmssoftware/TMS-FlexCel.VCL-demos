@@ -12,13 +12,13 @@ Some examples on how to create Charts with FlexCel.
   write two rows of real data first, define the chart, and after
   that substitute the first row of real data with \<\#\...\> fields.
   You can leave the second with the test data, because as long as
-  you use [x-ranges](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-designer-guide.html#x-ranges), it will be deleted.
+  you use [x-ranges](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-designer-guide.html#x-ranges), it will be deleted.
 
-- You can't use a  \<\#[delete row](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-tag-reference.html#delete-row)\> tag to remove the extra row. \<\#[delete row](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-tag-reference.html#delete-row)\> tags are
+- You can't use a  \<\#[delete row](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-tag-reference.html#delete-row)\> tag to remove the extra row. \<\#[delete row](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-tag-reference.html#delete-row)\> tags are
   executed from bottom to top, **at the same time** that the
   insertions are made. So, the row will be deleted before the actual
   data is inserted and the range will not expand. To solve this, we
-  now have [x-ranges](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-designer-guide.html#x-ranges). If you put \"X\" as the last char on a
+  now have [x-ranges](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-designer-guide.html#x-ranges). If you put \"X\" as the last char on a
   named range (as in \"\_Products\_X\" on this demo), the range will
   work as a normal one, but after being inserted it will delete the
   next empty row. (or column if it is a column range)

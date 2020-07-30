@@ -6,7 +6,7 @@ together selected rows when printing.
 In this demo we will see how to use them on a report.
 
 **Make sure to read the conceptual documentation 
-about [Intelligent Page Breaks](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-designer-guide.html#intelligent-page-breaks)
+about [Intelligent Page Breaks](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-designer-guide.html#intelligent-page-breaks)
 to better understand what we are doing here.**
 
 ## Concepts

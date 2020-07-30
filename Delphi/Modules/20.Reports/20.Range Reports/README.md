@@ -1,6 +1,6 @@
 # Range reports
 
-On the [GettingStarted](https://download.tmssoftware.com/flexcel/doc/vcl/samples/delphi/api/gettingstarted/index.html) demo we saw how to write tags on a template, and
+On the [GettingStarted](https://doc.tmssoftware.com/flexcel/vcl/samples/delphi/api/gettingstarted/index.html) demo we saw how to write tags on a template, and
 have FlexCel replace them. Now we are going to replace whole ranges with
 values from a database.
 
@@ -41,7 +41,7 @@ values from a database.
   define an alias on the Config sheet, (for example
   Categories2=Categories) and then use \_\_Categories2\_\_ on the
   second sheet.
-  Another alternative not shown in this example would be to use [Alias Bands](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-designer-guide.html#alias-bands).
+  Another alternative not shown in this example would be to use [Alias Bands](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-designer-guide.html#alias-bands).
 
-- We used [Intelligent Page Breaks](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-designer-guide.html#intelligent-page-breaks) in the first sheet so categories are
+- We used [Intelligent Page Breaks](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-designer-guide.html#intelligent-page-breaks) in the first sheet so categories are
   kept in their own pages when printing.

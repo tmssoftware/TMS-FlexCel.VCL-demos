@@ -214,8 +214,7 @@ object AboutForm: TAboutForm
       44AE426082}
     Proportional = True
     Stretch = True
-    ExplicitLeft = 8
-    ExplicitTop = -16
+    ExplicitHeight = 177
   end
   object Image2: TImage
     Left = 392
@@ -397,7 +396,7 @@ object AboutForm: TAboutForm
   end
   object Label1: TLabel
     Left = 40
-    Top = 47
+    Top = 24
     Width = 248
     Height = 25
     Caption = 'FLEXCEL DEMO BROWSER'
@@ -410,13 +409,11 @@ object AboutForm: TAboutForm
   end
   object Label2: TLabel
     Left = 40
-    Top = 70
+    Top = 55
     Width = 346
     Height = 13
     AutoSize = False
-    Caption = 
-      'An application that shows how to recreate an existing file with ' +
-      'FlexCel'
+    Caption = 'A repository with examples on how to use FlexCel'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlack
     Font.Height = -11
@@ -426,21 +423,28 @@ object AboutForm: TAboutForm
   end
   object Label3: TLabel
     Left = 40
-    Top = 120
-    Width = 238
+    Top = 93
+    Width = 76
     Height = 13
-    Caption = 'For more information on how to use this program:'
+    Caption = 'Documentation:'
   end
   object lblFlexCelVersion: TLabel
     Left = 40
-    Top = 96
+    Top = 74
     Width = 120
     Height = 13
     Caption = 'Unknown FlexCel Version'
   end
+  object Label4: TLabel
+    Left = 40
+    Top = 137
+    Width = 61
+    Height = 13
+    Caption = 'Get support:'
+  end
   object BtnOk: TButton
     Left = 373
-    Top = 176
+    Top = 181
     Width = 75
     Height = 26
     Anchors = [akRight, akBottom]
@@ -450,13 +454,26 @@ object AboutForm: TAboutForm
   end
   object LinkLabel1: TLinkLabel
     Left = 72
-    Top = 144
-    Width = 267
+    Top = 112
+    Width = 338
     Height = 19
     Caption = 
-      '<a href="https://www.tmssoftware.com/flexcel/tutorial.htm">http:' +
-      '//www.tmssoftware.com/flexcel/tutorial.htm</a>'
+      '<a href="https://doc.tmssoftware.com/flexcel/vcl/index.html">htt' +
+      'ps://doc.tmssoftware.com/flexcel/vcl/index.html</a>'
     TabOrder = 1
+    UseVisualStyle = True
+    OnLinkClick = LinkLabel1LinkClick
+  end
+  object LinkLabel2: TLinkLabel
+    Left = 72
+    Top = 156
+    Width = 358
+    Height = 19
+    Caption = 
+      '<a href="https://support.tmssoftware.com/c/vcl/tms-flexcel-for-v' +
+      'cl-fmx/44">https://support.tmssoftware.com/c/vcl/tms-flexcel-for' +
+      '-vcl-fmx/44</a>'
+    TabOrder = 2
     UseVisualStyle = True
     OnLinkClick = LinkLabel1LinkClick
   end

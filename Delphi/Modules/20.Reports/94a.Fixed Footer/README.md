@@ -14,9 +14,9 @@ dataset in groups of n rows, and manually copy the footer every time.
 
 ## Concepts
 
-- How to use the SPLIT tag (look at [Splitting Tables](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-designer-guide.html#splitting-tables) in the Reports designer's guide) to create a report with 40 records per page.
+- How to use the SPLIT tag (look at [Splitting Tables](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-designer-guide.html#splitting-tables) in the Reports designer's guide) to create a report with 40 records per page.
 
-- How to use the \"multiple of\" parameter in ATLEAST (look at [Ensuring a table has at least N records](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-designer-guide.html#ensuring-a-table-has-at-least-n-records) in the Reports designer's guide) to ensure the
+- How to use the \"multiple of\" parameter in ATLEAST (look at [Ensuring a table has at least N records](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-designer-guide.html#ensuring-a-table-has-at-least-n-records) in the Reports designer's guide) to ensure the
   dataset has a number of records multiple of 40. This makes sure that
   the footer will be at the bottom of the last page, not after the
   last record.

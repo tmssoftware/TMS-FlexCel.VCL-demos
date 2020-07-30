@@ -3,7 +3,7 @@
 This demo shows a lot of unrelated things you can do with the FlexCel
 API.
 
-It is a **complement** of what was shown in [GettingStarted](https://download.tmssoftware.com/flexcel/doc/vcl/samples/cpp/api/gettingstarted/index.html): this
+It is a **complement** of what was shown in [GettingStarted](https://doc.tmssoftware.com/flexcel/vcl/samples/cpp/api/gettingstarted/index.html): this
 means things that were shown there (like how to insert an image)
 will not be repeated here. You should look at both demos when studying the
 API.
@@ -25,7 +25,7 @@ The created file will be password protected, and all the passwords are
   do, and modify it with code. This starting file (template.xls/x)
   could be embedded in the exe file, but this is not shown here. 
   To see an example on how to embed the template inside the exe, look at
-  [Templates On The Exe](https://download.tmssoftware.com/flexcel/doc/vcl/samples/cpp/reports/templates-on-the-exe/index.html)
+  [Templates On The Exe](https://doc.tmssoftware.com/flexcel/vcl/samples/cpp/reports/templates-on-the-exe/index.html)
 
 - The starting template has a macro. At this time we can not create
   macros with FlexCel, but we can modify a file with existing macros

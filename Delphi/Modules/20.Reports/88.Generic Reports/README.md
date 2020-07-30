@@ -4,8 +4,8 @@ When you are reporting from an unknown database (for example if you are
 writing a DbExport app) you can\'t use a fixed template, because you
 don\'t know what the columns will be. While FlexCelReport is designed to
 handle fixed-form templates, there is some support also for generic
-reports. This example together with the [Meta Templates](https://download.tmssoftware.com/flexcel/doc/vcl/samples/delphi/reports/meta-templates/index.html) 
- and [Generic Reports 2](https://download.tmssoftware.com/flexcel/doc/vcl/samples/delphi/reports/generic-reports-2/index.html) examples show what
+reports. This example together with the [Meta Templates](https://doc.tmssoftware.com/flexcel/vcl/samples/delphi/reports/meta-templates/index.html) 
+ and [Generic Reports 2](https://doc.tmssoftware.com/flexcel/vcl/samples/delphi/reports/generic-reports-2/index.html) examples show what
 can be done. For more advanced generic reports, you should probably use
 the API directly.
 

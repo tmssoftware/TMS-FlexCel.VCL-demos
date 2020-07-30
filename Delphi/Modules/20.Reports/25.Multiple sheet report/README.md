@@ -8,7 +8,7 @@ products and the order details of each product.
 
 - How to use a table to create a report on multiple sheets.
 
-- [Defining Custom Formats](https://download.tmssoftware.com/flexcel/doc/vcl/guides/reports-designer-guide.html#defining-custom-formats)
+- [Defining Custom Formats](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-designer-guide.html#defining-custom-formats)
   to have alternating color rows
 
 - This is a three level master detail report: Category -\> Products

@@ -13,4 +13,4 @@ run a report from a TList\<T\>.
   add support for those types in FlexCel. To run your own reports
   with Aurelius, copy the unit \"AureliusFlexCelSupport.pas\" in
   your own app, and call SetupAurelius(Report) after creating the
-  [TFlexCelReport](https://download.tmssoftware.com/flexcel/doc/vcl/api/FlexCel.Report/TFlexCelReport/index.html) instance.
+  [TFlexCelReport](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Report/TFlexCelReport/index.html) instance.

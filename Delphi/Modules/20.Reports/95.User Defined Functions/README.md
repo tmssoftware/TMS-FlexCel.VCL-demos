@@ -2,7 +2,7 @@
 
 Here we will see how to define a user function to calculate the number
 of orders by employee and shipper. This example is similar to the 
-[Pivot Tables](https://download.tmssoftware.com/flexcel/doc/vcl/samples/delphi/reports/pivot-tables/index.html) example, but using only static normal cells.
+[Pivot Tables](https://doc.tmssoftware.com/flexcel/vcl/samples/delphi/reports/pivot-tables/index.html) example, but using only static normal cells.
 
 ## Concepts
 

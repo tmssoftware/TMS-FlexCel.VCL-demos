@@ -6,7 +6,7 @@ because the focus is in the Excel templates, not so much in the data
 layer. But you can use any TList\<T\> and TArray\<T\> as a datasource in
 a FlexCel report, and this is what we will show here.
 
-This demo shows some features not shown on the [Reports From Lists](https://download.tmssoftware.com/flexcel/doc/vcl/samples/delphi/reports/reports-from-lists/index.html)
+This demo shows some features not shown on the [Reports From Lists](https://doc.tmssoftware.com/flexcel/vcl/samples/delphi/reports/reports-from-lists/index.html)
 example.
 
 ## Concepts
@@ -16,7 +16,7 @@ example.
   a **People** class, and the People class has a list of
   **Language** objects. If People was a TList\<\> inside Country and
   you wanted to use that list, you would just define a
-  **\_\_People\_\_** band (this is shown in the [Reports From Lists](https://download.tmssoftware.com/flexcel/doc/vcl/samples/delphi/reports/reports-from-lists/index.html) example). But
+  **\_\_People\_\_** band (this is shown in the [Reports From Lists](https://doc.tmssoftware.com/flexcel/vcl/samples/delphi/reports/reports-from-lists/index.html) example). But
   as the TList\<\> is inside People which in turn is inside Country,
   you need to define a **\_\_People.Language\_\_** band.
 

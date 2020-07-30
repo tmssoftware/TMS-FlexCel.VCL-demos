@@ -5,4 +5,4 @@ tags from Stack Overflow and rank and provide a chart to visualize them. You can
 online or offline data, in case you don't have access to Stack Overflow.
 
 In this example, we are exporting the results to an html file and showing the results in a web browser.
-We could also export to pdf, as shown in the [iOS_FlexView](https://download.tmssoftware.com/flexcel/doc/vcl/samples/firemonkey-mobile/iosflexview/index.html) demo.
+We could also export to pdf, as shown in the [iOS_FlexView](https://doc.tmssoftware.com/flexcel/vcl/samples/firemonkey-mobile/iosflexview/index.html) demo.
