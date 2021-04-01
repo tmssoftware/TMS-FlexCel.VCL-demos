@@ -1,7 +1,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
 		<ProjectGuid>{94783539-D29C-4CDA-B943-C4D84047EEE5}</ProjectGuid>
-		<ProjectVersion>18.2</ProjectVersion>
+		<ProjectVersion>19.2</ProjectVersion>
 		<FrameworkType>VCL</FrameworkType>
 		<MainSource>TMSAurelius.dpr</MainSource>
 		<Base>True</Base>

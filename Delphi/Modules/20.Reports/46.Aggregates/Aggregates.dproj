@@ -1,7 +1,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
 		<ProjectGuid>{84740D18-1B9A-4DCB-99CA-BCB5FA8D5F16}</ProjectGuid>
-		<ProjectVersion>18.2</ProjectVersion>
+		<ProjectVersion>19.2</ProjectVersion>
 		<FrameworkType>VCL</FrameworkType>
 		<MainSource>Aggregates.dpr</MainSource>
 		<Base>True</Base>

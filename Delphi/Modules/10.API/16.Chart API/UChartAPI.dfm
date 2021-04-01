@@ -15,7 +15,7 @@ object FChartAPI: TFChartAPI
     402
     226)
   PixelsPerInch = 96
-  TextHeight = 14
+  TextHeight = 13
   object Memo1: TMemo
     Left = 24
     Top = 16

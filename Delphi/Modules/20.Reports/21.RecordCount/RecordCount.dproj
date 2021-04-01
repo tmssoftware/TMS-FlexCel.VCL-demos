@@ -1,7 +1,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
 		<ProjectGuid>{E578F01F-2657-49BB-80F4-25FB3098A8D4}</ProjectGuid>
-		<ProjectVersion>18.2</ProjectVersion>
+		<ProjectVersion>19.2</ProjectVersion>
 		<FrameworkType>VCL</FrameworkType>
 		<MainSource>RecordCount.dpr</MainSource>
 		<Base>True</Base>

@@ -42,9 +42,13 @@ var
   LabelOptions: TDataLabelOptions;
   ChartLineOptions: IChartLineOptions;
   ChartFillOptions: IChartFillOptions;
-  Runs: TArray<TRTFRun>;
-  fnt: TFlxFont;
-  LabelValue1: TRichString;
+  Paragraphs: TArray<TDrawingTextParagraph>;
+  ParagraphRuns: TArray<TDrawingTextRun>;
+  TextAttributes: TDrawingTextAttributes;
+  RunProperties: TDrawingTextProperties;
+  TextFill: IFillStyle;
+  ParagraphEndProperties: TDrawingTextProperties;
+  LabelValue1: TDrawingRichString;
   PlotAreaFrame: IChartFrameOptions;
   PlotAreaPos: TChartPlotAreaPosition;
   Series: IChartSeries;
@@ -88,20 +92,34 @@ begin
   ChartFillOptions := TChartFillOptions_Create(TShapeFill_Create(TNoFill_Create(), false, TFormattingType.Subtle, nil, false));
   Title.Frame := TChartFrameOptions_Create(ChartLineOptions, ChartFillOptions, false);
 
-  SetLength(Runs, 1);
-  Runs[0].FirstChar := 0;
-  fnt := xls.GetDefaultFont;
-  fnt.Name := 'Calibri Light';
-  fnt.Size20 := 320;
-  fnt.Color := TExcelColor.FromArgb($80, $80, $80);
-  fnt.Style := [TFlxFontStyles.Bold];
-  fnt.Family := 0;
-  fnt.CharSet := 1;
-  fnt.Scheme := TFontScheme.Major;
-  Runs[0].Font := fnt;
-  LabelValue1 := TRichString.Create('FlexCel: Lines of code over time', Runs);
+  SetLength(Paragraphs, 1);
+  SetLength(ParagraphRuns, 1);
+  TextAttributes := TDrawingTextAttributes.Create(nil, 'en-US', '', 16, TRUE, nil,
+     NullableTDrawingUnderlineStyle.Null, NullableTDrawingTextStrike.Null, nil,
+     NullableTDrawingTextCapitalization.Null, NullableTDrawingCoordinate.Null,
+     nil, nil, nil, false, false, false, 0, '');
+  TextFill := TSolidFill_Create(TDrawingColor.FromRgb($80, $80, $80));
+  RunProperties := TDrawingTextProperties.Create(TextFill,
+      nil,
+      nil,
+      nil,
+      TDrawingUnderline.Null,
+      TThemeTextFont.Create('Calibri Light'),
+      nil,
+      nil,
+      nil,
+      TDrawingHyperlink.Null,
+      TDrawingHyperlink.Null,
+      false,
+      TextAttributes);
 
-  Title.LabelValues := TArray<TCellValue>.Create(
+  ParagraphRuns[0] := TDrawingTextRun.Create('FlexCel: Lines of code over time', RunProperties);
+  ParagraphEndProperties := TDrawingTextProperties.Create(nil, TDrawingTextAttributes.Empty);
+  Paragraphs[0] := TDrawingTextParagraph.Create(ParagraphRuns, TDrawingParagraphProperties.Empty, ParagraphEndProperties);
+
+  LabelValue1 := TDrawingRichString.Create(Paragraphs);
+
+  Title.LabelValues := TArray<TDrawingValue>.Create(
     LabelValue1
   );
 

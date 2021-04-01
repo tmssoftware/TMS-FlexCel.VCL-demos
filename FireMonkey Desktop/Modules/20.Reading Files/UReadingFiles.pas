@@ -7,7 +7,7 @@ uses
   FMX.Types, FMX.StdCtrls, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.Layouts, FMX.Grid,
   FMX.TabControl, FMX.Objects, System.Math, System.Rtti,
   {$if CompilerVersion >= 31.0}FMX.Grid.Style, {$IFEND}
-  FMX.FlexCel.Core, FlexCel.XlsAdapter, FMX.Edit;
+  FMX.FlexCel.Core, FlexCel.XlsAdapter, FMX.Edit, FMX.Graphics;
 
 type
   TFReadingFiles = class(TForm)
@@ -27,6 +27,9 @@ type
       var Value: TValue);
     procedure btnFormatValuesClick(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
+    procedure SheetDataDrawColumnCell(Sender: TObject; const Canvas: TCanvas;
+      const Column: TColumn; const Bounds: TRectF; const Row: Integer;
+      const Value: TValue; const State: TGridDrawStates);
   private
     Xls: TExcelFile;
     procedure ClearGrid;
@@ -82,6 +85,38 @@ procedure TFReadingFiles.SheetChanged(Sender: TObject);
 begin
   Xls.ActiveSheet := (Sender as TComponent).Tag;
   SetupGrid;
+end;
+
+procedure TFReadingFiles.SheetDataDrawColumnCell(Sender: TObject;
+  const Canvas: TCanvas; const Column: TColumn; const Bounds: TRectF;
+  const Row: Integer; const Value: TValue; const State: TGridDrawStates);
+var
+  fmt: TFlxFormat;
+  FillBrush: TBrush;
+  BoundsExt: TRectF;
+begin
+   //Here we will show how to do colors
+   if Xls = nil then exit;
+   BoundsExt := Bounds;
+   BoundsExt.Inflate(4, 4);
+   fmt := Xls.GetCellVisibleFormatDef(Row + 1, Column.Index + 1);
+
+   if (fmt.FillPattern.Pattern = TFlxPatternStyle.Solid) then
+   begin
+      FillBrush := TBrush.Create(TBrushKind.Solid, fmt.FillPattern.FgColor.ToColor(xls));
+      try
+        Canvas.FillRect(BoundsExt, 0, 0, [], 1, FillBrush);
+      finally
+        FillBrush.Free;
+      end;
+      Canvas.Font.Size := fmt.Font.Size20 / 20.0 * 96.0/ 72.0;  //Firemonkey's Font.size is smaller than in VCL. So we multiply by 96/72.
+      Canvas.Font.Family := fmt.Font.Name;
+      //You could assign the font style here too.
+
+      Canvas.Fill.Color := fmt.Font.Color.ToColor(xls);
+      Canvas.FillText(Bounds, Xls.GetStringFromCell(Row + 1, Column.Index + 1).ToString,
+         fmt.WrapText, 1, [], TTextAlign.Leading);
+   end;
 end;
 
 procedure TFReadingFiles.SheetDataGetValue(Sender: TObject; const Col,

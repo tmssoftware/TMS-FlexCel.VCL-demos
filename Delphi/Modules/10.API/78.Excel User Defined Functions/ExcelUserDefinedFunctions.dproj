@@ -1,7 +1,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
 		<ProjectGuid>{F8875CFC-E0C2-4E1F-BDA4-5DF8F6BAF5B5}</ProjectGuid>
-		<ProjectVersion>18.2</ProjectVersion>
+		<ProjectVersion>19.2</ProjectVersion>
 		<MainSource>ExcelUserDefinedFunctions.dpr</MainSource>
 		<Config Condition="'$(Config)'==''">Debug</Config>
 		<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>

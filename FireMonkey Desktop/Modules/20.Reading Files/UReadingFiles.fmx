@@ -264,6 +264,7 @@ object FReadingFiles: TFReadingFiles
     ReadOnly = True
     RowCount = 100
     RowHeight = 21.000000000000000000
+    OnDrawColumnCell = SheetDataDrawColumnCell
     OnGetValue = SheetDataGetValue
   end
   object ScrollTabs: TFramedScrollBox

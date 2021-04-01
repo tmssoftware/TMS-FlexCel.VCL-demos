@@ -1,7 +1,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
 		<ProjectGuid>{39CC3714-34F1-4B91-A374-781FBA4B654F}</ProjectGuid>
-		<ProjectVersion>18.2</ProjectVersion>
+		<ProjectVersion>19.2</ProjectVersion>
 		<MainSource>ConsolidatingFiles.dpr</MainSource>
 		<Config Condition="'$(Config)'==''">Debug</Config>
 		<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
