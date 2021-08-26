@@ -94,7 +94,7 @@ begin
 
   SetLength(Paragraphs, 1);
   SetLength(ParagraphRuns, 1);
-  TextAttributes := TDrawingTextAttributes.Create(nil, 'en-US', '', 16, TRUE, nil,
+  TextAttributes := TDrawingTextAttributes.Create(nil, 'en-US', '', 1600, TRUE, nil,
      NullableTDrawingUnderlineStyle.Null, NullableTDrawingTextStrike.Null, nil,
      NullableTDrawingTextCapitalization.Null, NullableTDrawingCoordinate.Null,
      nil, nil, nil, false, false, false, 0, '');

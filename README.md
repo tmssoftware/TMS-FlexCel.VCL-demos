@@ -8,57 +8,70 @@ You can find a description of each demo in the [documentation](https://doc.tmsso
 **:book: Note** We update this repository automatically every time we release a new FlexCel version. So if you have notifications integrated with github, you can subscribe to this feed to be notified of new releases.
 
 
-## New in v 7.9 - April 2021
+## New in v 7.10 - August 2021
 
 
-- **Support for functions LAMBDA and LET.** We've reworked the recalculation engine to add support for [LAMBDA](https://www.microsoft.com/en-us/research/blog/lambda-the-ultimatae-excel-worksheet-function/) and [LET](https://support.microsoft.com/en-us/office/let-function-34842dd8-b92b-4d3f-b325-b8b8f9908999) functions. With Lambda, the calculation engine is now turing-complete.
+- **Support for SVG images embedded in xlsx files.** Excel has recently started allowing SVG images inside xlsx files. This releases adds full support for adding and reading SVG images to/from xlsx files. Note that we don't currently have a SVG renderer, so to add a SVG image you need to provide both an SVG and a PNG image. you can get more details in [this tip](https://doc.tmssoftware.com/flexcel/vcl/tips/svg-files-inside-xlsx-files.html)
 
-- **Support for functions SINGLE, VALUETOTEXT and VALUETOARRAY.** Added support for [SINGLE](https://support.microsoft.com/en-us/office/implicit-intersection-operator-ce3be07b-0101-4450-a24e-c1c999be2b34), [VALUETOTEXT](https://support.microsoft.com/en-us/office/valuetotext-function-5fff61a2-301a-4ab2-9ffa-0a5242a08fea) and [ARRAYTOTEXT](https://support.microsoft.com/en-us/office/arraytotext-function-9cdcad46-2fa5-4c6b-ac92-14e7bc862b8b) functions.
+- **Breaking Change: Now when exporting to HTML and SVG, the SVG images stored inside the file will be embedded as SVG.** Before, FlexCel would always embed the PNG fallback image. To keep the old behavior, there are 2 new properties: [ TFlexCelHtmlExport.RasterizeSVGImages](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Render/TFlexCelHtmlExport/RasterizeSVGImages.html) and [ TFlexCelSvgExport.RasterizeSVGImages](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Render/TFlexCelSvgExport/RasterizeSVGImages.html)
 
-- **Support for rendering multi-level labels in category axis.** In Excel you can set a category axis to have more than one row/column, and Excel will render those multi-level ranges in a different way than normal ranges. Now FlexCel will behave the same.
+- **Ability to add chart sheets with the API.** There is a new method [AddChartSheet](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/AddChartSheet.html) which will allow you to add chart sheets with the API. As usual, APIMate will show you the code needed to add a chart sheet.
 
-- **Support for legend keys in chart labels.** Now when exporting to PDF/HTML, if the option "Legend key" is enabled in the label options of a chart, FlexCel will render them.
+- **Ability to link shape text to cells via the API.** The new methods [GetShapeLinkedCell](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/GetShapeLinkedCell.html),  [SetShapeLinkedCell](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/SetShapeLinkedCell.html) in [ TExcelFile](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/) and [GetShapeLinkedCell](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/IExcelChart/GetShapeLinkedCell.html),  [SetShapeLinkedCell](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/IExcelChart/SetShapeLinkedCell.html) in [ IExcelChart](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/IExcelChart/) allow you to read and write linked text in shapes.
 
-- **Support for "Label contains Value from range" option in charts.** Now FlexCel will correctly handle the "Label Contains: " "Value from Cells" options for chart labels available in newer Excel versions. They will be exported to PDF/HTML and APIMate will show the code to create them in your programs.
+- **Full Window management via API.** There is a new property [ActiveWindow](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/ActiveWindow.html) which allows you to select the [window](https://support.microsoft.com/en-ie/office/close-workbooks-or-workbook-windows-ca74dca4-8d2f-43f9-84e1-f9a1b1621d26) you are working on. You can then set the zoom, selected cells, etc. for that window, leaving the other windows unaffected. The new commands  [AddWindow](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/AddWindow.html) and  [DeleteWindow](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/DeleteWindow.html) allow you to add or delete windows.  [WindowCount](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/WindowCount.html) will let you know how many windows you have in the file. [ActiveSheetForActiveWindow](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/ActiveSheetForActiveWindow.html) will let you select an active sheet for each window, even if the ActiveSheet for FlexCel won't change.
 
-- **Breaking Change: The property LabelValues in IDataLabel changed from TArray&lt;TCellValue> to TArray&lt;TDrawingValue>.** In order to support the "Label contains Value range" options in charts, we needed to change the type of the array to a more complete type. The current type was used in xls files, but xlsx files have a more complex type.
-While this is a breaking change, it should break at compile time. If you get an error compiling a line like `Title.LabelValues := TCellValueArray.Create('This is my Chart!');` change it to `Title.LabelValues := TDrawingValueArray.Create(TDrawingValue.Create('This is my Chart!'));`  ApiMate will now show the updated method.
+- **Includes in reports can now be FIXED.** Now you can use the word FIXED in the "Shift type" parameter of the [include tag](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-tag-reference.html#include) . Fixed includes won't insert rows or columns, just overwriting the cells in the main report.
 
-- **Improved drawing of x-axis in charts.** Now FlexCel will automatically adjust the x-axis labels to 45 degrees if needed, and also take the space from near labels if those are empty.
+- **Support for recalculation of function NUMBERVALUE.** Now FlexCel can recalculate the [NUMBERVALUE](https://support.microsoft.com/en-us/office/numbervalue-function-1b05c8cf-2bfa-4437-af70-596c7ea7d879) function introduced in Excel2013. As usual, the list of supported Excel functions is at [supported-excel-functions.html](https://doc.tmssoftware.com/flexcel/vcl/about/supported-excel-functions.html) in the docs
 
-- **TXls3DRange now supports an external filename.** The object [TXls3DRange](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TXls3DRange/index.html) now has a property with the filename, in case that the range is from another file. This allows to use external files in user-defined functions.
+- **Ability to set shape effects like glow or shadow with the API.** Now you can set shape effects with the API, and APIMate will tell you the code to do it.
 
-- **Hyperlink Base support.** Now FlexCel will correctly preserve [Hyperlink Base](https://support.microsoft.com/en-us/office/work-with-links-in-excel-7fc80d8d-68f9-482f-ab01-584c44d72b3e) in xlsx files (it was already preserved in xls). Now the hyperlink base is also used when exporting to HTML, SVG or PDF.
+- **Improved recalculation speed.** We've implemented caches for some common formula patterns which should make your recalculations go much faster if your files use those patterns.
 
-- **Support for using an expression like &lt;#joinedtable.tablejoined.\*> to make a generic report in only one of the joined tables.** Now when you join tables in the template you can use &lt;#joinedtable.tablejoined.\*> or &lt;#joinedtable.tablejoined.\**> to create a generic report only in the fields of that subtable.
+- **Improved support for Tiff and Gif images.** FlexCel used to convert tiff and giff images to png when loading them, so they could be saved inside xls files (xls files don't support those formats). Now FlexCel will preserve the file formats, and only convert them to pngs if you are saving in xls format.
 
-- **The &lt;#ref> tag can now use tags in its parameters.** Now you can write something like &lt;#ref(&lt;#dataset.#rowcount>,3)>. Before this version tags were not allowed as parameters.
+- **Improved HTML5 exporting.** We've made the html5 files generated by FlexCel more compliant with html5 validators.
 
-- **New property "IsCameraObject" in TImageProperties.** The new property [IsCameraObject](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/IImageProperties/IsCameraObject.html) lets you know if an image is a camera object or not.
+- **Improved drawing of shape shadows for xlsx files.** FlexCel will now render better the shadows in shapes inside xlsx files.
 
-- **Improved compatibility with xlsx files created by SoftMarker Office.** SoftMaker office adds many extensibility points in places of the xlsx where they are not allowed. FlexCel complained about that, but in the new version we ignore the ones we could identify.
+- **Improved drawing of log-chart gridlines.** Now the gridlines in logarithmic charts behave more similar to Excel in border cases
 
-- **The SKIA lib used in Linux now runs in Ubuntu 16.04 and newer.** We have updated the SKIA library we use for graphics support in Linux to the latest, and compiled it in Ubuntu 16.04 so it is compatible with 16.04 and newer.
+- **Comments added with the API won't include a shadow.** Now when you add a comment with the API, it won't include a shadow, same as modern Excel doesn't when you add a note. You can always use SetCommentProperties to add a shadow if you want to, and APIMate will show you the code.
 
-- **Axis labels will now render with a background color if they have one.** Now the axis labels will render the background color if you assign a color to them.
+- **Bug Fix.** Excel could crash with files including charts with Soft edges effect.
 
-- **Bug Fix.** FlexCel would always render labels in the category axis as not "linked to source" even if they were.
+- **Improved handling of linked text in autoshapes.** Now FlexCel will preserve the properties of empty linked text in autoshapes. It will also handle better shapes with text linked to names that reference different sheets.
 
-- **Bug Fix.** Labels which come from cells that are formatted to show negative values in different colors show with that color in Excel, except in pie charts. FlexCel used to ignore that color, not it will display it.
+- **Bug Fix.** Sometimes FlexCel could fail to parse formulas with hard-coded arrays which had strings inside.
 
-- **Bug Fix.** When rendering xlsx charts, labels which were manually positioned would ignore the default  numeric formatting.
+- **Bug Fix.** Conditional formats with iconsets where some values of the iconset were "No icon" could be saved wrong.
 
-- **Bug Fix.** Structured references with text formatting could be saved wrong to new xlsx files.
+- **Bug Fix.** Comments could lose or gain a shadow when converting from xls to xlsx or xlsx-strict. Also colors in the comments could be wrong in border cases.
 
-- **Bug Fix.** Rotated labels in charts could a little below or above from where they should go.
+- **Bug Fix.** When renaming tables FlexCel wasn't renaming references in column formulas
 
-- **Bug Fix.** FlexCel could fail to parse a formula where the sheet name started with some Unicode characters, like for example "※MySheet"
+- **Bug Fix.** FlexCel could crash when rendering chart labels with "Value from cells" if the range existed but was null.
 
-- **Bug Fix.** When reading structured references in Virtual Mode, there could be an access violation.
+- **Bug Fix.** Accessing some Conditional formats with inner borders could cause an Exception.
 
-- **Bug Fix.** FlexCel didn't preserve or render text linked to cells in shapes inside charts.
+- **Bug Fix.** FlexCel would not export to pdf 3rd-party files which had unreadable file properties.
 
-- **Bug Fix.** FlexCel would allow you to name a sheet starting with a single quote ('), and that would cause an invalid file. Now the quote at the start of the name will be replaced by a "_" as other invalid characters do.
+- **Bug Fix.** When using &lt;#database.#rowcount> in expressions outside the sheet, you could get an exception.
 
-- **Bug Fix.** There could be a memory leak when calling TFlexCelReport.ClearTables
+- **Bug Fix.** FlexCel could throw an exception when inserting columns in xls files with invalid external references
+
+- **Bug Fix.** FlexCel could throw an Exception when manually adding an autoshape to a chart that was created via the API.
+
+- **Bug Fix.** Better compatibility with files generated by FastReports. Excel ignores border style 0 and fill styles 0 and 1, and now FlexCel ignores those too.
+
+- **Better handling of third-party xls files.** Now FlexCel will convert the deprecated labels in biff8 xls files to sstlabels instead of keeping them as-is, allowing for much decreased memory usage when reading those files, and smaller result files.
+
+- **Bug Fix.** Text to autoshapes added with the API would always be left-aligned.
+
+- **Bug Fix.** FlexCel could report the BOM when reading custom XML parts inside xlsx files. Now the BOM is stripped out as it should.
+
+- **Bug Fix.** Reports using TDataSets in master-detail could get the wrong results if both master and detail had the same underlying dataset.
+
+- **Bug Fix.** ApiMate would not suggest how to add a shape without borders
 

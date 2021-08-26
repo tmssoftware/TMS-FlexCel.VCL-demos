@@ -11,7 +11,7 @@ lets you write your own [Regular Expressions](https://doc.tmssoftware.com/flexce
 
 - RegEx(IgnoreCase, Expression, Search): This will search for the
   expression inside \"Search\" string, and return the part of
-  \"Search\" that matchs the expression.
+  \"Search\" that matches the expression.
 
 - RegEx(IgnoreCase, Expression, Search, Replace): This will Replace
   the matching string inside \"Search\" by the \"Replace\" string.
