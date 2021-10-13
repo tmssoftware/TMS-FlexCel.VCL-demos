@@ -1,7 +1,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
 		<ProjectGuid>{216CE3B5-88BF-48A3-9DC0-19064EDB9507}</ProjectGuid>
-		<ProjectVersion>19.2</ProjectVersion>
+		<ProjectVersion>13.4</ProjectVersion>
 		<FrameworkType>VCL</FrameworkType>
 		<MainSource>RangeReports.dpr</MainSource>
 		<Base>True</Base>

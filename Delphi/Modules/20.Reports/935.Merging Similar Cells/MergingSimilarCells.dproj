@@ -1,7 +1,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
 		<ProjectGuid>{A52DDA87-FC50-415A-9513-A258744BF676}</ProjectGuid>
-		<ProjectVersion>19.2</ProjectVersion>
+		<ProjectVersion>13.4</ProjectVersion>
 		<FrameworkType>VCL</FrameworkType>
 		<MainSource>MergingSimilarCells.dpr</MainSource>
 		<Base>True</Base>

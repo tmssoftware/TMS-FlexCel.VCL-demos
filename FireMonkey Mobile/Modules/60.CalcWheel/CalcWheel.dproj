@@ -1,7 +1,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
 		<ProjectGuid>{E6D05F33-751B-482B-8E75-E8F9C981D71B}</ProjectGuid>
-		<ProjectVersion>18.5</ProjectVersion>
+		<ProjectVersion>17.2</ProjectVersion>
 		<FrameworkType>FMX</FrameworkType>
 		<MainSource>CalcWheel.dpr</MainSource>
 		<Base>True</Base>

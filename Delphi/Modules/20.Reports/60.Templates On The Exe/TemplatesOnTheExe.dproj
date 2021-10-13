@@ -1,7 +1,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
 		<ProjectGuid>{7390ECAB-8F5E-4EDF-8AB4-4EB965212DB2}</ProjectGuid>
-		<ProjectVersion>19.2</ProjectVersion>
+		<ProjectVersion>13.4</ProjectVersion>
 		<FrameworkType>VCL</FrameworkType>
 		<MainSource>TemplatesOnTheExe.dpr</MainSource>
 		<Base>True</Base>

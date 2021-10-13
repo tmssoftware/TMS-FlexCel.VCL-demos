@@ -1,7 +1,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
 		<ProjectGuid>{7D3BDE11-2A6A-4CFE-97E3-C1BF2DD6ACC8}</ProjectGuid>
-		<ProjectVersion>19.2</ProjectVersion>
+		<ProjectVersion>13.4</ProjectVersion>
 		<FrameworkType>VCL</FrameworkType>
 		<MainSource>SigningPdfs.dpr</MainSource>
 		<Base>True</Base>

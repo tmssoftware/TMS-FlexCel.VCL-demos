@@ -1,7 +1,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
 		<ProjectGuid>{FD43E33B-CAA0-43C7-A913-6126860D8587}</ProjectGuid>
-		<ProjectVersion>19.2</ProjectVersion>
+		<ProjectVersion>13.4</ProjectVersion>
 		<FrameworkType>VCL</FrameworkType>
 		<MainSource>ExportSVG.dpr</MainSource>
 		<Base>True</Base>

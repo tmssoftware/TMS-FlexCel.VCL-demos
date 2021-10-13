@@ -1,7 +1,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
 		<ProjectGuid>{ABA02824-2D08-44EB-89CB-62B4C931A492}</ProjectGuid>
-		<ProjectVersion>19.2</ProjectVersion>
+		<ProjectVersion>13.4</ProjectVersion>
 		<MainSource>CreatingPdfFilesWithPDFAPI.dpr</MainSource>
 		<Config Condition="'$(Config)'==''">Debug</Config>
 		<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>

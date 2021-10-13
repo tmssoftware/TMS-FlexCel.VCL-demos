@@ -1,7 +1,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
 		<ProjectGuid>{4317ABB1-94B9-4BE5-8642-800AB842B8AE}</ProjectGuid>
-		<ProjectVersion>18.8</ProjectVersion>
+		<ProjectVersion>17.2</ProjectVersion>
 		<FrameworkType>FMX</FrameworkType>
 		<MainSource>LangWars.dpr</MainSource>
 		<Base>True</Base>

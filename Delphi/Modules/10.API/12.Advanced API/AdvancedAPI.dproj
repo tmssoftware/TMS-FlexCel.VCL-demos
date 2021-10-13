@@ -1,7 +1,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
 		<ProjectGuid>{B2E8FA15-C5BF-4810-9B26-98D597926E6B}</ProjectGuid>
-		<ProjectVersion>19.2</ProjectVersion>
+		<ProjectVersion>13.4</ProjectVersion>
 		<MainSource>AdvancedAPI.dpr</MainSource>
 		<Config Condition="'$(Config)'==''">Debug</Config>
 		<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>

@@ -1,7 +1,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
 		<ProjectGuid>{93DD097F-E83D-49A3-982F-5AC74142197F}</ProjectGuid>
-		<ProjectVersion>18.8</ProjectVersion>
+		<ProjectVersion>13.4</ProjectVersion>
 		<FrameworkType>VCL</FrameworkType>
 		<MainSource>GettingStartedReports.cpp</MainSource>
 		<Base>True</Base>

@@ -1,7 +1,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
 		<ProjectGuid>{BA55CC8E-CAE3-440D-8830-69565D7BB0BD}</ProjectGuid>
-		<ProjectVersion>18.8</ProjectVersion>
+		<ProjectVersion>17.2</ProjectVersion>
 		<FrameworkType>FMX</FrameworkType>
 		<MainSource>FlexDocs.dpr</MainSource>
 		<Base>True</Base>

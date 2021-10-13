@@ -8,16 +8,16 @@ You can find a description of each demo in the [documentation](https://doc.tmsso
 **:book: Note** We update this repository automatically every time we release a new FlexCel version. So if you have notifications integrated with github, you can subscribe to this feed to be notified of new releases.
 
 
-## New in v 7.11 - September 2021
+## New in v 7.12 - October 2021
 
 
-- **Support for RAD Studio 11.** Official support for Rad Studio 11
+- **PowerBI Data models are now preserved.** FlexCel will now preserve PowerBI datamodels in xlsx files.
 
-- **New overloads of methods for getting image information that take objectIndexes instead of imageIndexes.** The methods [GetImageProperties](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/GetImageProperties.html), [GetImageName](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/GetImageName.html), [SetImageProperties](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/SetImageProperties.html), [DeleteImage](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/DeleteImage.html) and [ClearImage](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/ClearImage.html) now have overloads taking an objectIndex/objectPath pair instead of an imageIndex.
+- **Bug Fix.** GetImageProperties could return an index out of bounds when passed a valid imageindex but there were grouped images.
 
-- **New methods to convert between imageindexes and objectindexes with support for grouped shapes.** The new methods [ImageIndexToObjectPath](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/ImageIndexToObjectPath.html) and [ObjectPathToImageIndex](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/ObjectPathToImageIndex.html) can convert between imageIndexes and objectIndexes taking care of nested objects. The existing methods would only work in non-grouped objects.
+- **Bug Fix.** [TFlexCelPrintDocument.PrintAllVisibleSheets](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Render/TFlexCelPrintDocument/PrintAllVisibleSheets.html#tflexcelprintdocumentprintallvisiblesheets-method) wouldn't print if resetPageNumberOnEachSheet was true.
 
-- **You can now read and write the links of a camera object.** The methods [GetShapeLinkedCell](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/GetShapeLinkedCell.html) and [SetShapeLinkedCell](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/SetShapeLinkedCell.html) now work in picures too, allowing to read or create camera objects besides to shapes with their text linked.
+- **Bug Fix.** In Delphi XE, XE2 and XE3 there could be issues with sheet names using accented characters. This was already working fine for XE4 or newer.
 
-- **Improved loading of Excel 3, 4 and 95 files.** Now FlexCel can load camera objects in Excel 3, 4 and 95 files. It will also load the image names for images in Excel 95 files (Excel 4 and older don't store an image name)
+- **Setup now allows to enable full RTTI.** FlexCel by default disables RTTI on its classes and methods to produce smaller executables. But some apps like tms scripter studio require RTTI to work. Now the installer offers the option to enable RTTI. With RTTI enabled, you can expect a size increase in your exes of 2-3mb.
 
