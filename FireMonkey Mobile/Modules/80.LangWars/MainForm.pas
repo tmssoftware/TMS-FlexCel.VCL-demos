@@ -139,7 +139,7 @@ begin
     exit;
   end;
 
-  // To send the file, we need to define a file provider in AndrodiManifest.xml
+  // To send the file, we need to define a file provider in AndroidManifest.xml
   // See https://doc.tmssoftware.com/flexcel/vcl/guides/android-guide.html#sharing-files
   FlexCelDocExport.ExportFile(btnShare, PdfPath);
 end;

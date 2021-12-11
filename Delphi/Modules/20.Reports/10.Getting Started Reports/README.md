@@ -23,14 +23,14 @@ used, only report variables.
 
 - There are 2 special datatypes you must be aware:
 
-   1. **Dates:** Dates in Excel are just numbers, with an special cell
+   1. **Dates:** Dates in Excel are just numbers, with a special cell
    format. To enter a date in Excel, make sure the cell has a date
    format.
 
    2. **Multiline Text**:To be able to show carriage return on a cell,
    it must have \"Wrap text\" enabled on its cell format.
 
-- Hyperlinks are an special case for 2 reasons: 
+- Hyperlinks are a special case for 2 reasons: 
    1. **You can\'t enter
    \<\#** into an hyperlink, as **\#** is a reserved keyword. So, tags in
    hyperlinks are on the form \"\*.TAG.\*\" (On older FlexCelVersions

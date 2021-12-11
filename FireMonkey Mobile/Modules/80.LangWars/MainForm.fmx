@@ -50,11 +50,12 @@ object FMainForm: TFMainForm
     Size.Width = 640.000000000000000000
     Size.Height = 436.000000000000000000
     Size.PlatformDefault = False
+    WindowsEngine = None
   end
   object SORESTClient: TRESTClient
     Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
     AcceptCharset = 'UTF-8, *;q=0.8'
-    BaseURL = 'https://api.stackexchange.com/'
+    BaseURL = 'https://api.stackexchange.com'
     Params = <>
     Left = 40
     Top = 32

@@ -34,7 +34,6 @@ object FFlexDocs: TFFlexDocs
       Size.Height = 44.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
-      Visible = True
     end
     object btnOpen: TButton
       Action = ActionOpen
@@ -46,7 +45,6 @@ object FFlexDocs: TFFlexDocs
       Size.Height = 44.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
-      Visible = True
     end
   end
   object ActionList1: TActionList
