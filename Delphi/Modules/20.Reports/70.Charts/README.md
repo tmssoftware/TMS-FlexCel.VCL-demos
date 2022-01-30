@@ -1,6 +1,6 @@
 # Charts
 
-Some examples on how to create Charts with FlexCel.
+Some examples of how to create Charts with FlexCel.
 
 ## Concepts
 
@@ -23,10 +23,9 @@ Some examples on how to create Charts with FlexCel.
   work as a normal one, but after being inserted it will delete the
   next empty row. (or column if it is a column range)
 
-- Normally when you create a chart, series remain fixed and the data
-  range expands. Some charts might need that the data range is fixed
-  and new series are created. Those kinds of charts are not
-  currently supported with reports, but you can create them with the API.
+- Usually when you create a chart, series remain fixed and the data
+  range expands. But some special charts might need that the data range is fixed
+  and new series are created. For those cases, you can use [swap series](https://doc.tmssoftware.com/flexcel/vcl/guides/reports-tag-reference.html#swap-series)\> tags. Look at the example [Charts With Dynamic Series](https://doc.tmssoftware.com/flexcel/vcl/samples/delphi/reports/charts-with-dynamic-series/index.html) 
 
 - FlexCelReport **will not replace \<\#tags\>** inside the main title
   or the x/y axis titles. But you can drop a textbox inside the

@@ -135,6 +135,9 @@
         <Projects Include="Modules\20.Reports\70.Charts\Charts.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="Modules\20.Reports\75.Charts With Dynamic Series\ChartsWithDynamicSeries.dproj">
+            <Dependencies/>
+        </Projects>
         <Projects Include="Modules\20.Reports\80.Pivot Tables\PivotTables.dproj">
             <Dependencies/>
         </Projects>
