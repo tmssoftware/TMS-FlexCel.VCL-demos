@@ -8,24 +8,28 @@ You can find a description of each demo in the [documentation](https://doc.tmsso
 **:book: Note** We update this repository automatically every time we release a new FlexCel version. So if you have notifications integrated with github, you can subscribe to this feed to be notified of new releases.
 
 
-## New in v 7.16 - September 2022
+## New in v 7.17 - June 2023
 
 
-- **Support iOSSimulator Arm64.** There is now support for the new iOS Simulator Arm in Delphi 11.2
+- **Improved API for defining columns in tables.** Now you can define a totals formula or a column formula for the columns in the table, if needed. As usual, APIMate will show you how to do it.
 
-- **Support for different numeric systems in cell formatting.** Now if you format a cell with a different numeric system like for example "[$-2000000]#,##0.00", FlexCel will render those numbers correctly. (see [https://ansarichat.wordpress.com/2018/02/20/how-to-type-arabic-numerals-in-excel/](https://ansarichat.wordpress.com/2018/02/20/how-to-type-arabic-numerals-in-excel/) )
+- **Now FlexCel preserves digital signatures in macros.** When you have digitally signed macros in a file, now FlexCel will preserve them when opening and saving that file
 
-- **Bug Fix.** When rendering charts that used =Offset to define the data, and some columns or rows were hidden, FlexCel could fail to hide the values when the chart was set to not plot hidden cells.
+- **New property  DeleteEmptyBandsFixed in FlexCelReport controls what to do with empty fixed bands.** The new function [DeleteEmptyBandsFixed ](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Report/TFlexCelReport/DeleteEmptyBandsFixed.html) lets you define what happens if a fixed band has zero records.
 
-- **Bug Fix.** In some rare cases when there was merged cells whose first cell was hidden the background might not be exported to pdf.
+- **Improved the experimental Lazarus support.** FlexCel can't still be compiled with Lazarus stable as it hasn't got anonymous methods yet. But we've modified the code to adapt for the changes in Lazarus trunk.
 
-- **Bug Fix.** If printing gridlines and there were hidden columns or rows, the gridlines could be printed over the real borders of a cell.
+- **Bug Fix.** When recreating a table by calling AddTable and SetTable, the cell references could become invalid
 
-- **Bug Fix.** When exporting to CSV, there could be errors if you manually set cell values to NaN.
+- **Bug Fix.** The functions IFERROR, ISERROR and ISERR could sometimes return the error instead of the result of the function.
 
-- **Bug Fix.** If exporting to PDF and the "normal" font of the spreadsheet was Calibri 9 columns could be wider than expected.
+- **Bug Fix.** The functions COUNTIF, SUMIF and similar could behave wrong in some cases where you used wildcards. See [https://support.tmssoftware.com/t/countif-formula-with-wildcard-failing-after-recalc-method-is-called/19266](https://support.tmssoftware.com/t/countif-formula-with-wildcard-failing-after-recalc-method-is-called/19266)
 
-- **Bug Fix.** When exporting in Linux the pdfs could be wrong, due to a bug in Delphi. This release workarounds this bug and allows correct exporting from Linux.
+- **Bug Fix.** The function [TRIM](https://support.microsoft.com/en-us/office/trim-function-410388fa-c5df-49c6-b16c-9e5630b479f9) in Excel removes double spaces in the middle of a text, while FlexCel's implementation would remove only spaces at the beginning at end. Also Excel's TRIM only removes spaces (character 32) and not other whitespace like tabs. FlexCel's implementation now does the same.
 
-- **Bug Fix.** FlexCel could hang while loading some invalid third-party files.
+- **Bug Fix.** FlexCel could fail to read some encrypted files raising an error 'Error in CryptoAPI: $80090004'.
+
+- **Bug Fix.** The function =NUMBERVALUE() could throw an Exception in some border cases
+
+- **Bug Fix.** Setup would fail to install if there was a "," in the path
 
