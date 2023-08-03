@@ -1,7 +1,7 @@
 unit UPdfExporting;
 
 interface
-uses UProgressThread, SysUtils, VCL.FlexCel.Core, FlexCel.Render, FlexCel.Pdf;
+uses UProgressThread, SysUtils, FlexCel.Core, FlexCel.Render, FlexCel.Pdf;
 
 type
   TPdfThread = class(TProgressThread)

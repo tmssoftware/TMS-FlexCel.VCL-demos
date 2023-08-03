@@ -68,7 +68,7 @@ var
 
 implementation
 uses
-  VCL.FlexCel.Core, FlexCel.XlsAdapter, FlexCel.Report, FlexCel.Render,
+  FlexCel.VCLSupport, FlexCel.Core, FlexCel.XlsAdapter, FlexCel.Report, FlexCel.Render,
   ndfdXML, XSBuiltIns, DateUtils,
   IdHTTP, IdComponent,
   {$if CompilerVersion >= 23.0} System.UITypes, {$IFEND}

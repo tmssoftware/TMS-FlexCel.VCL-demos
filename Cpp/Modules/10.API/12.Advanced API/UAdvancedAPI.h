@@ -8,7 +8,8 @@
 #include <StdCtrls.hpp>
 #include <Forms.hpp>
 #include <Dialogs.hpp>
-#include <VCL.FlexCel.Core.hpp>
+#include <FlexCel.VCLSupport.hpp>
+#include <FlexCel.Core.hpp>
 #include <FlexCel.XlsAdapter.hpp>
 //---------------------------------------------------------------------------
 class TFAdvancedAPI : public TForm

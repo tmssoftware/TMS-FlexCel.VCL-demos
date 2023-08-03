@@ -9,7 +9,8 @@
 #include <Vcl.Forms.hpp>
 #include <Vcl.Dialogs.hpp>
 #include "DemoData.h"
-#include <VCL.FlexCel.Core.hpp>
+#include <FlexCel.VCLSupport.hpp>
+#include <FlexCel.Core.hpp>
 #include <FlexCel.XlsAdapter.hpp>
 #include <FlexCel.Report.hpp>
 

@@ -7,7 +7,7 @@ uses
   Dialogs, StdCtrls, ShellAPI, UPaths,
   {$IFDEF FPC} LResources,{$ENDIF}
   {$if CompilerVersion >= 23.0} System.UITypes, {$IFEND}
-  VCL.FlexCel.Core, FlexCel.XlsAdapter;
+  FlexCel.VCLSupport, FlexCel.Core, FlexCel.XlsAdapter;
 
 type
   TFEncryptedFiles = class(TForm)

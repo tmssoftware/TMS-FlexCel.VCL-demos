@@ -8,7 +8,7 @@ uses
   StdCtrls,
   pngimage, ExtCtrls, ExtDlgs,
   {$if CompilerVersion >= 23.0} System.UITypes, {$IFEND}
-  VCL.FlexCel.Core, FlexCel.XlsAdapter, FlexCel.Render, FlexCel.Pdf;
+  FlexCel.VCLSupport, FlexCel.Core, FlexCel.XlsAdapter, FlexCel.Render, FlexCel.Pdf;
 
 
 type

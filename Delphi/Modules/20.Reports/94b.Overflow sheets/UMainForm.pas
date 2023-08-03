@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics,
-  VCL.FlexCel.Core, FlexCel.XlsAdapter, FlexCel.Report, FlexCel.Render,
+  FlexCel.VCLSupport, FlexCel.Core, FlexCel.XlsAdapter, FlexCel.Report, FlexCel.Render,
   {$if CompilerVersion >= 23.0} System.UITypes, {$IFEND}
   ShellApi,
   Controls, Forms, Dialogs, StdCtrls, ExtCtrls;

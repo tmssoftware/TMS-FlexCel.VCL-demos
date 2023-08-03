@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics,
   Controls, Forms, Dialogs, StdCtrls, ExtCtrls, Clipbrd,
-  VCL.FlexCel.Core, FlexCel.XlsAdapter,
+  FlexCel.VCLSupport, FlexCel.Core, FlexCel.XlsAdapter,
   FlexCel.Render;
 
 type

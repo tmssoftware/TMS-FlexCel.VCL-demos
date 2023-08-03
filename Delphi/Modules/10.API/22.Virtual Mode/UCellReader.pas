@@ -1,7 +1,7 @@
 unit UCellReader;
 
 interface
-uses VCL.FlexCel.Core, USheetSelect, Controls, USparseArray;
+uses FlexCel.Core, USheetSelect, Controls, USparseArray;
 
 type
   //A simple cell reader that will get the values from FlexCel and put them into a grid.

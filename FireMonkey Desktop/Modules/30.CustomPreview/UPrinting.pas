@@ -1,7 +1,7 @@
 unit UPrinting;
 
 interface
-uses UProgressThread, SysUtils, FMX.FlexCel.Core, FlexCel.Render, Classes;
+uses UProgressThread, SysUtils, FlexCel.Core, FlexCel.Render, Classes;
 
 type
   TPrintingThread = class(TProgressThread)

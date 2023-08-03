@@ -8,7 +8,7 @@
 #include "UProgressThread.h"
 #include "FlexCel.Pdf.hpp"
 #include "FlexCel.Render.hpp"
-#include "VCL.FlexCel.Core.hpp"
+#include "FlexCel.Core.hpp"
 //---------------------------------------------------------------------------
 class TPdfThread: public TProgressThread
 {

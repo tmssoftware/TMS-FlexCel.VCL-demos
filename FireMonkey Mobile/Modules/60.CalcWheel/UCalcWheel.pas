@@ -5,13 +5,13 @@ interface
 {$if CompilerVersion < 30.0}
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls, FMX.FlexCel.Core, FlexCel.XlsAdapter,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls, FlexCel.FMXSupport, FlexCel.Core, FlexCel.XlsAdapter,
   FMX.Edit, FMX.Objects, FMX.Platform, FMX.Layouts, FMX.ListBox, FMX.Ani,
   FMX.Controls.Presentation, FMX.TabControl, FMX.ListView.Types, FMX.ListView;
 {$else}
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls, FMX.FlexCel.Core, FlexCel.XlsAdapter,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls, FlexCel.FMXSupport, FlexCel.Core, FlexCel.XlsAdapter,
   FMX.Edit, FMX.Objects, FMX.Platform, FMX.Layouts, FMX.ListBox, FMX.Ani,
   FMX.Controls.Presentation, FMX.TabControl, FMX.ListView.Types, FMX.ListView,
   FMX.ListView.Appearances, FMX.ListView.Adapters.Base;

@@ -6,7 +6,7 @@ uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics,
   Controls, Forms, Dialogs, ImgList, ActnList, StdCtrls,
   Tabs, Grids,ExtCtrls, ComCtrls, ToolWin, Generics.Collections,
-  VCL.FlexCel.Core, FlexCel.XlsAdapter, FlexCel.Render;
+  FlexCel.VCLSupport, FlexCel.Core, FlexCel.XlsAdapter, FlexCel.Render;
 
 type
   TFHandlingErrors = class(TForm)

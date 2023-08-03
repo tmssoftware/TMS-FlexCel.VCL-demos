@@ -1,7 +1,7 @@
 unit UProgressThread;
 
 interface
-uses Classes, SysUtils, FMX.FlexCel.Core;
+uses Classes, SysUtils, FlexCel.Core;
 type
 
 TProgressThread = class(TThread)

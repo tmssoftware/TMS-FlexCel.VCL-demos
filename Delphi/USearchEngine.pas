@@ -2,7 +2,7 @@ unit USearchEngine;
 interface
 {$region 'Uses'}
 uses SysUtils, Math, StrUtils, Classes, Generics.Collections, IOUtils,
-     VCL.FlexCel.Core, FlexCel.XlsAdapter, Generics.Defaults;
+     FlexCel.Core, FlexCel.XlsAdapter, Generics.Defaults;
 {$endregion}
 
 type

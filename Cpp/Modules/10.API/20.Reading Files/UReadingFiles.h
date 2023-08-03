@@ -16,7 +16,8 @@
 #include <Tabs.hpp>
 #include <ToolWin.hpp>
 #include <Math.hpp>
-#include <VCL.FlexCel.Core.hpp>
+#include <FlexCel.VCLSupport.hpp>
+#include <FlexCel.Core.hpp>
 #include <FlexCel.XlsAdapter.hpp>
 #include "UFlexCelHDPI.hpp"
 

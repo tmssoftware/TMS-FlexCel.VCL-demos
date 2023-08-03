@@ -4,7 +4,7 @@
 #define UProgressThreadH
 //---------------------------------------------------------------------------
 #include <System.Classes.hpp>
-#include "VCL.FlexCel.Core.hpp"
+#include "FlexCel.Core.hpp"
 
 typedef void __fastcall (__closure *TFeedbackMethod)(int Progress, String Msg);
 typedef void __fastcall (__closure *TFinalFeedbackMethod)(bool Ok, String Msg);

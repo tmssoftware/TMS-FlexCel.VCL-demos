@@ -6,7 +6,7 @@ uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics,
   Controls, Forms, Dialogs, ImgList, ActnList, StdCtrls,
   Tabs, Grids,ExtCtrls, ComCtrls, ToolWin, UPaths,
-  VCL.FlexCel.Core, FlexCel.XlsAdapter, UCellReader, USparseArray;
+  FlexCel.VCLSupport, FlexCel.Core, FlexCel.XlsAdapter, UCellReader, USparseArray;
 
 type
   TFVirtualMode = class(TForm)

@@ -6,13 +6,11 @@ A really simple demo on how to create an Excel file with the API.
 
 
 - Before using FlexCel, you have to add
-  \"**uses VCL.FlexCel.Core**\" and \"**uses FlexCel.XlsAdapter**\" to
+  \"**uses FlexCel.VCLSupport**\", \"**uses FlexCel.Core**\" and \"**uses FlexCel.XlsAdapter**\" to
   your uses statements. 
-  For a FireMonkey app, you would add \"**uses FMX.FlexCel.Core**\"
-  instead of \"**uses VCL.FlexCel.Core**\"
-  And for units that can be used in both VCL and FMX, you can add
-  \"**uses FlexCel.Core**\" instead. Just make sure to have at least
-  one uses with VCL or FMX in your app: The other units can use FlexCel.Core.
+  For a FireMonkey app, you would add \"**uses FlexCel.FMXSupport**\"
+  instead of \"**uses FlexCel.VCLSupport**\"
+ You need to use FMXSupport/VCLSupport units once in your app, so FlexCel can initialize the correct graphics engine. There is no need to add them more than once.
 
 - The most important class here is the [TXlsFile](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.XlsAdapter/TXlsFile/index.html) class, from where
   you can read and write to any Excel 2 or newer file.

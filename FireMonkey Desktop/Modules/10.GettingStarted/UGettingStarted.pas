@@ -7,7 +7,7 @@ uses
 {$if CompilerVersion >= 31}  //Delphi 10.1 Berlin deprecated MessageDlg
   FMX.DialogService.Sync,
 {$endif}
-  FMX.FlexCel.Core, FlexCel.XlsAdapter, FMX.FlexCel.DocExport,
+  FlexCel.FMXSupport, FlexCel.Core, FlexCel.XlsAdapter, FMX.FlexCel.DocExport,
   FMX.Controls.Presentation;
 
 type

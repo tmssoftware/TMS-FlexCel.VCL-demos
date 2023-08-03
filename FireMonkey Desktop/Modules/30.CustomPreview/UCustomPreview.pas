@@ -5,7 +5,7 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.StdCtrls, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.Objects, FMX.Ani,
-  FMX.FlexCel.Core, FlexCel.XlsAdapter, FlexCel.Render, FMX.Layouts,
+  FlexCel.FMXSupport, FlexCel.Core, FlexCel.XlsAdapter, FlexCel.Render, FMX.Layouts,
   FMX.FlexCel.Preview, FMX.ListBox, FMX.Edit, FMX.Menus,
   UPasswordDialog, UPdfExporting, UPrinting, FMX.Printer,
   FMX.Controls.Presentation;

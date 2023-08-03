@@ -7,7 +7,7 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, IPPeerClient,
   Data.DBXJSON, System.JSON, ZLib,
   DataModel, Generics.Defaults,
-  FMX.FlexCel.Core, FlexCel.XlsAdapter, FlexCel.Report, FlexCel.Render, FlexCel.Pdf,
+  FlexCel.FMXSupport, FlexCel.Core, FlexCel.XlsAdapter, FlexCel.Report, FlexCel.Render, FlexCel.Pdf,
   REST.Client, Data.Bind.Components, Data.Bind.ObjectScope, FMX.StdCtrls,
   FMX.WebBrowser, FMX.FlexCel.DocExport, REST.Types, FMX.Controls.Presentation;
 

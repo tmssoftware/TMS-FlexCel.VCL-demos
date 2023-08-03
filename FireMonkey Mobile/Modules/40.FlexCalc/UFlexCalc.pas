@@ -4,7 +4,7 @@ interface
 
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.FlexCel.Core, FlexCel.XlsAdapter,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FlexCel.FMXSupport, FlexCel.Core, FlexCel.XlsAdapter,
   FMX.StdCtrls, FMX.Edit;
 
 type

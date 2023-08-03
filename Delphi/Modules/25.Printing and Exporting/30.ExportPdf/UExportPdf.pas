@@ -8,7 +8,7 @@ uses
   Tabs, Grids,ExtCtrls, ComCtrls, ToolWin,
   {$if CompilerVersion >= 23.0} System.UITypes, {$IFEND}
   ShellAPI,
-  VCL.FlexCel.Core, FlexCel.XlsAdapter, FlexCel.Render, FlexCel.Pdf;
+  FlexCel.VCLSupport, FlexCel.Core, FlexCel.XlsAdapter, FlexCel.Render, FlexCel.Pdf;
 
 type
   TFExportPdf = class(TForm)

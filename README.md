@@ -8,28 +8,30 @@ You can find a description of each demo in the [documentation](https://doc.tmsso
 **:book: Note** We update this repository automatically every time we release a new FlexCel version. So if you have notifications integrated with github, you can subscribe to this feed to be notified of new releases.
 
 
-## New in v 7.17 - June 2023
+## New in v 7.18 - August 2023
 
 
-- **Improved API for defining columns in tables.** Now you can define a totals formula or a column formula for the columns in the table, if needed. As usual, APIMate will show you how to do it.
+- **Support for the new Excel2023 default format including the default aptos font.** Now when calling [ExcelFile.NewFile](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/NewFile.html) there is a new option to create a file with the new office 2023 theme and fonts.
 
-- **Now FlexCel preserves digital signatures in macros.** When you have digitally signed macros in a file, now FlexCel will preserve them when opening and saving that file
+- **Added new units FlexCel.VCLSupport, FlexCel.FMXSupport, FlexCel.LCLSupport and FlexCel.SKIASupport to replace VCL.FlexCel.Core, FMX.FlexCel.Core, LCL.FlexCel.Core and SKIA.FlexCel.Core respectively.** The units  VCL.FlexCel.Core, FMX.FlexCel.Core, LCL.FlexCel.Core and SKIA.FlexCel.Core still work, but we added new units FlexCel.PlatformSupport which should be preferred now as they behave better in C++ builder. You can read more about this change at [VCL.FlexCel.Core vs FlexCel.VCLSupport](https://doc.tmssoftware.com/flexcel/vcl/tips/vcl-flexcel-core-vs-flexcel-vclsupport.html)
 
-- **New property  DeleteEmptyBandsFixed in FlexCelReport controls what to do with empty fixed bands.** The new function [DeleteEmptyBandsFixed ](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Report/TFlexCelReport/DeleteEmptyBandsFixed.html) lets you define what happens if a fixed band has zero records.
+- **New property TExcelFile.PrintComments allows to directly manipulate how to print the comments.** The new property [ExcelFile.PrintComments](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/PrintComments.html) allows you to directly change how comments are printed without having to use  [TExcelFile.PrintOptions](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/PrintOptions.html).
 
-- **Improved the experimental Lazarus support.** FlexCel can't still be compiled with Lazarus stable as it hasn't got anonymous methods yet. But we've modified the code to adapt for the changes in Lazarus trunk.
+- **FlexCel can now render comments "As displayed".** When  [ExcelFile.PrintComments](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/PrintComments.html) is "As Displayed", FlexCel will now print and export to PDF/HTML/SVG the comments as they are displayed. See  [https://support.tmssoftware.com/t/excel-with-comments-export-to-pdf-with-comments-showing/19377](https://support.tmssoftware.com/t/excel-with-comments-export-to-pdf-with-comments-showing/19377)
 
-- **Bug Fix.** When recreating a table by calling AddTable and SetTable, the cell references could become invalid
+- **New property TExcelFile.PrintErrors allows to directly manipulate how to print the errors in formulas inside the sheet.** The new property [ExcelFile.PrintErrors](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/PrintErrors.html) allows you to change how the errors in the sheet will be printed.
 
-- **Bug Fix.** The functions IFERROR, ISERROR and ISERR could sometimes return the error instead of the result of the function.
+- **FlexCel can now render error in formulas according to the printer settings.** When  [ExcelFile.PrintErrors](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/PrintErrors.html) is not "As Displayed", FlexCel will now print and export to PDF/HTML/SVG the correct values.
 
-- **Bug Fix.** The functions COUNTIF, SUMIF and similar could behave wrong in some cases where you used wildcards. See [https://support.tmssoftware.com/t/countif-formula-with-wildcard-failing-after-recalc-method-is-called/19266](https://support.tmssoftware.com/t/countif-formula-with-wildcard-failing-after-recalc-method-is-called/19266)
+- **New properties TExcelFile.PrintOptionsInitializedFromPrinter, TExcelFile.PrintOverThenDown and TExcelFile.PrintDraftQuality.** The new properties  [ExcelFile.PrintOptionsInitializedFromPrinter](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/PrintOptionsInitializedFromPrinter.html), [ExcelFile.PrintOverThenDown](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/PrintOverThenDown.html) and  [ExcelFile.PrintDraftQuality](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/PrintDraftQuality.html)  allow to change the  [TExcelFile.PrintOptions](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/PrintOptions.html) in a simpler way. Now there are properties to change every one of the individual  [PrintOptions](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/PrintOptions.html), and so APIMate won't suggest changing  [PrintOptions](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/PrintOptions.html), but the standalone properties instead. APIMate will still show the code to change  [PrintOptions](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/PrintOptions.html), but commented out.
 
-- **Bug Fix.** The function [TRIM](https://support.microsoft.com/en-us/office/trim-function-410388fa-c5df-49c6-b16c-9e5630b479f9) in Excel removes double spaces in the middle of a text, while FlexCel's implementation would remove only spaces at the beginning at end. Also Excel's TRIM only removes spaces (character 32) and not other whitespace like tabs. FlexCel's implementation now does the same.
+- **ApiMate won't show PrinterDriverSettings by default.** PrinterDriverSettings are a huge binary blob which can make the output of APIMate much harder to read. It was already commented out, but now it is not shown at all by default. There is a checkbox to show it if you need it.
 
-- **Bug Fix.** FlexCel could fail to read some encrypted files raising an error 'Error in CryptoAPI: $80090004'.
+- **Bug Fix.** When rendering charts inside xlsx files, sometimes FlexCel could fail to render the correct colors of some series, using black instead.
 
-- **Bug Fix.** The function =NUMBERVALUE() could throw an Exception in some border cases
+- **Bug Fix.** Formatted numbers inside cells with "Shrink to fit" didn't shrink when exporting to HTML
 
-- **Bug Fix.** Setup would fail to install if there was a "," in the path
+- **Bug Fix.** &lt;#if> tag in reports would consider the condition true if it evaluated to NAN or a number.
+
+- **Bug Fix.** &lt;#ref> tag in reports now returns a real reference instead of a string with the cell reference. While for most uses it is the same, in some cases like in the "Cell" function, the old &lt;#ref> tag wouldn't work.
 

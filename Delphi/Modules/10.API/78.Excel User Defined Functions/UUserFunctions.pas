@@ -1,6 +1,6 @@
 unit UUserFunctions;
 interface
-uses VCL.FlexCel.Core;
+uses FlexCel.VCLSupport, FlexCel.Core;
 type
 
   /// <summary>
