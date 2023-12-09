@@ -1,6 +1,11 @@
 unit Queries;
 
 interface
+{$IF CompilerVersion < 23.0}
+//Aurelius doesn't support XE
+implementation
+{$ELSE}
+
 uses Generics.Collections, DataModel,
      Aurelius.Drivers.Interfaces, Aurelius.Drivers.dbGo,
      Aurelius.Sql.MSSQL,
@@ -62,5 +67,5 @@ begin
             .List;
   Result := FOrders;
 end;
-
+{$IFEND}
 end.

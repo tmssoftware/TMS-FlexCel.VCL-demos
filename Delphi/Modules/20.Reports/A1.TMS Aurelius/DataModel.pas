@@ -1,6 +1,10 @@
 unit DataModel;
 
 interface
+{$IF CompilerVersion < 23.0}
+//Aurelius doesn't support XE
+implementation
+{$ELSE}
 
 uses
   SysUtils, Generics.Collections, Aurelius.Mapping.Attributes, Aurelius.Types.Blob, Aurelius.Types.DynamicProperties, Aurelius.Types.Nullable, Aurelius.Types.Proxy, Aurelius.Criteria.Dictionary;
@@ -398,6 +402,6 @@ initialization
 
 finalization
   if __Dic <> nil then __Dic.Free
-
+{$IFEND}
 end.
 

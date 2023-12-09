@@ -1,6 +1,9 @@
 unit AureliusFlexCelSupport;
-
 interface
+{$IF CompilerVersion < 23.0}
+//Aurelius doesn't support XE
+implementation
+{$ELSE}
 uses RTTI, FlexCel.Report, Aurelius.Types.Blob, Aurelius.Mapping.RttiUtils;
 
 procedure SetupAurelius(const Report: TFlexCelReport);
@@ -69,5 +72,5 @@ begin
       end;
 end;
 
-
+{$IFEND}
 end.

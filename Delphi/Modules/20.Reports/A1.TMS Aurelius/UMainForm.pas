@@ -51,7 +51,7 @@ begin
   Close;
 end;
 
-procedure TMainForm.btnExportExcelClick(Sender: TObject);
+procedure TMainForm.btnExportExcelClick(Sender: TObject);  
 var
   Xls: TExcelFile;
 begin
@@ -112,7 +112,13 @@ begin
   Result := TPath.Combine(TPath.GetDirectoryName(ParamStr(0)), '..\..');
 end;
 
-
+{$IF CompilerVersion < 23.0}
+//Aurelius doesn't support XE
+function TMainForm.RunReport(const Xls: TExcelFile; const SaveDialog: TSaveDialog): boolean;
+begin
+  raise Exception.Create('Aurelius doesn''t support Delphi XE. To run this demo you need XE2 or newer');
+end;
+{$ELSE}
 function TMainForm.RunReport(const Xls: TExcelFile; const SaveDialog: TSaveDialog): boolean;
 var
   Report: TFlexCelReport;
@@ -147,6 +153,7 @@ begin
   end;
   Result := true;
 end;
+{$IFEND}
 
 procedure TMainForm.ShowOpenResult(const SaveDialog: TSaveDialog);
 begin
