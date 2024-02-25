@@ -9,9 +9,11 @@ will not be repeated here. You should look at both demos when studying the
 API.
 
 The things shown here do not make much sense in the real world; they are
-explicitly designed to show what can be done. Also remember that most of
-this stuff can be found easier by running **APIMate** (in Start
-menu-\>FlexCel-\>Tools)
+explicitly designed to show what can be done. 
+
+Also remember that most of
+this stuff can be found easier with APIMate
+
 
 The created file will be password protected, and all the passwords are
 \"**flexcel**\" (without quotes)
@@ -22,7 +24,8 @@ The created file will be password protected, and all the passwords are
   designed from the start with that in mind, and to not losing
   anything in the original file. So we will
   start from an existing file with the skeleton of what we want to
-  do, and modify it with code. This starting file (template.xls/x)
+  do, and modify it with code. 
+  This starting file (template.xls/x)
   could be embedded in the exe file, but this is not shown here. 
   To see an example on how to embed the template inside the exe, look at
   [Templates On The Exe](https://doc.tmssoftware.com/flexcel/vcl/samples/cpp/reports/templates-on-the-exe/index.html)

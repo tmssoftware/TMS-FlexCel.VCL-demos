@@ -1,6 +1,6 @@
 # Getting started
 
-A really simple demo on how to create an Excel file with the API.
+A simple demo showing how to create an Excel file with the API from scratch.
 
 ## Concepts
 
