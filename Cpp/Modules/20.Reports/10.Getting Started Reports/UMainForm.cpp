@@ -2,7 +2,9 @@
 
 #include <vcl.h>
 #include <IOUtils.hpp>
+#if __CODEGEARC__ >= 0x0700
 #include <System.Threading.hpp>
+#endif
 #pragma hdrstop
 
 #include "UMainForm.h"
@@ -87,7 +89,7 @@ void __fastcall TMainForm::NormalRun()
 }
 //---------------------------------------------------------------------------
 
-#ifndef __clang__
+#if !defined(__clang__) || __CODEGEARC__ < 0x0700
 class TDeleteFileTask : public TCppInterfacedObject<TProc> {
 public:
   String FileName;
@@ -129,15 +131,22 @@ void __fastcall TMainForm::AutoOpenRun()
 	 {
        //See https://doc.tmssoftware.com/flexcel/vcl/tips/automatically-open-generated-excel-files.html
 
-#ifdef __clang__
-	   TTask::Run([&]() {
-		 TThread::Sleep(30000); //wait for 30 secs to give Excel time to start.
-		 TFile::Delete(FileName);  //As it is an xltx file, we can delete it even when it is open on Excel.
-		 });
+//C++ builder before XE7 doesn't have a working "Parallel Programming Library" TTask and in XE7 it is buggy.
+//So we use TThread directly for older C++ builder versions.
+#if __CODEGEARC__ < 0x0700
+	   //Classic compiler doesn't support lambdas.
+	   TThread::CreateAnonymousThread(_di_TProc(new TDeleteFileTask(FileName)))->Start();
 #else
-   //Classic compiler doesn't support lambdas.
-	   TTask::Run(_di_TProc(new TDeleteFileTask(FileName)));
+	#ifdef __clang__
+		   TTask::Run([&]() {
+			 TThread::Sleep(30000); //wait for 30 secs to give Excel time to start.
+			 TFile::Delete(FileName);  //As it is an xltx file, we can delete it even when it is open on Excel.
+			 });
+	#else
+	   //Classic compiler doesn't support lambdas.
+		   TTask::Run(_di_TProc(new TDeleteFileTask(FileName)));
 
+	#endif
 #endif
 	 }
 

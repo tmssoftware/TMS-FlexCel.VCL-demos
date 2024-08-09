@@ -133,7 +133,6 @@
 					<Source Name="MainSource">ExportPdf.dpr</Source>
 				</Source>
 			</Delphi.Personality>
-			<Deployment/>
 			<Platforms>
 				<Platform value="Win64">True</Platform>
 				<Platform value="Win32">True</Platform>

@@ -15,7 +15,7 @@ uses
 
 begin
   Application.Initialize;
-  Application.MainFormOnTaskbar := True;
+  {$IFDEF ConditionalExpressions}{$IF CompilerVersion >= 18}Application.MainFormOnTaskbar := True;{$IFEND}{$ENDIF}
   Application.Title := 'FlexCel for VCL and FireMonkey main demo';
   Application.CreateForm(TMainDemoForm, MainDemoForm);
   Application.Run;

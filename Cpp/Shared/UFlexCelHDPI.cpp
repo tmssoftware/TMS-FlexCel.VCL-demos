@@ -210,7 +210,7 @@ TBitmap* ScaleBitmap(int const & TargetSize, TImageList * Iml,
 		// Here we have a bmp with alpha channel. We need to convert it to something GDI+ can read.
 
 		Check(GdipCreateBitmapFromScan0(Iml->Width, Iml->Height,
-			(int)Bmp->ScanLine[1] - (int)Bmp->ScanLine[0], PixelFormat32bppARGB,
+			(IntPtr)Bmp->ScanLine[1] - (IntPtr)Bmp->ScanLine[0], PixelFormat32bppARGB,
 			(unsigned char*)Bmp->ScanLine[0], &GPImg));
 		try {
 			if (DisableIcon)
@@ -302,11 +302,14 @@ void FixImageLists(TForm* Form, int const & TargetScale) {
 		long i_end = ResImageLists.size();
 		for (int i = 0; i < i_end; ++i) {
 			ImgRoot = GetRoot(ResImageLists.at(i)->Name);
-
+#if __clang__
+			auto search =
+#else
 			std::_Tree<std::_Tmap_traits<UnicodeString, TImageListScale,
 				std::less<UnicodeString>,
 				std::allocator<std::pair< const UnicodeString,
 				TImageListScale> >, 0> >::iterator search =
+#endif
 				BaseImageLists.find(ImgRoot);
 			if (search == BaseImageLists.end())
 				throw new Exception("Image list " + ResImageLists.at(i)->Name +
@@ -331,10 +334,14 @@ void FixImageLists(TForm* Form, int const & TargetScale) {
 			++i) // do disabled images after normal ones, so "real" disabled lists have preference.
 			{
 				ImgRoot = GetRoot(ResImageLists.at(i)->Name) + "Disabled";
+      #if __clang__
+  			auto search =
+      #else
 				std::_Tree<std::_Tmap_traits<UnicodeString, TImageListScale,
 					std::less<UnicodeString>,
 					std::allocator<std::pair< const UnicodeString,
 					TImageListScale> >, 0> >::iterator search =
+      #endif
 					BaseImageLists.find(ImgRoot);
 				if (search == BaseImageLists.end())
 					continue;
@@ -355,8 +362,11 @@ void FixImageLists(TForm* Form, int const & TargetScale) {
 				}
 			}
 		}
-
+#if __clang__
+		for (auto i = BaseImageLists.begin(); i != BaseImageLists.end(); i++)
+#else
 		for (std::_Tree<std::_Tmap_traits<UnicodeString,TImageListScale,std::less<UnicodeString>,std::allocator<std::pair<const UnicodeString,TImageListScale> >,0> >::iterator i = BaseImageLists.begin(); i != BaseImageLists.end(); i++)
+#endif
 		{
 			CopyImages(i->second, TargetScale);
 		}

@@ -11,7 +11,7 @@ uses
 
 begin
   Application.Initialize;
-  Application.MainFormOnTaskbar := True;
+  {$IFDEF ConditionalExpressions}{$IF CompilerVersion >= 18}Application.MainFormOnTaskbar := True;{$IFEND}{$ENDIF}
   Application.CreateForm(TMainForm, MainForm);
   Application.CreateForm(TEnterSQL, EnterSQL);
   Application.Run;

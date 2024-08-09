@@ -1,0 +1,2 @@
+ReportHeader RCDATA "Templates\\ReportHeader.xls"
+TemplatesInTheExe RCDATA "Templates\\Templates In The Exe.template.xls"

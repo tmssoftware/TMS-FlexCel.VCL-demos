@@ -65,7 +65,7 @@
 		<Base>true</Base>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Base)'!=''">
-		<Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
+		<Icon_MainIcon>..\..\Demo_Icon.ico</Icon_MainIcon>
 		<DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>
 		<AUP_ACCESS_COARSE_LOCATION>true</AUP_ACCESS_COARSE_LOCATION>
 		<AUP_INTERNET>true</AUP_INTERNET>
@@ -185,7 +185,7 @@
 			<FormType>fmx</FormType>
 		</DCCReference>
 		<DCCReference Include="DataModel.pas"/>
-		<None Include="Reports.rtf"/>
+		<None Include="README.rtf"/>
 		<RcItem Include="OfflineData\OfflineData.json">
 			<ContainerId>ResourceItem</ContainerId>
 			<ResourceType>RCDATA</ResourceType>
@@ -219,775 +219,775 @@
 				</Source>
 			</Delphi.Personality>
 			<Deployment Version="3">
-				<DeployFile LocalName="OfflineData\OfflineData.json" Configuration="Debug" Class="ProjectFile">
+				<DeployFile LocalName="OfflineData.json" Configuration="Debug" Class="ProjectFile">
 					<Platform Name="Android64">
 						<RemoteDir>.\assets\internal\</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="OfflineData\OfflineData.json" Configuration="Release" Class="ProjectFile">
+				<DeployFile LocalName="OfflineData.json" Configuration="Release" Class="ProjectFile">
 					<Platform Name="Android64">
 						<RemoteDir>.\assets\internal\</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_96x96.png" Configuration="Debug" Class="Android_LauncherIcon96">
+				<DeployFile LocalName="Reports_96x96.png" Configuration="Debug" Class="Android_LauncherIcon96">
 					<Platform Name="Android64">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_72x72.png" Configuration="Debug" Class="iPad_AppIcon72">
+				<DeployFile LocalName="Reports_72x72.png" Configuration="Debug" Class="iPad_AppIcon72">
 					<Platform Name="iOSDevice64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2688x1242.png" Configuration="Debug" Class="iPhone_Launch2688x1242">
+				<DeployFile LocalName="FM_LaunchImage_2688x1242.png" Configuration="Debug" Class="iPhone_Launch2688x1242">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default-Landscape-1242w-2688h@3x.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Release\strings.xml" Configuration="Release" Class="Android_Strings">
+				<DeployFile LocalName="strings.xml" Configuration="Release" Class="Android_Strings">
 					<Platform Name="Android64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android\Debug\strings.xml" Configuration="Debug" Class="Android_Strings">
+				<DeployFile LocalName="strings.xml" Configuration="Debug" Class="Android_Strings">
 					<Platform Name="Android">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="res\file_provider_paths.xml" Configuration="Debug" Class="ProjectFile">
+				<DeployFile LocalName="file_provider_paths.xml" Configuration="Debug" Class="ProjectFile">
 					<Platform Name="iOSDevice64">
 						<RemoteDir>StartUp\Documents\</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_57x57.png" Configuration="Debug" Class="iPhone_AppIcon57">
+				<DeployFile LocalName="Reports_57x57.png" Configuration="Debug" Class="iPhone_AppIcon57">
 					<Platform Name="iOSDevice64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2688.png" Configuration="Debug" Class="iPhone_Launch1242x2688">
+				<DeployFile LocalName="FM_LaunchImage_1242x2688.png" Configuration="Debug" Class="iPhone_Launch1242x2688">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default-1242w-2688h@3x.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android\Debug\colors.xml" Configuration="Debug" Class="Android_Colors">
+				<DeployFile LocalName="colors.xml" Configuration="Debug" Class="Android_Colors">
 					<Platform Name="Android">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1334x750.png" Configuration="Debug" Class="iPhone_Launch1334">
+				<DeployFile LocalName="FM_LaunchImage_1334x750.png" Configuration="Debug" Class="iPhone_Launch1334">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default-Landscape-750w-1334h@2x.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_960x720.png" Configuration="Debug" Class="Android_SplashImage960">
+				<DeployFile LocalName="Reports_960x720.png" Configuration="Debug" Class="Android_SplashImage960">
 					<Platform Name="Android64">
 						<RemoteName>splash_image.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android\Debug\splash_image_def.xml" Configuration="Debug" Class="AndroidSplashImageDef">
+				<DeployFile LocalName="splash_image_def.xml" Configuration="Debug" Class="AndroidSplashImageDef">
 					<Platform Name="Android">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_36x36.png" Configuration="Debug" Class="Android_LauncherIcon36">
+				<DeployFile LocalName="Reports_36x36.png" Configuration="Debug" Class="Android_LauncherIcon36">
 					<Platform Name="Android64">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_36x36.png" Configuration="Release" Class="Android_LauncherIcon36">
+				<DeployFile LocalName="Reports_36x36.png" Configuration="Release" Class="Android_LauncherIcon36">
 					<Platform Name="Android64">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Release\colors.xml" Configuration="Release" Class="Android_Colors">
+				<DeployFile LocalName="colors.xml" Configuration="Release" Class="Android_Colors">
 					<Platform Name="Android64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Templates\report.template.xls" Configuration="Release" Class="ProjectFile">
+				<DeployFile LocalName="report.template.xls" Configuration="Release" Class="ProjectFile">
 					<Platform Name="Android64">
 						<RemoteDir>.\assets\internal\</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_144x144.png" Configuration="Release" Class="Android_LauncherIcon144">
+				<DeployFile LocalName="Reports_144x144.png" Configuration="Release" Class="Android_LauncherIcon144">
 					<Platform Name="Android64">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Templates\report.template.xls" Configuration="Debug" Class="ProjectFile">
+				<DeployFile LocalName="report.template.xls" Configuration="Debug" Class="ProjectFile">
 					<Platform Name="Android64">
 						<RemoteDir>.\assets\internal\</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_144x144.png" Configuration="Debug" Class="Android_LauncherIcon144">
+				<DeployFile LocalName="Reports_144x144.png" Configuration="Debug" Class="Android_LauncherIcon144">
 					<Platform Name="Android64">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_960x720.png" Configuration="Release" Class="Android_SplashImage960">
+				<DeployFile LocalName="Reports_960x720.png" Configuration="Release" Class="Android_SplashImage960">
 					<Platform Name="Android64">
 						<RemoteName>splash_image.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Release\splash_image_def.xml" Configuration="Release" Class="AndroidSplashImageDef">
+				<DeployFile LocalName="splash_image_def.xml" Configuration="Release" Class="AndroidSplashImageDef">
 					<Platform Name="Android64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_470x320.png" Configuration="Release" Class="Android_SplashImage470">
-					<Platform Name="Android64">
-						<RemoteName>splash_image.png</RemoteName>
-						<Overwrite>true</Overwrite>
-					</Platform>
-				</DeployFile>
-				<DeployFile LocalName="icons\Reports_470x320.png" Configuration="Debug" Class="Android_SplashImage470">
+				<DeployFile LocalName="Reports_470x320.png" Configuration="Release" Class="Android_SplashImage470">
 					<Platform Name="Android64">
 						<RemoteName>splash_image.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="OfflineData\OfflineData.json" Configuration="Debug" Class="ProjectFile">
+				<DeployFile LocalName="Reports_470x320.png" Configuration="Debug" Class="Android_SplashImage470">
+					<Platform Name="Android64">
+						<RemoteName>splash_image.png</RemoteName>
+						<Overwrite>true</Overwrite>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="OfflineData.json" Configuration="Debug" Class="ProjectFile">
 					<Platform Name="Win32">
 						<RemoteDir>.\</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_2048x2732.png" Configuration="Debug" Class="iPad_Launch2048x2732">
+				<DeployFile LocalName="FM_LaunchImagePortrait_2048x2732.png" Configuration="Debug" Class="iPad_Launch2048x2732">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default-2048w-2732h@2x~ipad.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\Redist\iossimulator\libPCRE.dylib" Class="DependencyModule"/>
-				<DeployFile LocalName="icons\Reports_100x100.png" Configuration="Debug" Class="iPad_SpotLight100">
+				<DeployFile LocalName="libPCRE.dylib" Class="DependencyModule"/>
+				<DeployFile LocalName="Reports_100x100.png" Configuration="Debug" Class="iPad_SpotLight100">
 					<Platform Name="iOSDevice64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_120x120.png" Configuration="Debug" Class="iPhone_AppIcon120">
+				<DeployFile LocalName="Reports_120x120.png" Configuration="Debug" Class="iPhone_AppIcon120">
 					<Platform Name="iOSDevice64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports.icns" Configuration="Debug" Class="ProjectOSXResource"/>
-				<DeployFile LocalName="icons\Reports_960x720.png" Configuration="Debug" Class="Android_SplashImage960">
+				<DeployFile LocalName="Reports.icns" Configuration="Debug" Class="ProjectOSXResource"/>
+				<DeployFile LocalName="Reports_960x720.png" Configuration="Debug" Class="Android_SplashImage960">
 					<Platform Name="Android">
 						<RemoteName>splash_image.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="OSX32\Debug\Reports.entitlements" Configuration="Debug" Class="ProjectOSXEntitlements"/>
-				<DeployFile LocalName="Templates\report.template.xls" Configuration="Debug" Class="ProjectFile">
+				<DeployFile LocalName="Reports.entitlements" Configuration="Debug" Class="ProjectOSXEntitlements"/>
+				<DeployFile LocalName="report.template.xls" Configuration="Debug" Class="ProjectFile">
 					<Platform Name="Win32">
 						<RemoteDir>.\</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib" Class="DependencyModule">
+				<DeployFile LocalName="libcgunwind.1.0.dylib" Class="DependencyModule">
 					<Platform Name="iOSSimulator">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\Redist\osx32\libcgsqlite3.dylib" Class="DependencyModule">
+				<DeployFile LocalName="libcgsqlite3.dylib" Class="DependencyModule">
 					<Platform Name="OSX32">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="libnative-activity.so" Configuration="Debug" Class="AndroidLibnativeMipsFile">
+				<DeployFile LocalName="$(BDS)\lib\android\debug\mips\libnative-activity.so" Configuration="Debug" Class="AndroidLibnativeMipsFile">
 					<Platform Name="Android64">
 						<RemoteName>libReports.so</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2388x1668.png" Configuration="Debug" Class="iPad_Launch2388x1668">
+				<DeployFile LocalName="FM_LaunchImageLandscape_2388x1668.png" Configuration="Debug" Class="iPad_Launch2388x1668">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default-Landscape-1668w-2388h@2x~ipad.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="classes.dex" Configuration="Debug" Class="AndroidClassesDexFile">
+				<DeployFile LocalName="Android64\Debug\classes.dex" Configuration="Debug" Class="AndroidClassesDexFile">
 					<Platform Name="Android64">
 						<RemoteName>classes.dex</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="res\file_provider_paths.xml" Configuration="Debug" Class="ProjectFile">
+				<DeployFile LocalName="file_provider_paths.xml" Configuration="Debug" Class="ProjectFile">
 					<Platform Name="Win32">
 						<RemoteDir>.\</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_180x180.png" Configuration="Debug" Class="iPhone_AppIcon180">
+				<DeployFile LocalName="Reports_180x180.png" Configuration="Debug" Class="iPhone_AppIcon180">
 					<Platform Name="iOSDevice64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Templates\report.template.xls" Configuration="Debug" Class="ProjectFile">
+				<DeployFile LocalName="report.template.xls" Configuration="Debug" Class="ProjectFile">
 					<Platform Name="iOSDevice64">
 						<RemoteDir>StartUp\Documents\</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_426x320.png" Configuration="Debug" Class="Android_SplashImage426">
+				<DeployFile LocalName="Reports_426x320.png" Configuration="Debug" Class="Android_SplashImage426">
 					<Platform Name="Android">
 						<RemoteName>splash_image.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="libnative-activity.so" Configuration="Debug" Class="AndroidLibnativeArmeabiv7aFile">
+				<DeployFile LocalName="$(BDS)\lib\android\debug\armeabi-v7a\libnative-activity.so" Configuration="Debug" Class="AndroidLibnativeArmeabiv7aFile">
 					<Platform Name="Android64">
 						<RemoteName>libReports.so</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_NotificationIcon_48x48.png" Configuration="Debug" Class="Android_NotificationIcon48">
+				<DeployFile LocalName="FM_NotificationIcon_48x48.png" Configuration="Debug" Class="Android_NotificationIcon48">
 					<Platform Name="Android">
 						<RemoteName>ic_notification.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Release\styles-v21.xml" Configuration="Release" Class="AndroidSplashStylesV21">
+				<DeployFile LocalName="styles-v21.xml" Configuration="Release" Class="AndroidSplashStylesV21">
 					<Platform Name="Android64">
 						<RemoteName>styles.xml</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Win32\Debug\Reports.exe" Configuration="Debug" Class="ProjectOutput"/>
-				<DeployFile LocalName="Android\Debug\styles-v21.xml" Configuration="Debug" Class="AndroidSplashStylesV21">
+				<DeployFile LocalName="Reports.exe" Configuration="Debug" Class="ProjectOutput"/>
+				<DeployFile LocalName="styles-v21.xml" Configuration="Debug" Class="AndroidSplashStylesV21">
 					<Platform Name="Android">
 						<RemoteName>styles.xml</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_1024x768.png" Configuration="Debug" Class="iPad_Launch1024x768">
+				<DeployFile LocalName="Reports_1024x768.png" Configuration="Debug" Class="iPad_Launch1024x768">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default-Landscape~ipad.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_640x480.png" Configuration="Release" Class="Android_SplashImage640">
+				<DeployFile LocalName="Reports_640x480.png" Configuration="Release" Class="Android_SplashImage640">
 					<Platform Name="Android64">
 						<RemoteName>splash_image.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_640x480.png" Configuration="Debug" Class="Android_SplashImage640">
+				<DeployFile LocalName="Reports_640x480.png" Configuration="Debug" Class="Android_SplashImage640">
 					<Platform Name="Android64">
 						<RemoteName>splash_image.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_72x72.png" Configuration="Debug" Class="Android_LauncherIcon72">
+				<DeployFile LocalName="Reports_72x72.png" Configuration="Debug" Class="Android_LauncherIcon72">
 					<Platform Name="Android64">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="iOSDevice64\Debug\Reports.entitlements" Configuration="Debug" Class="ProjectiOSEntitlements">
+				<DeployFile LocalName="Reports.entitlements" Configuration="Debug" Class="ProjectiOSEntitlements">
 					<Platform Name="iOSDevice64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_36x36.png" Configuration="Debug" Class="Android_LauncherIcon36">
+				<DeployFile LocalName="Reports_36x36.png" Configuration="Debug" Class="Android_LauncherIcon36">
 					<Platform Name="Android">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_320x480.png" Configuration="Debug" Class="iPhone_Launch320">
+				<DeployFile LocalName="Reports_320x480.png" Configuration="Debug" Class="iPhone_Launch320">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_72x72.png" Configuration="Release" Class="Android_LauncherIcon72">
+				<DeployFile LocalName="Reports_72x72.png" Configuration="Release" Class="Android_LauncherIcon72">
 					<Platform Name="Android64">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_167x167.png" Configuration="Debug" Class="iPad_AppIcon167">
+				<DeployFile LocalName="FM_ApplicationIcon_167x167.png" Configuration="Debug" Class="iPad_AppIcon167">
 					<Platform Name="iOSDevice64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_60x60.png" Configuration="Debug" Class="iPhone_AppIcon60">
+				<DeployFile LocalName="Reports_60x60.png" Configuration="Debug" Class="iPhone_AppIcon60">
 					<Platform Name="iOSDevice64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_48x48.png" Configuration="Debug" Class="Android_LauncherIcon48">
+				<DeployFile LocalName="Reports_48x48.png" Configuration="Debug" Class="Android_LauncherIcon48">
 					<Platform Name="Android64">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_48x48.png" Configuration="Release" Class="Android_LauncherIcon48">
+				<DeployFile LocalName="Reports_48x48.png" Configuration="Release" Class="Android_LauncherIcon48">
 					<Platform Name="Android64">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Debug\styles.xml" Configuration="Debug" Class="AndroidSplashStyles">
+				<DeployFile LocalName="styles.xml" Configuration="Debug" Class="AndroidSplashStyles">
 					<Platform Name="Android64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_48x48.png" Configuration="Debug" Class="Android_LauncherIcon48">
+				<DeployFile LocalName="Reports_48x48.png" Configuration="Debug" Class="Android_LauncherIcon48">
 					<Platform Name="Android">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="classes.dex" Configuration="Release" Class="AndroidClassesDexFile">
+				<DeployFile LocalName="Android64\Release\classes.dex" Configuration="Release" Class="AndroidClassesDexFile">
 					<Platform Name="Android64">
 						<RemoteName>classes.dex</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="classes.dex" Configuration="Debug" Class="AndroidClassesDexFile">
+				<DeployFile LocalName="Android\Debug\classes.dex" Configuration="Debug" Class="AndroidClassesDexFile">
 					<Platform Name="Android">
 						<RemoteName>classes.dex</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_NotificationIcon_36x36.png" Configuration="Debug" Class="Android_NotificationIcon36">
+				<DeployFile LocalName="FM_NotificationIcon_36x36.png" Configuration="Debug" Class="Android_NotificationIcon36">
 					<Platform Name="Android">
 						<RemoteName>ic_notification.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_96x96.png" Configuration="Debug" Class="Android_LauncherIcon96">
+				<DeployFile LocalName="Reports_96x96.png" Configuration="Debug" Class="Android_LauncherIcon96">
 					<Platform Name="Android">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\Redist\iossimulator\libpcre.dylib" Class="DependencyModule">
+				<DeployFile LocalName="libpcre.dylib" Class="DependencyModule">
 					<Platform Name="iOSSimulator">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="iOSDevice64\Debug\ResourceRules.plist" Configuration="Debug" Class="ProjectiOSDeviceResourceRules">
+				<DeployFile LocalName="ResourceRules.plist" Configuration="Debug" Class="ProjectiOSDeviceResourceRules">
 					<Platform Name="iOSDevice64">
 						<RemoteName>ResourceRules.plist</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_80x80.png" Configuration="Debug" Class="iPad_SpotLight80">
+				<DeployFile LocalName="Reports_80x80.png" Configuration="Debug" Class="iPad_SpotLight80">
 					<Platform Name="iOSDevice64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_120x120.png" Configuration="Debug" Class="iPhone_Spotlight120">
+				<DeployFile LocalName="FM_SpotlightSearchIcon_120x120.png" Configuration="Debug" Class="iPhone_Spotlight120">
 					<Platform Name="iOSDevice64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1668x2388.png" Configuration="Debug" Class="iPad_Launch1668x2388">
+				<DeployFile LocalName="FM_LaunchImagePortrait_1668x2388.png" Configuration="Debug" Class="iPad_Launch1668x2388">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default-1668w-2388h@2x~ipad.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="iOSDevice64\Debug\LangWars" Configuration="Debug" Class="ProjectOutput">
+				<DeployFile LocalName="LangWars" Configuration="Debug" Class="ProjectOutput">
 					<Platform Name="iOSDevice64">
 						<RemoteName>LangWars</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1125x2436.png" Configuration="Debug" Class="iPhone_Launch1125">
+				<DeployFile LocalName="FM_LaunchImage_1125x2436.png" Configuration="Debug" Class="iPhone_Launch1125">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default-1125w-2436h@3x.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_87x87.png" Configuration="Debug" Class="iPhone_AppIcon87">
+				<DeployFile LocalName="Reports_87x87.png" Configuration="Debug" Class="iPhone_AppIcon87">
 					<Platform Name="iOSDevice64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_58x58.png" Configuration="Debug" Class="iPad_Setting58">
+				<DeployFile LocalName="Reports_58x58.png" Configuration="Debug" Class="iPad_Setting58">
 					<Platform Name="iOSDevice64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_152x152.png" Configuration="Debug" Class="iPad_AppIcon152">
+				<DeployFile LocalName="Reports_152x152.png" Configuration="Debug" Class="iPad_AppIcon152">
 					<Platform Name="iOSDevice64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_114x114.png" Configuration="Debug" Class="iPhone_AppIcon114">
+				<DeployFile LocalName="Reports_114x114.png" Configuration="Debug" Class="iPhone_AppIcon114">
 					<Platform Name="iOSDevice64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_NotificationIcon_96x96.png" Configuration="Debug" Class="Android_NotificationIcon96">
+				<DeployFile LocalName="FM_NotificationIcon_96x96.png" Configuration="Debug" Class="Android_NotificationIcon96">
 					<Platform Name="Android">
 						<RemoteName>ic_notification.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_2048x1536.png" Configuration="Debug" Class="iPad_Launch2048x1536">
+				<DeployFile LocalName="Reports_2048x1536.png" Configuration="Debug" Class="iPad_Launch2048x1536">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default-Landscape-1536w-2048h@2x~ipad.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_640x1136.png" Configuration="Debug" Class="iPhone_Launch640x1136">
+				<DeployFile LocalName="Reports_640x1136.png" Configuration="Debug" Class="iPhone_Launch640x1136">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default-640w-1136h@2x.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_50x50.png" Configuration="Debug" Class="iPad_SpotLight50">
+				<DeployFile LocalName="Reports_50x50.png" Configuration="Debug" Class="iPad_SpotLight50">
 					<Platform Name="iOSDevice64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Release\libLangWars.so" Configuration="Release" Class="ProjectOutput">
+				<DeployFile LocalName="libLangWars.so" Configuration="Release" Class="ProjectOutput">
 					<Platform Name="Android64">
 						<RemoteName>libLangWars.so</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android\Debug\libLangWars.so" Configuration="Debug" Class="ProjectOutput">
+				<DeployFile LocalName="libLangWars.so" Configuration="Debug" Class="ProjectOutput">
 					<Platform Name="Android">
 						<RemoteName>libLangWars.so</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2732x2048.png" Configuration="Debug" Class="iPad_Launch2732x2048">
+				<DeployFile LocalName="FM_LaunchImageLandscape_2732x2048.png" Configuration="Debug" Class="iPad_Launch2732x2048">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default-Landscape-2048w-2732h@2x~ipad.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Win32\Debug\LangWars.exe" Configuration="Debug" Class="ProjectOutput">
+				<DeployFile LocalName="LangWars.exe" Configuration="Debug" Class="ProjectOutput">
 					<Platform Name="Win32">
 						<RemoteName>LangWars.exe</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="OfflineData\OfflineData.json" Configuration="Debug" Class="ProjectFile">
+				<DeployFile LocalName="OfflineData.json" Configuration="Debug" Class="ProjectFile">
 					<Platform Name="Android">
 						<RemoteDir>.\assets\internal\</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Debug\AndroidManifest.xml" Configuration="Debug" Class="ProjectAndroidManifest">
+				<DeployFile LocalName="AndroidManifest.xml" Configuration="Debug" Class="ProjectAndroidManifest">
 					<Platform Name="Android64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="iOSDevice64\Debug\Reports.dSYM" Configuration="Debug" Class="ProjectiOSDeviceDebug">
+				<DeployFile LocalName="Reports.dSYM" Configuration="Debug" Class="ProjectiOSDeviceDebug">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Reports</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_72x72.png" Configuration="Debug" Class="Android_LauncherIcon72">
+				<DeployFile LocalName="Reports_72x72.png" Configuration="Debug" Class="Android_LauncherIcon72">
 					<Platform Name="Android">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Templates\report.template.xls" Configuration="Debug" Class="ProjectFile">
+				<DeployFile LocalName="report.template.xls" Configuration="Debug" Class="ProjectFile">
 					<Platform Name="Android">
 						<RemoteDir>.\assets\internal\</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Reports.rtf" Configuration="Debug" Class="ProjectFile">
+				<DeployFile LocalName="README.rtf" Configuration="Debug" Class="ProjectFile">
 					<Platform Name="iOSDevice64">
 						<RemoteDir>StartUp\Documents\</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1668x2224.png" Configuration="Debug" Class="iPad_Launch1668">
+				<DeployFile LocalName="FM_LaunchImagePortrait_1668x2224.png" Configuration="Debug" Class="iPad_Launch1668">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default-1668w-2224h@2x~ipad.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_192x192.png" Configuration="Debug" Class="Android_LauncherIcon192">
+				<DeployFile LocalName="FM_LauncherIcon_192x192.png" Configuration="Debug" Class="Android_LauncherIcon192">
 					<Platform Name="Android64">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_1536x2048.png" Configuration="Debug" Class="iPad_Launch1536x2048">
+				<DeployFile LocalName="Reports_1536x2048.png" Configuration="Debug" Class="iPad_Launch1536x2048">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default-1536w-2048h@2x~ipad.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_144x144.png" Configuration="Debug" Class="Android_LauncherIcon144">
+				<DeployFile LocalName="Reports_144x144.png" Configuration="Debug" Class="Android_LauncherIcon144">
 					<Platform Name="Android">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="OfflineData\OfflineData.json" Configuration="Debug" Class="ProjectFile"/>
-				<DeployFile LocalName="icons\Reports_40x40.png" Configuration="Debug" Class="iPad_SpotLight40">
+				<DeployFile LocalName="OfflineData.json" Configuration="Debug" Class="ProjectFile"/>
+				<DeployFile LocalName="Reports_40x40.png" Configuration="Debug" Class="iPad_SpotLight40">
 					<Platform Name="iOSDevice64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_NotificationIcon_72x72.png" Configuration="Debug" Class="Android_NotificationIcon72">
+				<DeployFile LocalName="FM_NotificationIcon_72x72.png" Configuration="Debug" Class="Android_NotificationIcon72">
 					<Platform Name="Android">
 						<RemoteName>ic_notification.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\Redist\osx64\libcgsqlite3.dylib" Class="DependencyModule">
+				<DeployFile LocalName="libcgsqlite3.dylib" Class="DependencyModule">
 					<Platform Name="OSX64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2224x1668.png" Configuration="Debug" Class="iPad_Launch2224">
+				<DeployFile LocalName="FM_LaunchImageLandscape_2224x1668.png" Configuration="Debug" Class="iPad_Launch2224">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default-Landscape-1668w-2224h@2x~ipad.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="OSX32\Debug\Reports.info.plist" Configuration="Debug" Class="ProjectOSXInfoPList"/>
-				<DeployFile LocalName="icons\Reports_76x76.png" Configuration="Debug" Class="iPad_AppIcon76">
+				<DeployFile LocalName="Reports.info.plist" Configuration="Debug" Class="ProjectOSXInfoPList"/>
+				<DeployFile LocalName="Reports_76x76.png" Configuration="Debug" Class="iPad_AppIcon76">
 					<Platform Name="iOSDevice64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="libnative-activity.so" Configuration="Debug" Class="AndroidLibnativeArmeabiFile">
+				<DeployFile LocalName="$(BDS)\lib\android\debug\armeabi\libnative-activity.so" Configuration="Debug" Class="AndroidLibnativeArmeabiFile">
 					<Platform Name="Android64">
 						<RemoteName>libReports.so</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Debug\libLangWars.so" Configuration="Debug" Class="ProjectOutput">
+				<DeployFile LocalName="libLangWars.so" Configuration="Debug" Class="ProjectOutput">
 					<Platform Name="Android64">
 						<RemoteName>libLangWars.so</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1136x640.png" Configuration="Debug" Class="iPhone_Launch1136x640">
+				<DeployFile LocalName="FM_LaunchImage_1136x640.png" Configuration="Debug" Class="iPhone_Launch1136x640">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default-Landscape-640w-1136h@2x.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="OSX32\Debug\Reports" Configuration="Debug" Class="ProjectOutput"/>
-				<DeployFile LocalName="icons\Reports_640x480.png" Configuration="Debug" Class="Android_SplashImage640">
+				<DeployFile LocalName="Reports" Configuration="Debug" Class="ProjectOutput"/>
+				<DeployFile LocalName="Reports_640x480.png" Configuration="Debug" Class="Android_SplashImage640">
 					<Platform Name="Android">
 						<RemoteName>splash_image.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Reports.rtf" Configuration="Debug" Class="ProjectFile">
+				<DeployFile LocalName="README.rtf" Configuration="Debug" Class="ProjectFile">
 					<Platform Name="Android">
 						<RemoteDir>.\assets\internal\</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Debug\colors.xml" Configuration="Debug" Class="Android_Colors">
+				<DeployFile LocalName="colors.xml" Configuration="Debug" Class="Android_Colors">
 					<Platform Name="Android64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Reports.rtf" Configuration="Debug" Class="ProjectFile">
+				<DeployFile LocalName="README.rtf" Configuration="Debug" Class="ProjectFile">
 					<Platform Name="Win32">
 						<RemoteDir>.\</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_1242x2208.png" Configuration="Debug" Class="iPhone_Launch1242">
+				<DeployFile LocalName="Reports_1242x2208.png" Configuration="Debug" Class="iPhone_Launch1242">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default-1242w-2208h@3x.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android\Debug\AndroidManifest.xml" Configuration="Debug" Class="ProjectAndroidManifest">
+				<DeployFile LocalName="AndroidManifest.xml" Configuration="Debug" Class="ProjectAndroidManifest">
 					<Platform Name="Android">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Release\AndroidManifest.xml" Configuration="Release" Class="ProjectAndroidManifest">
+				<DeployFile LocalName="AndroidManifest.xml" Configuration="Release" Class="ProjectAndroidManifest">
 					<Platform Name="Android64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Debug\splash_image_def.xml" Configuration="Debug" Class="AndroidSplashImageDef">
+				<DeployFile LocalName="splash_image_def.xml" Configuration="Debug" Class="AndroidSplashImageDef">
 					<Platform Name="Android64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android\Debug\styles.xml" Configuration="Debug" Class="AndroidSplashStyles">
+				<DeployFile LocalName="styles.xml" Configuration="Debug" Class="AndroidSplashStyles">
 					<Platform Name="Android">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Release\styles.xml" Configuration="Release" Class="AndroidSplashStyles">
+				<DeployFile LocalName="styles.xml" Configuration="Release" Class="AndroidSplashStyles">
 					<Platform Name="Android64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_426x320.png" Configuration="Debug" Class="Android_SplashImage426">
+				<DeployFile LocalName="Reports_426x320.png" Configuration="Debug" Class="Android_SplashImage426">
 					<Platform Name="Android64">
 						<RemoteName>splash_image.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_426x320.png" Configuration="Release" Class="Android_SplashImage426">
+				<DeployFile LocalName="Reports_426x320.png" Configuration="Release" Class="Android_SplashImage426">
 					<Platform Name="Android64">
 						<RemoteName>splash_image.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_29x29.png" Configuration="Debug" Class="iPad_Setting29">
+				<DeployFile LocalName="Reports_29x29.png" Configuration="Debug" Class="iPad_Setting29">
 					<Platform Name="iOSDevice64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Reports.rtf" Configuration="Release" Class="ProjectFile">
+				<DeployFile LocalName="README.rtf" Configuration="Release" Class="ProjectFile">
 					<Platform Name="Android64">
 						<RemoteDir>.\assets\internal\</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Reports.rtf" Configuration="Debug" Class="ProjectFile">
+				<DeployFile LocalName="README.rtf" Configuration="Debug" Class="ProjectFile">
 					<Platform Name="Android64">
 						<RemoteDir>.\assets\internal\</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Reports.rtf" Configuration="Debug" Class="ProjectFile"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_NotificationIcon_24x24.png" Configuration="Debug" Class="Android_NotificationIcon24">
+				<DeployFile LocalName="README.rtf" Configuration="Debug" Class="ProjectFile"/>
+				<DeployFile LocalName="FM_NotificationIcon_24x24.png" Configuration="Debug" Class="Android_NotificationIcon24">
 					<Platform Name="Android">
 						<RemoteName>ic_notification.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
+				<DeployFile LocalName="libcgunwind.1.0.dylib" Class="DependencyModule">
 					<Platform Name="OSX32">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="res\file_provider_paths.xml" Configuration="Release" Class="ProjectFile">
+				<DeployFile LocalName="file_provider_paths.xml" Configuration="Release" Class="ProjectFile">
 					<Platform Name="Android64">
 						<RemoteDir>res\xml</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="res\file_provider_paths.xml" Configuration="Debug" Class="ProjectFile">
+				<DeployFile LocalName="file_provider_paths.xml" Configuration="Debug" Class="ProjectFile">
 					<Platform Name="Android64">
 						<RemoteDir>res\xml</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_640x960.png" Configuration="Debug" Class="iPhone_Launch640">
+				<DeployFile LocalName="Reports_640x960.png" Configuration="Debug" Class="iPhone_Launch640">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default@2x.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="OfflineData\OfflineData.json" Configuration="Debug" Class="ProjectFile">
+				<DeployFile LocalName="OfflineData.json" Configuration="Debug" Class="ProjectFile">
 					<Platform Name="iOSDevice64">
 						<RemoteDir>StartUp\Documents\</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Debug\strings.xml" Configuration="Debug" Class="Android_Strings">
+				<DeployFile LocalName="strings.xml" Configuration="Debug" Class="Android_Strings">
 					<Platform Name="Android64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_750x1334.png" Configuration="Debug" Class="iPhone_Launch750">
+				<DeployFile LocalName="Reports_750x1334.png" Configuration="Debug" Class="iPhone_Launch750">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default-750w-1334h@2x.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Debug\styles-v21.xml" Configuration="Debug" Class="AndroidSplashStylesV21">
+				<DeployFile LocalName="styles-v21.xml" Configuration="Debug" Class="AndroidSplashStylesV21">
 					<Platform Name="Android64">
 						<RemoteName>styles.xml</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_2208x1242.png" Configuration="Debug" Class="iPhone_Launch2208">
+				<DeployFile LocalName="Reports_2208x1242.png" Configuration="Debug" Class="iPhone_Launch2208">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default-Landscape-1242w-2208h@3x.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_144x144.png" Configuration="Debug" Class="iPad_AppIcon144">
+				<DeployFile LocalName="Reports_144x144.png" Configuration="Debug" Class="iPad_AppIcon144">
 					<Platform Name="iOSDevice64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="iOSDevice64\Debug\Reports.info.plist" Configuration="Debug" Class="ProjectiOSInfoPList">
+				<DeployFile LocalName="Reports.info.plist" Configuration="Debug" Class="ProjectiOSInfoPList">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Info.plist</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_828x1792.png" Configuration="Debug" Class="iPhone_Launch828">
+				<DeployFile LocalName="FM_LaunchImage_828x1792.png" Configuration="Debug" Class="iPhone_Launch828">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default-828w-1792h@2x.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_768x1024.png" Configuration="Debug" Class="iPad_Launch768x1024">
+				<DeployFile LocalName="Reports_768x1024.png" Configuration="Debug" Class="iPad_Launch768x1024">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default-Portrait~ipad.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2436x1125.png" Configuration="Debug" Class="iPhone_Launch2436">
+				<DeployFile LocalName="FM_LaunchImage_2436x1125.png" Configuration="Debug" Class="iPhone_Launch2436">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default-Landscape-1125w-2436h@3x.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Templates\report.template.xls" Configuration="Debug" Class="ProjectFile"/>
-				<DeployFile LocalName="Android64\Debug\LangWars.classes" Configuration="Debug" Class="AndroidClasses">
+				<DeployFile LocalName="report.template.xls" Configuration="Debug" Class="ProjectFile"/>
+				<DeployFile LocalName="LangWars.classes" Configuration="Debug" Class="AndroidClasses">
 					<Platform Name="Android64">
 						<Operation>64</Operation>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="res\file_provider_paths.xml" Configuration="Debug" Class="ProjectFile">
+				<DeployFile LocalName="file_provider_paths.xml" Configuration="Debug" Class="ProjectFile">
 					<Platform Name="Android">
 						<RemoteDir>res\xml</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_96x96.png" Configuration="Release" Class="Android_LauncherIcon96">
+				<DeployFile LocalName="Reports_96x96.png" Configuration="Release" Class="Android_LauncherIcon96">
 					<Platform Name="Android64">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\Reports_470x320.png" Configuration="Debug" Class="Android_SplashImage470">
+				<DeployFile LocalName="Reports_470x320.png" Configuration="Debug" Class="Android_SplashImage470">
 					<Platform Name="Android">
 						<RemoteName>splash_image.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1792x828.png" Configuration="Debug" Class="iPhone_Launch1792">
+				<DeployFile LocalName="FM_LaunchImage_1792x828.png" Configuration="Debug" Class="iPhone_Launch1792">
 					<Platform Name="iOSDevice64">
 						<RemoteName>Default-Landscape-828w-1792h@2x.png</RemoteName>
 						<Overwrite>true</Overwrite>

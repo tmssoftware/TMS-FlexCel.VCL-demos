@@ -65,7 +65,7 @@
 		<Base>true</Base>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Base)'!=''">
-		<Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
+		<Icon_MainIcon>..\..\Demo_Icon.ico</Icon_MainIcon>
 		<DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>
 		<AUP_ACCESS_COARSE_LOCATION>true</AUP_ACCESS_COARSE_LOCATION>
 		<AUP_INTERNET>true</AUP_INTERNET>
@@ -187,7 +187,7 @@
 			<FormType>fmx</FormType>
 		</DCCReference>
 		<None Include="Entitlement.TemplateiOS.xml"/>
-		<None Include="FlexCelView.rtf"/>
+		<None Include="README.rtf"/>
 		<BuildConfiguration Include="Base">
 			<Key>Base</Key>
 		</BuildConfiguration>
@@ -210,71 +210,71 @@
 				</Source>
 			</Delphi.Personality>
 			<Deployment Version="3">
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_144x144.png" Configuration="Debug" Class="iPad_AppIcon144"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_320x480.png" Configuration="Debug" Class="iPhone_Launch320"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x960.png" Configuration="Debug" Class="iPhone_Launch640"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_120x120.png" Configuration="Debug" Class="iPhone_AppIcon120"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_29x29.png" Configuration="Debug" Class="iPhone_Spotlight29"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png" Configuration="Debug" Class="iPhone_AppIcon87"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_72x72.png" Configuration="Debug" Class="iPad_AppIcon72"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2008.png" Configuration="Debug" Class="iPad_Launch1536"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png" Configuration="Debug" Class="iPad_Launch2048x1536"/>
-				<DeployFile LocalName="FlexCelView.rtf" Configuration="Debug" Class="ProjectFile"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Configuration="Debug" Class="iPad_Launch1536x2048"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_100x100.png" Configuration="Debug" Class="iPad_SpotLight100"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_114x114.png" Configuration="Debug" Class="iPhone_AppIcon114"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png" Configuration="Debug" Class="iPhone_AppIcon180"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2208.png" Configuration="Debug" Class="iPhone_Launch1242"/>
+				<DeployFile LocalName="FM_ApplicationIcon_144x144.png" Configuration="Debug" Class="iPad_AppIcon144"/>
+				<DeployFile LocalName="FM_LaunchImage_320x480.png" Configuration="Debug" Class="iPhone_Launch320"/>
+				<DeployFile LocalName="FM_LaunchImage_640x960.png" Configuration="Debug" Class="iPhone_Launch640"/>
+				<DeployFile LocalName="FM_ApplicationIcon_120x120.png" Configuration="Debug" Class="iPhone_AppIcon120"/>
+				<DeployFile LocalName="FM_SpotlightSearchIcon_29x29.png" Configuration="Debug" Class="iPhone_Spotlight29"/>
+				<DeployFile LocalName="FM_ApplicationIcon_87x87.png" Configuration="Debug" Class="iPhone_AppIcon87"/>
+				<DeployFile LocalName="FM_ApplicationIcon_72x72.png" Configuration="Debug" Class="iPad_AppIcon72"/>
+				<DeployFile LocalName="FM_LaunchImagePortrait_1536x2008.png" Configuration="Debug" Class="iPad_Launch1536"/>
+				<DeployFile LocalName="FM_LaunchImageLandscape_2048x1536.png" Configuration="Debug" Class="iPad_Launch2048x1536"/>
+				<DeployFile LocalName="README.rtf" Configuration="Debug" Class="ProjectFile"/>
+				<DeployFile LocalName="FM_LaunchImagePortrait_1536x2048.png" Configuration="Debug" Class="iPad_Launch1536x2048"/>
+				<DeployFile LocalName="FM_SpotlightSearchIcon_100x100.png" Configuration="Debug" Class="iPad_SpotLight100"/>
+				<DeployFile LocalName="FM_ApplicationIcon_114x114.png" Configuration="Debug" Class="iPhone_AppIcon114"/>
+				<DeployFile LocalName="FM_ApplicationIcon_180x180.png" Configuration="Debug" Class="iPhone_AppIcon180"/>
+				<DeployFile LocalName="FM_LaunchImage_1242x2208.png" Configuration="Debug" Class="iPhone_Launch1242"/>
 				<DeployFile LocalName="Entitlement.TemplateiOS.xml" Configuration="Debug" Class="ProjectFile"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_50x50.png" Configuration="Debug" Class="iPad_SpotLight50"/>
-				<DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
+				<DeployFile LocalName="FM_SpotlightSearchIcon_50x50.png" Configuration="Debug" Class="iPad_SpotLight50"/>
+				<DeployFile LocalName="libcgunwind.1.0.dylib" Class="DependencyModule">
 					<Platform Name="OSX32">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="iOSSimulator\Debug\iOS_FlexView.entitlements" Configuration="Debug" Class="ProjectiOSEntitlements"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Configuration="Debug" Class="iPad_Launch768x1024"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_57x57.png" Configuration="Debug" Class="iPhone_AppIcon57"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1004.png" Configuration="Debug" Class="iPad_Launch768"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png" Configuration="Debug" Class="iPad_SpotLight80"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_60x60.png" Configuration="Debug" Class="iPhone_AppIcon60"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png" Configuration="Debug" Class="iPhone_Launch750"/>
-				<DeployFile LocalName="Win32\Debug\iOS_FlexView.exe" Configuration="Debug" Class="ProjectOutput"/>
-				<DeployFile LocalName="$(BDS)\Redist\iossimulator\libpcre.dylib" Class="DependencyModule">
+				<DeployFile LocalName="iOS_FlexView.entitlements" Configuration="Debug" Class="ProjectiOSEntitlements"/>
+				<DeployFile LocalName="FM_LaunchImagePortrait_768x1024.png" Configuration="Debug" Class="iPad_Launch768x1024"/>
+				<DeployFile LocalName="FM_ApplicationIcon_57x57.png" Configuration="Debug" Class="iPhone_AppIcon57"/>
+				<DeployFile LocalName="FM_LaunchImagePortrait_768x1004.png" Configuration="Debug" Class="iPad_Launch768"/>
+				<DeployFile LocalName="FM_SpotlightSearchIcon_80x80.png" Configuration="Debug" Class="iPad_SpotLight80"/>
+				<DeployFile LocalName="FM_ApplicationIcon_60x60.png" Configuration="Debug" Class="iPhone_AppIcon60"/>
+				<DeployFile LocalName="FM_LaunchImage_750x1334.png" Configuration="Debug" Class="iPhone_Launch750"/>
+				<DeployFile LocalName="iOS_FlexView.exe" Configuration="Debug" Class="ProjectOutput"/>
+				<DeployFile LocalName="libpcre.dylib" Class="DependencyModule">
 					<Platform Name="iOSSimulator">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\Redist\osx64\libcgsqlite3.dylib" Class="DependencyModule">
+				<DeployFile LocalName="libcgsqlite3.dylib" Class="DependencyModule">
 					<Platform Name="OSX64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_29x29.png" Configuration="Debug" Class="iPad_Setting29"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Configuration="Debug" Class="iPad_AppIcon76"/>
-				<DeployFile LocalName="$(BDS)\Redist\iossimulator\libPCRE.dylib" Class="DependencyModule"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png" Configuration="Debug" Class="iPhone_Launch2208"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x1136.png" Configuration="Debug" Class="iPhone_Launch640x1136"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1496.png" Configuration="Debug" Class="iPad_Launch2048"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png" Configuration="Debug" Class="iPad_AppIcon152"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_58x58.png" Configuration="Debug" Class="iPad_Setting58"/>
-				<DeployFile LocalName="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib" Class="DependencyModule">
+				<DeployFile LocalName="FM_SettingIcon_29x29.png" Configuration="Debug" Class="iPad_Setting29"/>
+				<DeployFile LocalName="FM_ApplicationIcon_76x76.png" Configuration="Debug" Class="iPad_AppIcon76"/>
+				<DeployFile LocalName="libPCRE.dylib" Class="DependencyModule"/>
+				<DeployFile LocalName="FM_LaunchImage_2208x1242.png" Configuration="Debug" Class="iPhone_Launch2208"/>
+				<DeployFile LocalName="FM_LaunchImage_640x1136.png" Configuration="Debug" Class="iPhone_Launch640x1136"/>
+				<DeployFile LocalName="FM_LaunchImageLandscape_2048x1496.png" Configuration="Debug" Class="iPad_Launch2048"/>
+				<DeployFile LocalName="FM_ApplicationIcon_152x152.png" Configuration="Debug" Class="iPad_AppIcon152"/>
+				<DeployFile LocalName="FM_SettingIcon_58x58.png" Configuration="Debug" Class="iPad_Setting58"/>
+				<DeployFile LocalName="libcgunwind.1.0.dylib" Class="DependencyModule">
 					<Platform Name="iOSSimulator">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="iOSSimulator\Debug\iOS_FlexView" Configuration="Debug" Class="ProjectOutput"/>
-				<DeployFile LocalName="$(BDS)\Redist\osx32\libcgsqlite3.dylib" Class="DependencyModule">
+				<DeployFile LocalName="iOS_FlexView" Configuration="Debug" Class="ProjectOutput"/>
+				<DeployFile LocalName="libcgsqlite3.dylib" Class="DependencyModule">
 					<Platform Name="OSX32">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png" Configuration="Debug" Class="iPad_Launch1024x768"/>
-				<DeployFile LocalName="iOSSimulator\Debug\iOS_FlexView.info.plist" Configuration="Debug" Class="ProjectiOSInfoPList"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x748.png" Configuration="Debug" Class="iPad_Launch1024"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png" Configuration="Debug" Class="iPhone_Spotlight40"/>
-				<DeployFile LocalName="iOSSimulator\Debug\iOS_FlexView.rsm" Configuration="Debug" Class="DebugSymbols"/>
-				<DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png" Configuration="Debug" Class="iPad_SpotLight40"/>
+				<DeployFile LocalName="FM_LaunchImageLandscape_1024x768.png" Configuration="Debug" Class="iPad_Launch1024x768"/>
+				<DeployFile LocalName="iOS_FlexView.info.plist" Configuration="Debug" Class="ProjectiOSInfoPList"/>
+				<DeployFile LocalName="FM_LaunchImageLandscape_1024x748.png" Configuration="Debug" Class="iPad_Launch1024"/>
+				<DeployFile LocalName="FM_SpotlightSearchIcon_40x40.png" Configuration="Debug" Class="iPhone_Spotlight40"/>
+				<DeployFile LocalName="iOS_FlexView.rsm" Configuration="Debug" Class="DebugSymbols"/>
+				<DeployFile LocalName="FM_SpotlightSearchIcon_40x40.png" Configuration="Debug" Class="iPad_SpotLight40"/>
 				<DeployClass Name="AdditionalDebugSymbols">
 					<Platform Name="iOSSimulator">
 						<Operation>1</Operation>

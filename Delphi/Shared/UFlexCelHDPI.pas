@@ -227,7 +227,7 @@ begin
     //Here we have a bmp with alpha channel. We need to convert it to something GDI+ can read.
 
 
-    Check(GdipCreateBitmapFromScan0(Iml.Width, Iml.Height, Integer(Bmp.ScanLine[1]) - Integer(Bmp.ScanLine[0]), PixelFormat32bppARGB, Bmp.ScanLine[0], GPImg));
+    Check(GdipCreateBitmapFromScan0(Iml.Width, Iml.Height, Integer(IntPtr(Bmp.ScanLine[1]) - IntPtr(Bmp.ScanLine[0])), PixelFormat32bppARGB, Bmp.ScanLine[0], GPImg));
     try
       if DisableIcon then ConvertToGrayScale(GPImg);
 

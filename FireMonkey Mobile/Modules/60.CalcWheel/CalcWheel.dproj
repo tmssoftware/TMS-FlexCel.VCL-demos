@@ -65,7 +65,7 @@
 		<Base>true</Base>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Base)'!=''">
-		<Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
+		<Icon_MainIcon>..\..\Demo_Icon.ico</Icon_MainIcon>
 		<DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>
 		<AUP_ACCESS_COARSE_LOCATION>true</AUP_ACCESS_COARSE_LOCATION>
 		<AUP_INTERNET>true</AUP_INTERNET>
@@ -182,7 +182,7 @@
 			<Form>WheelForm</Form>
 			<FormType>fmx</FormType>
 		</DCCReference>
-		<None Include="CalcWheel.rtf"/>
+		<None Include="README.rtf"/>
 		<None Include="Docs\default.xls"/>
 		<None Include="Docs\Mortgage.xls"/>
 		<BuildConfiguration Include="Base">
@@ -207,32 +207,32 @@
 				</Source>
 			</Delphi.Personality>
 			<Deployment Version="3">
-				<DeployFile LocalName="Docs\default.xls" Configuration="Debug" Class="ProjectFile"/>
-				<DeployFile LocalName="Docs\Mortgage.xls" Configuration="Debug" Class="ProjectFile"/>
-				<DeployFile LocalName="$(BDS)\Redist\iossimulator\libpcre.dylib" Class="DependencyModule">
+				<DeployFile LocalName="default.xls" Configuration="Debug" Class="ProjectFile"/>
+				<DeployFile LocalName="Mortgage.xls" Configuration="Debug" Class="ProjectFile"/>
+				<DeployFile LocalName="libpcre.dylib" Class="DependencyModule">
 					<Platform Name="iOSSimulator">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Win32\Debug\CalcWheel.exe" Configuration="Debug" Class="ProjectOutput"/>
-				<DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
+				<DeployFile LocalName="CalcWheel.exe" Configuration="Debug" Class="ProjectOutput"/>
+				<DeployFile LocalName="libcgunwind.1.0.dylib" Class="DependencyModule">
 					<Platform Name="OSX32">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib" Class="DependencyModule">
+				<DeployFile LocalName="libcgunwind.1.0.dylib" Class="DependencyModule">
 					<Platform Name="iOSSimulator">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\Redist\osx32\libcgsqlite3.dylib" Class="DependencyModule">
+				<DeployFile LocalName="libcgsqlite3.dylib" Class="DependencyModule">
 					<Platform Name="OSX32">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\Redist\iossimulator\libPCRE.dylib" Class="DependencyModule"/>
-				<DeployFile LocalName="CalcWheel.rtf" Configuration="Debug" Class="ProjectFile"/>
-				<DeployFile LocalName="$(BDS)\Redist\osx64\libcgsqlite3.dylib" Class="DependencyModule">
+				<DeployFile LocalName="libPCRE.dylib" Class="DependencyModule"/>
+				<DeployFile LocalName="README.rtf" Configuration="Debug" Class="ProjectFile"/>
+				<DeployFile LocalName="libcgsqlite3.dylib" Class="DependencyModule">
 					<Platform Name="OSX64">
 						<Overwrite>true</Overwrite>
 					</Platform>

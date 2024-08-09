@@ -28,7 +28,7 @@ The created file will be password protected, and all the passwords are
   This starting file (template.xls/x)
   could be embedded in the exe file, but this is not shown here. 
   To see an example on how to embed the template inside the exe, look at
-  [Templates On The Exe](https://doc.tmssoftware.com/flexcel/vcl/samples/cpp/reports/templates-on-the-exe/index.html)
+  [Templates In The Exe](https://doc.tmssoftware.com/flexcel/vcl/samples/cpp/reports/templates-in-the-exe/index.html)
 
 - The starting template has a macro. At this time we can not create
   macros with FlexCel, but we can modify a file with existing macros

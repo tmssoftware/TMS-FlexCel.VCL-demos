@@ -65,7 +65,7 @@
 		<Base>true</Base>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Base)'!=''">
-		<Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
+		<Icon_MainIcon>..\..\Demo_Icon.ico</Icon_MainIcon>
 		<DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>
 		<AUP_ACCESS_COARSE_LOCATION>true</AUP_ACCESS_COARSE_LOCATION>
 		<AUP_INTERNET>true</AUP_INTERNET>
@@ -188,7 +188,7 @@
 			<Form>FFlexDocs</Form>
 			<FormType>fmx</FormType>
 		</DCCReference>
-		<None Include="FlexDocs.rtf"/>
+		<None Include="README.rtf"/>
 		<None Include="res\file_provider_paths.xml"/>
 		<BuildConfiguration Include="Base">
 			<Key>Base</Key>
@@ -212,382 +212,382 @@
 				</Source>
 			</Delphi.Personality>
 			<Deployment Version="3">
-				<DeployFile LocalName="Android64\Release\strings.xml" Configuration="Release" Class="Android_Strings">
+				<DeployFile LocalName="strings.xml" Configuration="Release" Class="Android_Strings">
 					<Platform Name="Android64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="FlexDocs.rtf" Configuration="Debug" Class="ProjectFile"/>
-				<DeployFile LocalName="Android64\Release\colors.xml" Configuration="Release" Class="Android_Colors">
+				<DeployFile LocalName="README.rtf" Configuration="Debug" Class="ProjectFile"/>
+				<DeployFile LocalName="colors.xml" Configuration="Release" Class="Android_Colors">
 					<Platform Name="Android64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_72x72.png" Configuration="Debug" Class="Android_LauncherIcon72">
+				<DeployFile LocalName="FlexDocs_72x72.png" Configuration="Debug" Class="Android_LauncherIcon72">
 					<Platform Name="Android64">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_426x320.png" Configuration="Debug" Class="Android_SplashImage426">
+				<DeployFile LocalName="FlexDocs_426x320.png" Configuration="Debug" Class="Android_SplashImage426">
 					<Platform Name="Android">
 						<RemoteName>splash_image.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android\Debug\splash_image_def.xml" Configuration="Debug" Class="AndroidSplashImageDef">
+				<DeployFile LocalName="splash_image_def.xml" Configuration="Debug" Class="AndroidSplashImageDef">
 					<Platform Name="Android">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Win32\Debug\FlexDocs.exe" Configuration="Debug" Class="ProjectOutput"/>
-				<DeployFile LocalName="Android64\Debug\AndroidManifest.xml" Configuration="Debug" Class="ProjectAndroidManifest">
+				<DeployFile LocalName="FlexDocs.exe" Configuration="Debug" Class="ProjectOutput"/>
+				<DeployFile LocalName="AndroidManifest.xml" Configuration="Debug" Class="ProjectAndroidManifest">
 					<Platform Name="Android64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Release\splash_image_def.xml" Configuration="Release" Class="AndroidSplashImageDef">
+				<DeployFile LocalName="splash_image_def.xml" Configuration="Release" Class="AndroidSplashImageDef">
 					<Platform Name="Android64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_72x72.png" Configuration="Release" Class="Android_LauncherIcon72">
+				<DeployFile LocalName="FlexDocs_72x72.png" Configuration="Release" Class="Android_LauncherIcon72">
 					<Platform Name="Android64">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="FlexDocs.rtf" Configuration="Debug" Class="ProjectFile">
+				<DeployFile LocalName="README.rtf" Configuration="Debug" Class="ProjectFile">
 					<Platform Name="Android">
 						<RemoteDir>.\assets\internal\</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\Redist\osx64\libcgsqlite3.dylib" Class="DependencyModule">
+				<DeployFile LocalName="libcgsqlite3.dylib" Class="DependencyModule">
 					<Platform Name="OSX64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_72x72.png" Configuration="Debug" Class="Android_LauncherIcon72">
+				<DeployFile LocalName="FlexDocs_72x72.png" Configuration="Debug" Class="Android_LauncherIcon72">
 					<Platform Name="Android">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="libnative-activity.so" Configuration="Release" Class="AndroidLibnativeArmeabiFile">
+				<DeployFile LocalName="$(BDS)\lib\android\debug\armeabi\libnative-activity.so" Configuration="Release" Class="AndroidLibnativeArmeabiFile">
 					<Platform Name="Android64">
 						<RemoteName>libFlexDocs.so</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\Redist\iossimulator\libPCRE.dylib" Class="DependencyModule"/>
-				<DeployFile LocalName="Android64\Debug\colors.xml" Configuration="Debug" Class="Android_Colors">
+				<DeployFile LocalName="libPCRE.dylib" Class="DependencyModule"/>
+				<DeployFile LocalName="colors.xml" Configuration="Debug" Class="Android_Colors">
 					<Platform Name="Android64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android\Debug\AndroidManifest.xml" Configuration="Debug" Class="ProjectAndroidManifest">
+				<DeployFile LocalName="AndroidManifest.xml" Configuration="Debug" Class="ProjectAndroidManifest">
 					<Platform Name="Android">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="FlexDocs.rtf" Configuration="Debug" Class="ProjectFile">
+				<DeployFile LocalName="README.rtf" Configuration="Debug" Class="ProjectFile">
 					<Platform Name="Win32">
 						<RemoteDir>.\</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Release\AndroidManifest.xml" Configuration="Release" Class="ProjectAndroidManifest">
+				<DeployFile LocalName="AndroidManifest.xml" Configuration="Release" Class="ProjectAndroidManifest">
 					<Platform Name="Android64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Debug\splash_image_def.xml" Configuration="Debug" Class="AndroidSplashImageDef">
+				<DeployFile LocalName="splash_image_def.xml" Configuration="Debug" Class="AndroidSplashImageDef">
 					<Platform Name="Android64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_48x48.png" Configuration="Debug" Class="Android_LauncherIcon48">
+				<DeployFile LocalName="FlexDocs_48x48.png" Configuration="Debug" Class="Android_LauncherIcon48">
 					<Platform Name="Android64">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib" Class="DependencyModule">
+				<DeployFile LocalName="libcgunwind.1.0.dylib" Class="DependencyModule">
 					<Platform Name="iOSSimulator">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="libnative-activity.so" Configuration="Release" Class="AndroidLibnativeMipsFile">
+				<DeployFile LocalName="$(BDS)\lib\android\debug\mips\libnative-activity.so" Configuration="Release" Class="AndroidLibnativeMipsFile">
 					<Platform Name="Android64">
 						<RemoteName>libFlexDocs.so</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\Redist\osx32\libcgsqlite3.dylib" Class="DependencyModule">
+				<DeployFile LocalName="libcgsqlite3.dylib" Class="DependencyModule">
 					<Platform Name="OSX32">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Release\styles.xml" Configuration="Release" Class="AndroidSplashStyles">
+				<DeployFile LocalName="styles.xml" Configuration="Release" Class="AndroidSplashStyles">
 					<Platform Name="Android64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_48x48.png" Configuration="Release" Class="Android_LauncherIcon48">
+				<DeployFile LocalName="FlexDocs_48x48.png" Configuration="Release" Class="Android_LauncherIcon48">
 					<Platform Name="Android64">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="classes.dex" Configuration="Debug" Class="AndroidClassesDexFile">
+				<DeployFile LocalName="Android64\Debug\classes.dex" Configuration="Debug" Class="AndroidClassesDexFile">
 					<Platform Name="Android64">
 						<RemoteName>classes.dex</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="res\file_provider_paths.xml" Configuration="Debug" Class="ProjectFile">
+				<DeployFile LocalName="file_provider_paths.xml" Configuration="Debug" Class="ProjectFile">
 					<Platform Name="Win32">
 						<RemoteDir>.\</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_426x320.png" Configuration="Release" Class="Android_SplashImage426">
+				<DeployFile LocalName="FlexDocs_426x320.png" Configuration="Release" Class="Android_SplashImage426">
 					<Platform Name="Android64">
 						<RemoteName>splash_image.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_426x320.png" Configuration="Debug" Class="Android_SplashImage426">
+				<DeployFile LocalName="FlexDocs_426x320.png" Configuration="Debug" Class="Android_SplashImage426">
 					<Platform Name="Android64">
 						<RemoteName>splash_image.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_470x320.png" Configuration="Debug" Class="Android_SplashImage470">
+				<DeployFile LocalName="FlexDocs_470x320.png" Configuration="Debug" Class="Android_SplashImage470">
 					<Platform Name="Android64">
 						<RemoteName>splash_image.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_470x320.png" Configuration="Release" Class="Android_SplashImage470">
+				<DeployFile LocalName="FlexDocs_470x320.png" Configuration="Release" Class="Android_SplashImage470">
 					<Platform Name="Android64">
 						<RemoteName>splash_image.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android\Debug\styles.xml" Configuration="Debug" Class="AndroidSplashStyles">
+				<DeployFile LocalName="styles.xml" Configuration="Debug" Class="AndroidSplashStyles">
 					<Platform Name="Android">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="libnative-activity.so" Configuration="Release" Class="AndroidLibnativeArmeabiv7aFile">
+				<DeployFile LocalName="$(BDS)\lib\android\debug\armeabi-v7a\libnative-activity.so" Configuration="Release" Class="AndroidLibnativeArmeabiv7aFile">
 					<Platform Name="Android64">
 						<RemoteName>libFlexDocs.so</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Release\styles-v21.xml" Configuration="Release" Class="AndroidSplashStylesV21">
+				<DeployFile LocalName="styles-v21.xml" Configuration="Release" Class="AndroidSplashStylesV21">
 					<Platform Name="Android64">
 						<RemoteName>styles.xml</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_48x48.png" Configuration="Debug" Class="Android_LauncherIcon48">
+				<DeployFile LocalName="FlexDocs_48x48.png" Configuration="Debug" Class="Android_LauncherIcon48">
 					<Platform Name="Android">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android\Debug\styles-v21.xml" Configuration="Debug" Class="AndroidSplashStylesV21">
+				<DeployFile LocalName="styles-v21.xml" Configuration="Debug" Class="AndroidSplashStylesV21">
 					<Platform Name="Android">
 						<RemoteName>styles.xml</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_640x480.png" Configuration="Debug" Class="Android_SplashImage640">
+				<DeployFile LocalName="FlexDocs_640x480.png" Configuration="Debug" Class="Android_SplashImage640">
 					<Platform Name="Android">
 						<RemoteName>splash_image.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_36x36.png" Configuration="Debug" Class="Android_LauncherIcon36">
+				<DeployFile LocalName="FlexDocs_36x36.png" Configuration="Debug" Class="Android_LauncherIcon36">
 					<Platform Name="Android64">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_36x36.png" Configuration="Release" Class="Android_LauncherIcon36">
+				<DeployFile LocalName="FlexDocs_36x36.png" Configuration="Release" Class="Android_LauncherIcon36">
 					<Platform Name="Android64">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_960x720.png" Configuration="Release" Class="Android_SplashImage960">
+				<DeployFile LocalName="FlexDocs_960x720.png" Configuration="Release" Class="Android_SplashImage960">
 					<Platform Name="Android64">
 						<RemoteName>splash_image.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="FlexDocs.rtf" Configuration="Release" Class="ProjectFile">
+				<DeployFile LocalName="README.rtf" Configuration="Release" Class="ProjectFile">
 					<Platform Name="Android64">
 						<RemoteDir>.\assets\internal\</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_960x720.png" Configuration="Debug" Class="Android_SplashImage960">
+				<DeployFile LocalName="FlexDocs_960x720.png" Configuration="Debug" Class="Android_SplashImage960">
 					<Platform Name="Android64">
 						<RemoteName>splash_image.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="FlexDocs.rtf" Configuration="Debug" Class="ProjectFile">
+				<DeployFile LocalName="README.rtf" Configuration="Debug" Class="ProjectFile">
 					<Platform Name="Android64">
 						<RemoteDir>.\assets\internal\</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android\Debug\libFlexDocs.so" Configuration="Debug" Class="ProjectOutput">
+				<DeployFile LocalName="libFlexDocs.so" Configuration="Debug" Class="ProjectOutput">
 					<Platform Name="Android">
 						<RemoteName>libFlexDocs.so</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
+				<DeployFile LocalName="libcgunwind.1.0.dylib" Class="DependencyModule">
 					<Platform Name="OSX32">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Debug\styles.xml" Configuration="Debug" Class="AndroidSplashStyles">
+				<DeployFile LocalName="styles.xml" Configuration="Debug" Class="AndroidSplashStyles">
 					<Platform Name="Android64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Win32\Debug\FlexDocs.exe" Configuration="Debug" Class="ProjectOutput">
+				<DeployFile LocalName="FlexDocs.exe" Configuration="Debug" Class="ProjectOutput">
 					<Platform Name="Win32">
 						<RemoteName>FlexDocs.exe</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Release\libFlexDocs.so" Configuration="Release" Class="ProjectOutput">
+				<DeployFile LocalName="libFlexDocs.so" Configuration="Release" Class="ProjectOutput">
 					<Platform Name="Android64">
 						<RemoteName>libFlexDocs.so</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="classes.dex" Configuration="Release" Class="AndroidClassesDexFile">
+				<DeployFile LocalName="Android64\Release\classes.dex" Configuration="Release" Class="AndroidClassesDexFile">
 					<Platform Name="Android64">
 						<RemoteName>classes.dex</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="res\file_provider_paths.xml" Configuration="Release" Class="ProjectFile">
+				<DeployFile LocalName="file_provider_paths.xml" Configuration="Release" Class="ProjectFile">
 					<Platform Name="Android64">
 						<RemoteDir>res\xml</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_640x480.png" Configuration="Release" Class="Android_SplashImage640">
+				<DeployFile LocalName="FlexDocs_640x480.png" Configuration="Release" Class="Android_SplashImage640">
 					<Platform Name="Android64">
 						<RemoteName>splash_image.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="res\file_provider_paths.xml" Configuration="Debug" Class="ProjectFile">
+				<DeployFile LocalName="file_provider_paths.xml" Configuration="Debug" Class="ProjectFile">
 					<Platform Name="Android64">
 						<RemoteDir>res\xml</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="classes.dex" Configuration="Debug" Class="AndroidClassesDexFile">
+				<DeployFile LocalName="Android\Debug\classes.dex" Configuration="Debug" Class="AndroidClassesDexFile">
 					<Platform Name="Android">
 						<RemoteName>classes.dex</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_96x96.png" Configuration="Debug" Class="Android_LauncherIcon96">
+				<DeployFile LocalName="FlexDocs_96x96.png" Configuration="Debug" Class="Android_LauncherIcon96">
 					<Platform Name="Android">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_36x36.png" Configuration="Debug" Class="Android_LauncherIcon36">
+				<DeployFile LocalName="FlexDocs_36x36.png" Configuration="Debug" Class="Android_LauncherIcon36">
 					<Platform Name="Android">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_640x480.png" Configuration="Debug" Class="Android_SplashImage640">
+				<DeployFile LocalName="FlexDocs_640x480.png" Configuration="Debug" Class="Android_SplashImage640">
 					<Platform Name="Android64">
 						<RemoteName>splash_image.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="$(BDS)\Redist\iossimulator\libpcre.dylib" Class="DependencyModule">
+				<DeployFile LocalName="libpcre.dylib" Class="DependencyModule">
 					<Platform Name="iOSSimulator">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Debug\strings.xml" Configuration="Debug" Class="Android_Strings">
+				<DeployFile LocalName="strings.xml" Configuration="Debug" Class="Android_Strings">
 					<Platform Name="Android64">
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_144x144.png" Configuration="Debug" Class="Android_LauncherIcon144">
-					<Platform Name="Android64">
-						<RemoteName>ic_launcher.png</RemoteName>
-						<Overwrite>true</Overwrite>
-					</Platform>
-				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_144x144.png" Configuration="Release" Class="Android_LauncherIcon144">
+				<DeployFile LocalName="FlexDocs_144x144.png" Configuration="Debug" Class="Android_LauncherIcon144">
 					<Platform Name="Android64">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Debug\styles-v21.xml" Configuration="Debug" Class="AndroidSplashStylesV21">
+				<DeployFile LocalName="FlexDocs_144x144.png" Configuration="Release" Class="Android_LauncherIcon144">
+					<Platform Name="Android64">
+						<RemoteName>ic_launcher.png</RemoteName>
+						<Overwrite>true</Overwrite>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="styles-v21.xml" Configuration="Debug" Class="AndroidSplashStylesV21">
 					<Platform Name="Android64">
 						<RemoteName>styles.xml</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_96x96.png" Configuration="Debug" Class="Android_LauncherIcon96">
+				<DeployFile LocalName="FlexDocs_96x96.png" Configuration="Debug" Class="Android_LauncherIcon96">
 					<Platform Name="Android64">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_96x96.png" Configuration="Release" Class="Android_LauncherIcon96">
+				<DeployFile LocalName="FlexDocs_96x96.png" Configuration="Release" Class="Android_LauncherIcon96">
 					<Platform Name="Android64">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_470x320.png" Configuration="Debug" Class="Android_SplashImage470">
+				<DeployFile LocalName="FlexDocs_470x320.png" Configuration="Debug" Class="Android_SplashImage470">
 					<Platform Name="Android">
 						<RemoteName>splash_image.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="Android64\Debug\libFlexDocs.so" Configuration="Debug" Class="ProjectOutput">
+				<DeployFile LocalName="libFlexDocs.so" Configuration="Debug" Class="ProjectOutput">
 					<Platform Name="Android64">
 						<RemoteName>libFlexDocs.so</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_144x144.png" Configuration="Debug" Class="Android_LauncherIcon144">
+				<DeployFile LocalName="FlexDocs_144x144.png" Configuration="Debug" Class="Android_LauncherIcon144">
 					<Platform Name="Android">
 						<RemoteName>ic_launcher.png</RemoteName>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="res\file_provider_paths.xml" Configuration="Debug" Class="ProjectFile">
+				<DeployFile LocalName="file_provider_paths.xml" Configuration="Debug" Class="ProjectFile">
 					<Platform Name="Android">
 						<RemoteDir>res\xml</RemoteDir>
 						<Overwrite>true</Overwrite>
 					</Platform>
 				</DeployFile>
-				<DeployFile LocalName="icons\FlexDocs_960x720.png" Configuration="Debug" Class="Android_SplashImage960">
+				<DeployFile LocalName="FlexDocs_960x720.png" Configuration="Debug" Class="Android_SplashImage960">
 					<Platform Name="Android">
 						<RemoteName>splash_image.png</RemoteName>
 						<Overwrite>true</Overwrite>

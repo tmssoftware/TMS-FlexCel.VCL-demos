@@ -9,7 +9,7 @@ uses
 
 begin
   Application.Initialize;
-  Application.MainFormOnTaskbar := True;
+  {$IFDEF ConditionalExpressions}{$IF CompilerVersion >= 18}Application.MainFormOnTaskbar := True;{$IFEND}{$ENDIF}
   Application.CreateForm(TFIntelligentPageBreaks, FIntelligentPageBreaks);
   Application.Run;
 end.

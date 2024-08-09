@@ -136,7 +136,6 @@
 					<Source Name="MainSource">GenericReports.dpr</Source>
 				</Source>
 			</Delphi.Personality>
-			<Deployment/>
 			<Platforms>
 				<Platform value="Win64">True</Platform>
 				<Platform value="Win32">True</Platform>
