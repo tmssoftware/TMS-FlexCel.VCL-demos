@@ -10,7 +10,7 @@ uses
 
 begin
   Application.Initialize;
-  {$IFDEF ConditionalExpressions}{$IF CompilerVersion >= 18}Application.MainFormOnTaskbar := True;{$IFEND}{$ENDIF}
+  Application.MainFormOnTaskbar := True;
   Application.CreateForm(TFRenderObjects, FRenderObjects);
   Application.Run;
 end.
