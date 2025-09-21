@@ -112,6 +112,36 @@ bool IsBetterScale(int const & CurrentScale, int const & ProposedScale,
 	return (ProposedScale >= TargetScale) && (ProposedScale < CurrentScale);
 }
 
+void DrawImage(GpGraphics* gr, GpBitmap* & Img, unsigned int Width, unsigned int Height, GpImageAttributes* imgAtt)
+{
+	__try {
+		Check(GdipDrawImageRectRect(gr, Img, 0, 0, Width, Height, 0, 0,
+			Width, Height, UnitPixel, imgAtt, NULL, NULL));
+	}
+	__finally {
+		GdipDeleteGraphics(gr);
+	}
+}
+
+GpBitmap* & ConvertImageImpl(GpImageAttributes* imgAtt, ColorMatrix const & cm, unsigned int Width, unsigned int Height, GpBitmap* _Result, GpGraphics* gr, GpBitmap* & Img)
+{
+	Check(GdipSetImageAttributesColorMatrix(imgAtt, ColorAdjustTypeDefault, true, &cm, NULL, ColorMatrixFlagsDefault));
+		    Check(GdipCreateBitmapFromScan0(Width, Height, 0, PixelFormat32bppARGB, NULL, &_Result));
+	try {
+				Check(GdipGetImageGraphicsContext(_Result, &gr));
+		DrawImage(gr, Img, Width, Height, imgAtt);
+
+	}
+	catch (...) { {
+			GdipDisposeImage(_Result);
+			throw;
+		}
+	}
+	GdipDisposeImage(Img);
+	Img = _Result;
+	return Img;
+}
+
 void ConvertImage(GpBitmap* & Img, ColorMatrix const & cm) {
 	GpImageAttributes* imgAtt;
 	GpBitmap* _Result;
@@ -123,27 +153,8 @@ void ConvertImage(GpBitmap* & Img, ColorMatrix const & cm) {
 	Check(GdipGetImageHeight(Img, &Height));
 
 	Check(GdipCreateImageAttributes(&imgAtt));
-	try {
-		Check(GdipSetImageAttributesColorMatrix(imgAtt, ColorAdjustTypeDefault, true, &cm, NULL, ColorMatrixFlagsDefault));
-	    Check(GdipCreateBitmapFromScan0(Width, Height, 0, PixelFormat32bppARGB, NULL, &_Result));
-		try {
-            Check(GdipGetImageGraphicsContext(_Result, &gr));
-			try {
-				Check(GdipDrawImageRectRect(gr, Img, 0, 0, Width, Height, 0, 0,
-					Width, Height, UnitPixel, imgAtt, NULL, NULL));
-			}
-			__finally {
-				GdipDeleteGraphics(gr);
-			}
-
-		}
-		catch (...) { {
-				GdipDisposeImage(_Result);
-				throw;
-			}
-		}
-		GdipDisposeImage(Img);
-		Img = _Result;
+	__try {
+		Img = ConvertImageImpl(imgAtt, cm, Width, Height, _Result, gr, Img);
 	}
 	__finally {
 		GdipDisposeImageAttributes(imgAtt);
@@ -188,12 +199,50 @@ void ConvertToGrayscale(GpBitmap* & Img) {
 	ConvertImage(Img, cm);
 }
 
+void Scale(TBitmap* result, GpBitmap* GPImg, int const & TargetSize)
+{
+    GpGraphics* GPResultGr;
+	Check(GdipCreateFromHDC(result->Canvas->Handle, &GPResultGr));
+	__try {
+		Check(GdipSetInterpolationMode(GPResultGr,
+			InterpolationModeHighQualityBicubic));
+		Check(GdipSetSmoothingMode(GPResultGr,
+			SmoothingModeAntiAlias));
+		Check(GdipSetCompositingMode(GPResultGr,
+			CompositingModeSourceOver));
+		Check(GdipDrawImageRectI(GPResultGr, GPImg, 0, 0,
+			TargetSize, TargetSize));
+	}
+	__finally {
+		GdipDeleteGraphics(GPResultGr);
+	}
+}
+
+TBitmap* ScaleBitmapImpl(int const & TargetSize, GpBitmap* GPImg)
+{
+	TBitmap* result = new TBitmap();
+	try {
+		result->PixelFormat = TPixelFormat::pf32bit;
+		result->Transparent = true;
+		SetBkMode(result->Canvas->Handle, TRANSPARENT);
+		result->SetSize(TargetSize, TargetSize);
+		result->AlphaFormat = afIgnored;
+		Scale(result, GPImg, TargetSize);
+
+
+	}
+	catch (...) {
+		result->Free();
+		throw;
+	}
+	return result;
+}
+
 TBitmap* ScaleBitmap(int const & TargetSize, TImageList * Iml,
 	int const & i, bool const & DisableIcon) {
 	TBitmap* result;
 	TBitmap* Bmp;
 	GpBitmap* GPImg;
-	GpGraphics* GPResultGr;
 
 	// Getting the alpha channel right is difficult. If we draw the imagelist in a TPngImage.Canvas.HAndle or in a GDI+ DC, it loses the alpha channel.
 	// So we need to draw it in a TBitmap.Canvas.Handle. But then, if we use GetDCFromHBitmpap or assign this bitmap to a png image, alpha is lost again.
@@ -212,37 +261,11 @@ TBitmap* ScaleBitmap(int const & TargetSize, TImageList * Iml,
 		Check(GdipCreateBitmapFromScan0(Iml->Width, Iml->Height,
 			(IntPtr)Bmp->ScanLine[1] - (IntPtr)Bmp->ScanLine[0], PixelFormat32bppARGB,
 			(unsigned char*)Bmp->ScanLine[0], &GPImg));
-		try {
+		__try {
 			if (DisableIcon)
 				ConvertToGrayscale(GPImg);
 
-			result = new TBitmap();
-			try {
-				result->PixelFormat = TPixelFormat::pf32bit;
-				result->Transparent = true;
-				SetBkMode(result->Canvas->Handle, TRANSPARENT);
-				result->SetSize(TargetSize, TargetSize);
-				result->AlphaFormat = afIgnored;
-				Check(GdipCreateFromHDC(result->Canvas->Handle, &GPResultGr));
-				try {
-					Check(GdipSetInterpolationMode(GPResultGr,
-						InterpolationModeHighQualityBicubic));
-					Check(GdipSetSmoothingMode(GPResultGr,
-						SmoothingModeAntiAlias));
-					Check(GdipSetCompositingMode(GPResultGr,
-						CompositingModeSourceOver));
-					Check(GdipDrawImageRectI(GPResultGr, GPImg, 0, 0,
-						TargetSize, TargetSize));
-				}
-				__finally {
-					GdipDeleteGraphics(GPResultGr);
-				}
-
-			}
-			catch (...) {
-				result->Free();
-				throw;
-			}
+			result = ScaleBitmapImpl(TargetSize, GPImg);
 		}
 		__finally {
 			GdipDisposeImage(GPImg);
@@ -270,7 +293,7 @@ void CopyImages(TImageListScale & Iml, int const & TargetScale) {
 		for (i = 0; i < i_end; ++i) {
 			Bmp = ScaleBitmap(TargetSize, Iml.CorrectedList, i,
 				!Iml.PerfectFit);
-			try {
+			__try {
 				Iml.ImageList->Add(Bmp, NULL);
 			}
 			__finally {
@@ -378,7 +401,7 @@ void FixDynamicStuff(TForm* Form, int const & TargetScale) {
 
 	GdipToken = 0;
 	InitGDIPlus(GdipToken);
-	try {
+	__try {
 		FixImageLists(Form, TargetScale);
 	}
 	__finally {

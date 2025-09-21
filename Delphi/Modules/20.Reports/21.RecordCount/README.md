@@ -22,6 +22,7 @@ and we need to supply the number of rows to it. For more information read the se
 
 
 > [!Note]
+> 
 > In this specific case setting SlowCount to true isn\'t
 > strictly necessary. As RecordCount is -1, FlexCel can figure out
 > that the number is wrong and do the slow count automatically. You
