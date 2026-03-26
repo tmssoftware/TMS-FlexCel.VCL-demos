@@ -8,20 +8,30 @@ You can find a description of each demo in the [documentation](https://doc.tmsso
 **:book: Note** We update this repository automatically every time we release a new FlexCel version. So if you have notifications integrated with github, you can subscribe to this feed to be notified of new releases.
 
 
-## New in v 7.25 - September 2025
+## New in v 7.26 - March 2026
 
 
-- **Rad Studio 13 support.** Added Rad Studio 13 support
+- **Support for the Windows on ARM EC platform.** This release introduces support for Windows on ARM (EC) that was introduced in Delphi 13.1
 
-- **New property TExcelFile.OptionsHideObjects lets you set the option to hide objects in a workbook.** The new property [OptionsHideObjects](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.XlsAdapter/TXlsFile/OptionsHideObjects.html) allows you to read or write that property of the workbook. The FlexCel renderer will also honor this setting when you export to PDF, HTML, etc.
+- **Support for longer strings in formulas.** Before 2026, a hardcoded string in a formula like =len("ABC") was limited to 255 characters. Now the new limit it 4095, and FlexCel was updated to support the new strings. Note that if you save a formula with the new longer strings, it will show as #NAME in older Excel versions
 
-- **New overload for creating Hyperlinks.** There is a new overload for creating hyperlinks that automatically separates the url from the text mark. (text mark is the part after # in the url)
+- **Support for longer data validation lists.** In 2026, Excel added the ability to create data validation lists bigger than 255 characters. Now FlexCel can handle those too. Note: To use this feature, you need a very recent Excel, as older ones won't show those validations.
 
-- **In FireMonkey, FlexCelPreview could show the images at 2x the size.** In some cases when using FireMonkey, the resolution in FlexCelPreview could go wrong and show the images at twice the size.
+- **Support for new Error codes introduced by Excel.** Now FlexCel can understand the new  #CONNECT, #BLOCKED!, #PYTHON! and #TIMEOUT! errors.
 
-- **Improved merged cell handling when exporting or printing.** When calculating the Area to print, Excel in some cases might ignore huge merged cells that end up in the last column or row. In this release, we changed our behavior (never ignoring merged cells) to be similar to Excel (ignore merged cells in particular cases)
+- **Ability to abort a LoopOverUsedRange before the range has been fully visited.** [LoopOverUsedRange](https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TExcelFile/LoopOverUsedRange.html) method now has an "abort" parameter which allows to end the loop before the range has been completed.
 
-- **In master-detail reports with TList&lt;> and and empty master, there could be an exception.** Sometimes when running a report with Lists and master-detail, there could be an exception is the master had 0 records.
+- **Bug fix.** Images added with the API weren't showing in the macOS26 or iOS26 previewers
 
-- **Bug Fix.** When signing PDFs using CryptoAPI, FlexCel was creating persistent keys on the disk, which could end up filling it.
+- **Bug fix.** Fonts with spaces weren't quoted when creating SVG files, and some browsers wouldn't display the fonts
+
+- **Bug fix.** Small glitches in rendering file could happen when zoom was very small (less than 10%)
+
+- **Bug fix.** Some invalid xlsx files could throw an overflow exception
+
+- **We support now the \n character as intersection operator.** Even when according to the xlsx spec, only space is the intersection operator, Excel also allows \n, so we now allow it too.
+
+- **Bug fix.** When saving single cell tables, the files generated could be invalid
+
+- **Bug fix.** When converting a xlsx file to xls, if the selected row or column was bigger than the maximum allowed in xls, FlexCel would throw an exception. Now it ignores it, and selects the larger cell address that can be saved in xls. This way you can still save the file as xls.
 
