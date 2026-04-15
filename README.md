@@ -31,7 +31,7 @@ You can find a description of each demo in the [documentation](https://doc.tmsso
 
 - **We support now the \n character as intersection operator.** Even when according to the xlsx spec, only space is the intersection operator, Excel also allows \n, so we now allow it too.
 
-- **Bug fix.** When saving single cell tables, the files generated could be invalid
-
 - **Bug fix.** When converting a xlsx file to xls, if the selected row or column was bigger than the maximum allowed in xls, FlexCel would throw an exception. Now it ignores it, and selects the larger cell address that can be saved in xls. This way you can still save the file as xls.
+
+- **Bug fix.** When saving single cell tables, the files generated could be invalid
 
