@@ -5,6 +5,10 @@ to a generated PDF file.
 
 ## Concepts
 
+- FlexCel supports adbe.pkcs7.detached (the original Adobe format), PAdES baseline level B-B, and PAdES baseline level B-T.
+  Being older, adbe.pkcs7.detached is the most extended and compatible, but PAdES is the standard required by the European Union to sign. 
+  It probably makes sense to sign your PDFs with PAdES.
+
 - In order to sign a PDF file you will need a certificate issued by a
   valid Certificate Authority, or one issued by yourself. In this
   example we will use a self signed certificate. **This certificate
@@ -29,3 +33,7 @@ to a generated PDF file.
   the same way we call CryptoAPI. This is explained in the section
   [Signing PDF Files](https://doc.tmssoftware.com/flexcel/vcl/guides/pdf-exporting-guide.html#signing-pdf-files) in the 
   PDF exporting guide.
+
+- By design, FlexCel never connects to the internet. 
+  So if you want to create a PAdES B-T signature, which includes a timestamp from a TSA server, you need to provide the code to actually connect the server in an anonymous method. 
+  This demo shows how to do it. 

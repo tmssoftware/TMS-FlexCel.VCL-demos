@@ -28,10 +28,14 @@ out of sub totals.
    -\>Tools-\>Protection-\>Protect Sheet.
 
 - When the file is encrypted (using a password to open) FlexCel
-  supports four different encryption modes: 
-  **Excel 95**, **Standard Excel97/2000 encryption**, 
+  supports four different encryption modes:
+  **Excel 95**, **Standard Excel97/2000 encryption**,
   **Excel 2007 xlsx encryption** and
   **Excel 2010 \"agile\" xlsx encryption**.
+  The **Excel 95** and **Standard Excel97/2000** modes exist only for
+  compatibility with legacy xls files and use old encryption algorithms.
+  For new confidential files, save as xlsx and use the **Excel 2010
+  \"agile\" xlsx encryption** mode.
 
 - To open an encrypted file, you can set the **OpenPassword** property
   or the **OnPassword** event. Use the OnPassword event when you

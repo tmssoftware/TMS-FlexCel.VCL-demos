@@ -3,7 +3,7 @@ object FSigningPdfs: TFSigningPdfs
   Top = 0
   BorderStyle = bsSingle
   Caption = 'Signing PDFs'
-  ClientHeight = 95
+  ClientHeight = 163
   ClientWidth = 298
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -15,12 +15,12 @@ object FSigningPdfs: TFSigningPdfs
   OnCreate = FormCreate
   DesignSize = (
     298
-    95)
+    163)
   PixelsPerInch = 96
   TextHeight = 13
   object SignaturePicture: TImage
     Left = 8
-    Top = 102
+    Top = 170
     Width = 282
     Height = 107
     Center = True
@@ -28,25 +28,54 @@ object FSigningPdfs: TFSigningPdfs
     Stretch = True
     OnClick = SignaturePictureClick
   end
-  object btnCreateAndSignPdf: TButton
+  object lblSignatureType: TLabel
     Left = 8
-    Top = 8
+    Top = 11
+    Width = 76
+    Height = 13
+    Caption = 'Signature type:'
+  end
+  object cbSignatureType: TComboBox
+    Left = 8
+    Top = 30
     Width = 282
-    Height = 57
+    Height = 21
+    Style = csDropDownList
     Anchors = [akLeft, akTop, akRight]
-    Caption = 'Create and sign PDF'
     TabOrder = 0
-    OnClick = btnCreateAndSignPdfClick
-    ExplicitWidth = 272
+    Items.Strings = (
+      'PKCS#7 (adbe.pkcs7.detached)'
+      'PAdES B-B (ETSI.CAdES.detached)'
+      'PAdES B-T (B-B + timestamp from a TSA)')
+  end
+  object cbCertify: TCheckBox
+    Left = 8
+    Top = 61
+    Width = 282
+    Height = 17
+    Caption = 'Certify the document (DocMDP)'
+    Checked = True
+    State = cbChecked
+    TabOrder = 1
   end
   object cbVisibleSignature: TCheckBox
     Left = 8
-    Top = 71
-    Width = 272
+    Top = 84
+    Width = 282
     Height = 17
     Caption = 'Visible Signature (In last page)'
-    TabOrder = 1
+    TabOrder = 2
     OnClick = cbVisibleSignatureClick
+  end
+  object btnCreateAndSignPdf: TButton
+    Left = 8
+    Top = 110
+    Width = 282
+    Height = 45
+    Anchors = [akLeft, akTop, akRight]
+    Caption = 'Create and sign PDF'
+    TabOrder = 3
+    OnClick = btnCreateAndSignPdfClick
   end
   object OpenPictureDialog: TOpenPictureDialog
     Left = 72
