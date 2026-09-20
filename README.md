@@ -8,6 +8,13 @@ You can find a description of each demo in the [documentation](https://doc.tmsso
 **:book: Note** We update this repository automatically every time we release a new FlexCel version. So if you have notifications integrated with github, you can subscribe to this feed to be notified of new releases.
 
 
+## New in v 7.27.1 - September 2026
+
+
+- **Support for Delphi 13.2. Updated Skia (Linux) to the latest version.** The skia version FlexCel was using to work in Linux wasn't compatible with the new compiler. We've updated SKIA to be the latest version. Note that FlexCel only uses SKIA in Linux, so this only affects the Linux compiler.
+
+
+
 ## New in v 7.27 - September 2026
 
 
