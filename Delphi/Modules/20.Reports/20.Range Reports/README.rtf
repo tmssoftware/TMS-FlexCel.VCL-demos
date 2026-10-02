@@ -147,40 +147,40 @@
 }{\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}\deftab720
 \hyphauto1\viewscale100\formshade\nobrkwrptbl\paperh15840\paperw12240\margl1440\margr1440\margt1440\margb1440\sectd\sbknone\sftnnar\saftnnrlc\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\ftnbj\ftnstart1\ftnrestart\ftnnar\fet\aftnrstcont\aftnstart1\aftnnrlc\htmautsp
 {\*\ftnsep\chftnsep}\pgndec\pard\plain \s1\keep\sb360\sa80\keepn\cf18\rtlch\af8\afs40\ltrch\hich\af5\afs40\dbch\af8\loch\f5\fs40\keep\sb360\sa80\keepn{
-{\*\bkmkstart range-reports}Range reports}
+{\*\bkmkstart _32676d3104950652b9b3213ce3b71d48da2b841}Range reports}
 \par \pard\plain \s97{
 On the }{{\field{\*\fldinst HYPERLINK "https://doc.tmssoftware.com/flexcel/vcl/samples/delphi/api/gettingstarted/index.html" }{\fldrslt {\cf20
 GettingStarted}{}}}
  demo we saw how to write tags on a template, and have FlexCel replace them. Now we are going to replace whole ranges with values from a database.}
 \par \pard\plain \s2\keep\sb160\sa80\keepn\cf18\rtlch\af8\afs32\ltrch\hich\af5\afs32\dbch\af8\loch\f5\fs32{
-{\*\bkmkstart concepts}Concepts}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+{\*\bkmkstart _concepts}Concepts}
+\par \pard\plain \s97{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 To be able to use a database, you have to define a }{\rtlch\ab\ltrch\b
 named range}{
  on the template, to tell FlexCel which rows or columns to use. Also, you need to add the table on the code.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+\par \pard\plain \s97{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 You can arrange the ranges in many different ways. Take a look at all the sheets, they have different reports from the Northwind demo recreated with FlexCel.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+\par \pard\plain \s97{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 There are }{\rtlch\ab\ltrch\b
 four kinds}{
  of named ranges:}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af11\ltrch o\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{\rtlch\ab\ltrch\b
+\par \pard\plain \s97{\listtext\pard\plain \rtlch\af11\ltrch o\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{\rtlch\ab\ltrch\b
 "__"}{
  Ranges: They are the most common, and the ones you should probably use. The table will be inserted horizontally, and the full rows will be moved down.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af11\ltrch o\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{\rtlch\ab\ltrch\b
+\par \pard\plain \s97{\listtext\pard\plain \rtlch\af11\ltrch o\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{\rtlch\ab\ltrch\b
 "_"}{
  Ranges: They work as the "__" ranges, but only the range and not the full row is moved down. Row properties (like row height) are not copied because not the full row is copied.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af11\ltrch o\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{\rtlch\ab\ltrch\b
+\par \pard\plain \s97{\listtext\pard\plain \rtlch\af11\ltrch o\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{\rtlch\ab\ltrch\b
 "II_"}{
  Ranges: Use them to insert the table by columns, not by rows. Full columns will be inserted.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af11\ltrch o\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{\rtlch\ab\ltrch\b
+\par \pard\plain \s97{\listtext\pard\plain \rtlch\af11\ltrch o\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{\rtlch\ab\ltrch\b
 "I_"}{
  Ranges: Tables will be inserted by columns, but only the selected range will move. Column properties (like column width) are not copied.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+\par \pard\plain \s97{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 Ranges can be defined inside ranges, to create }{\rtlch\ab\ltrch\b
 Master-Detail}{
  reports. On the dataset schema on your application, you have to define the corresponding relations for this to work.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+\par \pard\plain \s97{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 It might happen that you need to use the }{\rtlch\ab\ltrch\b
 same datatable}{
 , lets say __Categories__ on }{\rtlch\ab\ltrch\b
@@ -188,8 +188,8 @@ more than one sheet}{
 . You can't define more than one __Categories__ named range, but you can define an alias on the Config sheet, (for example Categories2=Categories) and then use __Categories2__ on the second sheet. Another alternative not shown in this example would be to use }{{\field{\*\fldinst HYPERLINK "https://doc.tmssoftware.com/flexcel/vcl/guides/reports-designer-guide.html#alias-bands" }{\fldrslt {\cf20
 Alias Bands}{}}}
 .}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720\sb0\sa200{
+\par \pard\plain \s97{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720\sb180\sa180{
 We used }{{\field{\*\fldinst HYPERLINK "https://doc.tmssoftware.com/flexcel/vcl/guides/reports-designer-guide.html#intelligent-page-breaks" }{\fldrslt {\cf20
 Intelligent Page Breaks}{}}}
- in the first sheet so categories are kept in their own pages when printing.{\*\bkmkend range-reports}{\*\bkmkend concepts}}
+ in the first sheet so categories are kept in their own pages when printing.{\*\bkmkend _32676d3104950652b9b3213ce3b71d48da2b841}{\*\bkmkend _concepts}}
 \par }

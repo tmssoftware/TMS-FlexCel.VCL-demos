@@ -128,12 +128,12 @@
 }{\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}\deftab720
 \hyphauto1\viewscale100\formshade\nobrkwrptbl\paperh15840\paperw12240\margl1440\margr1440\margt1440\margb1440\sectd\sbknone\sftnnar\saftnnrlc\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\ftnbj\ftnstart1\ftnrestart\ftnnar\fet\aftnrstcont\aftnstart1\aftnnrlc\htmautsp
 {\*\ftnsep\chftnsep}\pgndec\pard\plain \s1\keep\sb360\sa80\keepn\cf18\rtlch\af8\afs40\ltrch\hich\af5\afs40\dbch\af8\loch\f5\fs40\keep\sb360\sa80\keepn{
-{\*\bkmkstart getting-started}Getting started}
+{\*\bkmkstart _b2d3594c04a200a4fadb0db44e5da6c7d71ed81}Getting started}
 \par \pard\plain \s88{
 A simple demo showing how to create an Excel file with the API from scratch.}
 \par \pard\plain \s2\keep\sb160\sa80\keepn\cf18\rtlch\af8\afs32\ltrch\hich\af5\afs32\dbch\af8\loch\f5\fs32{
-{\*\bkmkstart concepts}Concepts}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+{\*\bkmkstart _concepts}Concepts}
+\par \pard\plain \s88{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 Before using FlexCel, you have to add "}{\rtlch\ab\ltrch\b
 uses FlexCel.VCLSupport}{
 ", "}{\rtlch\ab\ltrch\b
@@ -145,17 +145,17 @@ uses FlexCel.FMXSupport}{
 " instead of "}{\rtlch\ab\ltrch\b
 uses FlexCel.VCLSupport}{
 " You need to use FMXSupport/VCLSupport units once in your app, so FlexCel can initialize the correct graphics engine. There is no need to add them more than once.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+\par \pard\plain \s88{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 The most important class here is the }{{\field{\*\fldinst HYPERLINK "https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.XlsAdapter/TXlsFile/index.html" }{\fldrslt {\cf20
 TXlsFile}{}}}
  class, from where you can read and write to any Excel 2 or newer file.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+\par \pard\plain \s88{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 To set the value for a cell, use }{{\field{\*\fldinst HYPERLINK "https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.XlsAdapter/TXlsFile/SetCellValue.html" }{\fldrslt {\cf20
 TXlsFile.SetCellValue}{}}}
 . You can set any kind of object here, not just text. If you set it to a }{{\field{\*\fldinst HYPERLINK "https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Core/TFormula/index.html" }{\fldrslt {\cf20
 TFormula}{}}}
  object, you will enter a formula.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720\sb0\sa200{
+\par \pard\plain \s88{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720\sb180\sa180{
 As explained in the }{{\field{\*\fldinst HYPERLINK "https://doc.tmssoftware.com/flexcel/vcl/guides/api-developer-guide.html" }{\fldrslt {\cf20
 FlexCel API Developer Guide}{}}}
 , formats in Excel are indexes to an XF (e}{\rtlch\ab\ltrch\b
@@ -163,5 +163,5 @@ X}{
 tended }{\rtlch\ab\ltrch\b
 F}{
 ormat list) To modify the format on a cell, you have to assign an XF index to that cell. To create new XF formats, use }{{\field{\*\fldinst HYPERLINK "https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.XlsAdapter/TXlsFile/AddFormat.html" }{\fldrslt {\cf20
-TXlsFile.AddFormat}}}{\*\bkmkend getting-started}{\*\bkmkend concepts}}
+TXlsFile.AddFormat}}}{\*\bkmkend _b2d3594c04a200a4fadb0db44e5da6c7d71ed81}{\*\bkmkend _concepts}}
 \par }

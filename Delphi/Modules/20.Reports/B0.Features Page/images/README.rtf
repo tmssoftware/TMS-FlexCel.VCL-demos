@@ -147,24 +147,24 @@
 }{\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}\deftab720
 \hyphauto1\viewscale100\formshade\nobrkwrptbl\paperh15840\paperw12240\margl1440\margr1440\margt1440\margb1440\sectd\sbknone\sftnnar\saftnnrlc\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\ftnbj\ftnstart1\ftnrestart\ftnnar\fet\aftnrstcont\aftnstart1\aftnnrlc\htmautsp
 {\*\ftnsep\chftnsep}\pgndec\pard\plain \s1\keep\sb360\sa80\keepn\cf18\rtlch\af8\afs40\ltrch\hich\af5\afs40\dbch\af8\loch\f5\fs40\keep\sb360\sa80\keepn{
-{\*\bkmkstart images}Images}
+{\*\bkmkstart _images}Images}
 \par \pard\plain \s97{
 Inserting images from a database on a FlexCel report is simple, just insert a blank image and name it as <#table.field>. All the complexity is handled by FlexCel. But when you need more options, there are always things you can do.}
 \par \pard\plain \s2\keep\sb160\sa80\keepn\cf18\rtlch\af8\afs32\ltrch\hich\af5\afs32\dbch\af8\loch\f5\fs32{
-{\*\bkmkstart concepts}Concepts}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+{\*\bkmkstart _concepts}Concepts}
+\par \pard\plain \s97{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 Using the }{{\field{\*\fldinst HYPERLINK "https://doc.tmssoftware.com/flexcel/vcl/guides/reports-tag-reference.html#image-size" }{\fldrslt {\cf20
 Image Size}{}}}
  (}{\rtlch\ab\ltrch\b
 <#IMGSIZE(Zoom, AspectRatio)>}{
 ) tag. This tag only works when written on an image name, and allows you to define which size the inserted image will have. Use this tag only if the image dimension changes on the database. If all images are the same size (most common scenario) just set the size of the image at design time, as it is faster.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+\par \pard\plain \s97{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 Using an Alias on the config sheet. As the image name has a small length, we defined the report variables }{\rtlch\ab\ltrch\b
 <#Photo>}{
 , }{\rtlch\ab\ltrch\b
 <Photo100>}{
 , etc. on the config sheet.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+\par \pard\plain \s97{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 Using the }{\rtlch\ab\ltrch\b
 ImgPos}{
 , }{\rtlch\ab\ltrch\b
@@ -172,18 +172,18 @@ ImgFit}{
  and }{\rtlch\ab\ltrch\b
 ImgDelete}{
  tags. On the second sheet of this report you can see those tags in action.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+\par \pard\plain \s97{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 Using the }{{\field{\*\fldinst HYPERLINK "https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Report/TFlexCelReport/GetImageData.html" }{\fldrslt {\cf20
 TFlexCelReport.GetImageData}{}}}
  event. This is a last resort option. If you need to do some further processing on the image, you can do it on this event. The preferred order of option then is:}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain  1.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{
+\par \pard\plain \s97{\listtext\pard\plain  1.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{
 If all images are the same size and on a standard format, just name the image as <#table.field> and do nothing more.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain  2.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{
+\par \pard\plain \s97{\listtext\pard\plain  2.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{
 If you need to adjust dynamically the image dimensions, use }{{\field{\*\fldinst HYPERLINK "https://doc.tmssoftware.com/flexcel/vcl/guides/reports-tag-reference.html#image-size" }{\fldrslt {\cf20
 Image Size}{}}}
  tag. It can be a little slower than 1, as the image has to be processed to calculate its dimensions.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain  3.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440\sb0\sa200{
+\par \pard\plain \s97{\listtext\pard\plain  3.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440\sb180\sa180{
 If you need to define a custom image size, or the image is on a proprietary format you need to convert, use }{{\field{\*\fldinst HYPERLINK "https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Report/TFlexCelReport/GetImageData.html" }{\fldrslt {\cf20
 TFlexCelReport.GetImageData}{}}}
- event.{\*\bkmkend images}{\*\bkmkend concepts}}
+ event.{\*\bkmkend _images}{\*\bkmkend _concepts}}
 \par }

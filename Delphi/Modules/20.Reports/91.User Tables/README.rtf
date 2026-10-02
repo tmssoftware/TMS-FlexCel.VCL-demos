@@ -147,26 +147,26 @@
 }{\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}\deftab720
 \hyphauto1\viewscale100\formshade\nobrkwrptbl\paperh15840\paperw12240\margl1440\margr1440\margt1440\margb1440\sectd\sbknone\sftnnar\saftnnrlc\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\ftnbj\ftnstart1\ftnrestart\ftnnar\fet\aftnrstcont\aftnstart1\aftnnrlc\htmautsp
 {\*\ftnsep\chftnsep}\pgndec\pard\plain \s1\keep\sb360\sa80\keepn\cf18\rtlch\af8\afs40\ltrch\hich\af5\afs40\dbch\af8\loch\f5\fs40\keep\sb360\sa80\keepn{
-{\*\bkmkstart user-defined-tables}User defined tables}
+{\*\bkmkstart _75a003a20063041e53fa9b2eda41c254f3fc664}User defined tables}
 \par \pard\plain \s97{
 User defined tables allow you to specify the datasets in the report part of the data layer. Different from }{{\field{\*\fldinst HYPERLINK "https://doc.tmssoftware.com/flexcel/vcl/samples/delphi/reports/direct-sql/index.html" }{\fldrslt {\cf20
 Direct SQL}{}}}
 , user tables work in a more controlled environment, where you can specifically deny or grant access to the data. User Tables also allow access not SQL databases.}
 \par \pard\plain \s2\keep\sb160\sa80\keepn\cf18\rtlch\af8\afs32\ltrch\hich\af5\afs32\dbch\af8\loch\f5\fs32{
-{\*\bkmkstart concepts}Concepts}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+{\*\bkmkstart _concepts}Concepts}
+\par \pard\plain \s97{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 To use User Tables you need the following things:}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain  1.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{
+\par \pard\plain \s97{\listtext\pard\plain  1.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{
 On the config sheet, write "User Table(parameters)" on the "Source Name" column, and something else on the "Table Name" column. What you write on the "Table Name" column is really not important, but you need to write something so FlexCel knows that the row has information. Normally you would use this column to tell FlexCel what is the name of the datatable you want to add, but this is not a requirement.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain  2.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{
+\par \pard\plain \s97{\listtext\pard\plain  2.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{
 On the code, you need to define a UserTable event that will actually add the tables to the report base on what you write on the "parameters" and "table name" columns.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+\par \pard\plain \s97{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 On this example, we just use the parameter as the name of the table we want to load, and use the "table name" column as the name of the table we will insert on the report. We could also use the parameter string as parameter to an SQL, but when doing this, please make sure you }{\rtlch\ab\ltrch\b
 validate}{
  the parameter string against a hashtable of possible values, to avoid SQL injections attacks.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+\par \pard\plain \s97{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 Even when we do not show it here, you could pass many parameters on the "Parameters" string, using your own defined parameter separator, and process this string on the event.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720\sb0\sa200{
+\par \pard\plain \s97{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720\sb180\sa180{
 Unrelated to user tables, on this demo we also show how you can delete the categories that have no products, using a <#delete range> tag inside a <#if(<#products.#Rowcount>0 ) = 0> tag. }{\rtlch\ai\ab\ltrch\i\b
 Important note:}{\rtlch\ai\ltrch\i
  As FlexCel already deletes products that have no records, this will interfere with the <#Delete range> tag that will delete whole categories, and it would in fact delete one more row that what we need. So it is important that you make}{
@@ -174,5 +174,5 @@ Important note:}{\rtlch\ai\ltrch\i
 genericReport.DeleteEmptyRanges = false}{
  }{\rtlch\ai\ltrch\i
 on the code before running the report}{
-.{\*\bkmkend user-defined-tables}{\*\bkmkend concepts}}
+.{\*\bkmkend _75a003a20063041e53fa9b2eda41c254f3fc664}{\*\bkmkend _concepts}}
 \par }

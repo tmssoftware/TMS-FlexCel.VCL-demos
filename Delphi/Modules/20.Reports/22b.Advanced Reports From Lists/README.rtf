@@ -128,7 +128,7 @@
 }{\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}\deftab720
 \hyphauto1\viewscale100\formshade\nobrkwrptbl\paperh15840\paperw12240\margl1440\margr1440\margt1440\margb1440\sectd\sbknone\sftnnar\saftnnrlc\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\ftnbj\ftnstart1\ftnrestart\ftnnar\fet\aftnrstcont\aftnstart1\aftnnrlc\htmautsp
 {\*\ftnsep\chftnsep}\pgndec\pard\plain \s1\keep\sb360\sa80\keepn\cf18\rtlch\af8\afs40\ltrch\hich\af5\afs40\dbch\af8\loch\f5\fs40\keep\sb360\sa80\keepn{
-{\*\bkmkstart advanced-reports-from-lists.}Advanced Reports from Lists.}
+{\*\bkmkstart _16264a2ca03668821a043081772a7821b6bee19}Advanced Reports from Lists.}
 \par \pard\plain \s88{
 Most of the demos here use datasets as datasources. This is just for convenience, so we share the same data layer in all demos, and also because the focus is in the Excel templates, not so much in the data layer. But you can use any TList<T> and TArray<T> as a datasource in a FlexCel report, and this is what we will show here.}
 \par \pard\plain \s84\sb180\sa180{
@@ -136,8 +136,8 @@ This demo shows some features not shown on the }{{\field{\*\fldinst HYPERLINK "h
 Reports From Lists}{}}}
  example.}
 \par \pard\plain \s2\keep\sb160\sa80\keepn\cf18\rtlch\af8\afs32\ltrch\hich\af5\afs32\dbch\af8\loch\f5\fs32{
-{\*\bkmkstart concepts}Concepts}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+{\*\bkmkstart _concepts}Concepts}
+\par \pard\plain \s88{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 How to do a master-detail report when the details are nested many levels inside the master. In this case, the class }{\rtlch\ab\ltrch\b
 Country}{
  has a }{\rtlch\ab\ltrch\b
@@ -151,7 +151,7 @@ Reports From Lists}{}}}
  example). But as the TList<> is inside People which in turn is inside Country, you need to define a }{\rtlch\ab\ltrch\b
 __People.Language__}{
  band.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720\sb0\sa200{
+\par \pard\plain \s88{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720\sb180\sa180{
 How to reference a table with dots using }{\rtlch\ab\ltrch\b
 [square brackets]}{
 . If you write in a cell <#tablename.}{\rtlch\ab\ltrch\b
@@ -159,5 +159,5 @@ section.field}{
 > FlexCel will interpret this as table \u8220\'93tablename\u8221\'94, field \u8220\'93section.field\u8221\'94. The text up to the first dot is always the table, and the rest is the field. But sometimes you might want this to being interpreted as table \u8220\'93tablename.section\u8221\'94, field \u8220\'93field\u8221\'94. To do so, you need to write <#}{\rtlch\ab\ltrch\b
 [tablename.section]}{
 .field>. In this particular case, we have a table "People.Language" which we defined in the previous point. If we wrote in cell B1: "<#people.language.speakers.percent> FlexCel would interpret this is the table "people", not "people.language" which is what we need. To make FlexCel understand that we want a table "people.language" we use }{\rtlch\ab\ltrch\b
-<#[people.language].speakers.percent>{\*\bkmkend advanced-reports-from-lists.}{\*\bkmkend concepts}}
+<#[people.language].speakers.percent>{\*\bkmkend _16264a2ca03668821a043081772a7821b6bee19}{\*\bkmkend _concepts}}
 \par }

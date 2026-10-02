@@ -147,32 +147,32 @@
 }{\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}\deftab720
 \hyphauto1\viewscale100\formshade\nobrkwrptbl\paperh15840\paperw12240\margl1440\margr1440\margt1440\margb1440\sectd\sbknone\sftnnar\saftnnrlc\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\ftnbj\ftnstart1\ftnrestart\ftnnar\fet\aftnrstcont\aftnstart1\aftnnrlc\htmautsp
 {\*\ftnsep\chftnsep}\pgndec\pard\plain \s1\keep\sb360\sa80\keepn\cf18\rtlch\af8\afs40\ltrch\hich\af5\afs40\dbch\af8\loch\f5\fs40\keep\sb360\sa80\keepn{
-{\*\bkmkstart reading-and-writing-encrypted-files}Reading and writing encrypted files}
+{\*\bkmkstart _8cce05a5be91499aee454c5b7c66d7ba97a0425}Reading and writing encrypted files}
 \par \pard\plain \s97{
 How to read and write Encrypted Excel files using FlexCel.}
 \par \pard\plain \s2\keep\sb160\sa80\keepn\cf18\rtlch\af8\afs32\ltrch\hich\af5\afs32\dbch\af8\loch\f5\fs32{
-{\*\bkmkstart concepts}Concepts}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+{\*\bkmkstart _concepts}Concepts}
+\par \pard\plain \s97{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 Concepts on this demo are similar to the ones shown in }{{\field{\*\fldinst HYPERLINK "https://doc.tmssoftware.com/flexcel/vcl/samples/delphi/reports/encryption-and-subtotals/index.html" }{\fldrslt {\cf20
 Encryption And Subtotals}{}}}
  example, but are repeated here so you can see them even if you are not using reports.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+\par \pard\plain \s97{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 There are }{\rtlch\ab\ltrch\b
 4 ways to protect data}{
  in Excel:}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain  1.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{
+\par \pard\plain \s97{\listtext\pard\plain  1.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{
 A password to open. This is the }{\rtlch\ab\ltrch\b
 only}{
  way that will actually }{\rtlch\ab\ltrch\b
 encrypt}{
  the file. All other methods just will add a record telling Excel not to modify the file. On Excel, this option is on ->Tools->Options... Security tab.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain  2.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{
+\par \pard\plain \s97{\listtext\pard\plain  2.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{
 A password to modify. Also on ->Tools->Options->Security tab, this password will allow you to open the file, but not to save it. The file will not be encrypted, and you can always use Save As to save the file.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain  3.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{
+\par \pard\plain \s97{\listtext\pard\plain  3.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{
 Protecting the workbook. This will cause a pseudo-encryption of the file, but the password used to encrypt will be always the same, no matter what password you enter. On Excel, this option is at ->Tools->Protection->Protect Workbook.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain  4.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{
+\par \pard\plain \s97{\listtext\pard\plain  4.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{
 Protecting the sheet. This option will protect the cells, objects, etc on a particular sheet. ->Tools->Protection->Protect Sheet.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+\par \pard\plain \s97{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 When the file is encrypted (using a password to open) FlexCel supports four different encryption modes: }{\rtlch\ab\ltrch\b
 Excel 95}{
 , }{\rtlch\ab\ltrch\b
@@ -188,12 +188,12 @@ Standard Excel97/2000}{
  modes exist only for compatibility with legacy xls files and use old encryption algorithms. For new confidential files, save as xlsx and use the }{\rtlch\ab\ltrch\b
 Excel 2010 "agile" xlsx encryption}{
  mode.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720\sb0\sa200{
+\par \pard\plain \s97{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720\sb180\sa180{
 To open an encrypted file, you can set the }{\rtlch\ab\ltrch\b
 OpenPassword}{
  property or the }{\rtlch\ab\ltrch\b
 OnPassword}{
  event. Use the OnPassword event when you want to interactively ask for a password }{\rtlch\ab\ltrch\b
 if}{
- the file is encrypted.{\*\bkmkend reading-and-writing-encrypted-files}{\*\bkmkend concepts}}
+ the file is encrypted.{\*\bkmkend _8cce05a5be91499aee454c5b7c66d7ba97a0425}{\*\bkmkend _concepts}}
 \par }

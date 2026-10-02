@@ -128,26 +128,26 @@
 }{\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}\deftab720
 \hyphauto1\viewscale100\formshade\nobrkwrptbl\paperh15840\paperw12240\margl1440\margr1440\margt1440\margb1440\sectd\sbknone\sftnnar\saftnnrlc\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\ftnbj\ftnstart1\ftnrestart\ftnnar\fet\aftnrstcont\aftnstart1\aftnnrlc\htmautsp
 {\*\ftnsep\chftnsep}\pgndec\pard\plain \s1\keep\sb360\sa80\keepn\cf18\rtlch\af8\afs40\ltrch\hich\af5\afs40\dbch\af8\loch\f5\fs40\keep\sb360\sa80\keepn{
-{\*\bkmkstart signing-pdfs}Signing PDFs}
+{\*\bkmkstart _5336bd7d486f2e29fc4503bf5370794b70f6941}Signing PDFs}
 \par \pard\plain \s88{
 In this example we will show how to add a visible or invisible signature to a generated PDF file.}
 \par \pard\plain \s2\keep\sb160\sa80\keepn\cf18\rtlch\af8\afs32\ltrch\hich\af5\afs32\dbch\af8\loch\f5\fs32{
-{\*\bkmkstart concepts}Concepts}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+{\*\bkmkstart _concepts}Concepts}
+\par \pard\plain \s88{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 FlexCel supports adbe.pkcs7.detached (the original Adobe format), PAdES baseline level B-B, and PAdES baseline level B-T. Being older, adbe.pkcs7.detached is the most extended and compatible, but PAdES is the standard required by the European Union to sign. It probably makes sense to sign your PDFs with PAdES.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+\par \pard\plain \s88{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 In order to sign a PDF file you will need a certificate issued by a valid Certificate Authority, or one issued by yourself. In this example we will use a self signed certificate. }{\rtlch\ab\ltrch\b
 This certificate will not validate by default when you open it in Acrobat, you need to add it to your trusted list.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+\par \pard\plain \s88{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 As SHA-1 is deprecated, FlexCel will default to using SHA512 for the signature. You could use a different algorithm by providing an OID in the EncryptionFactory.GetSigner call.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+\par \pard\plain \s88{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 In order to sign a file, FlexCel }{\rtlch\ab\ltrch\b
 will write a requirement for Acrobat 8 or newer in the generated files. This is because only Acrobat 8 or newer support SHA512.}{
  Older versions of acrobat will still display the pages but will not validate the signature.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+\par \pard\plain \s88{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 FlexCel currently only has support for signing in Windows, using CryptoAPI. You can still create your own signature engine for other platforms by using a third party cryptography library or by calling the native crypto functions in that platform, the same way we call CryptoAPI. This is explained in the section }{{\field{\*\fldinst HYPERLINK "https://doc.tmssoftware.com/flexcel/vcl/guides/pdf-exporting-guide.html#signing-pdf-files" }{\fldrslt {\cf20
 Signing PDF Files}{}}}
  in the PDF exporting guide.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720\sb0\sa200{
-{\*\bkmkstart signing-pdfs}{\*\bkmkstart concepts}By design, FlexCel never connects to the internet. So if you want to create a PAdES B-T signature, which includes a timestamp from a TSA server, you need to provide the code to actually connect the server in an anonymous method. This demo shows how to do it.{\*\bkmkend signing-pdfs}{\*\bkmkend concepts}}
+\par \pard\plain \s88{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720\sb180\sa180{
+{\*\bkmkstart _5336bd7d486f2e29fc4503bf5370794b70f6941}{\*\bkmkstart _concepts}By design, FlexCel never connects to the internet. So if you want to create a PAdES B-T signature, which includes a timestamp from a TSA server, you need to provide the code to actually connect the server in an anonymous method. This demo shows how to do it.{\*\bkmkend _5336bd7d486f2e29fc4503bf5370794b70f6941}{\*\bkmkend _concepts}}
 \par }

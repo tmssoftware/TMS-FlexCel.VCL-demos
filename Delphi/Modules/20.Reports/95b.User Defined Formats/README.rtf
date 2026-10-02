@@ -146,27 +146,27 @@
 }{\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}\deftab720
 \hyphauto1\viewscale100\formshade\nobrkwrptbl\paperh15840\paperw12240\margl1440\margr1440\margt1440\margb1440\sectd\sbknone\sftnnar\saftnnrlc\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\ftnbj\ftnstart1\ftnrestart\ftnnar\fet\aftnrstcont\aftnstart1\aftnnrlc\htmautsp
 {\*\ftnsep\chftnsep}\pgndec\pard\plain \s1\keep\sb360\sa80\keepn\cf18\rtlch\af8\afs40\ltrch\hich\af5\afs40\dbch\af8\loch\f5\fs40\keep\sb360\sa80\keepn{
-{\*\bkmkstart user-defined-formats}User defined formats}
+{\*\bkmkstart _71db981fd8c45f5fb9460fab778cc6e725a04d0}User defined formats}
 \par \pard\plain \s96{
 User defined formats are a way to format cells in a report with code. Normally you will want to use them if the data to format the cells is in the database and it is not known at compile time, so you can\u8217\'92t use conditional formatting or formats defined in the config sheet.}
 \par \pard\plain \s2\keep\sb160\sa80\keepn\cf18\rtlch\af8\afs32\ltrch\hich\af5\afs32\dbch\af8\loch\f5\fs32{
-{\*\bkmkstart concepts}Concepts}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+{\*\bkmkstart _concepts}Concepts}
+\par \pard\plain \s96{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 How to define and use a user defined format.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+\par \pard\plain \s96{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 You can pass parameters to the user defined format by writing them after the format name. In this example we show passing one parameter (in user format "ZipCode") and two parameters (in user format "ShipFormat").}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+\par \pard\plain \s96{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 If you don\u8217\'92t want to modify the format then }{\rtlch\ab\ltrch\b
 return a null TFlxFormat and a null TFlxApplyFormat}{
 . We do this in the ZipCode user format, when the zip code is not numeric. If you wanted to return a format but not apply, you could set only the TFlxApplyFormat to null and the full TFlxFormat would be applied.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+\par \pard\plain \s96{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 As you can see, the colors in this demo don\u8217\'92t make much sense. There is a reason for that: trying to find an example of stuff that can only be made with user defined formats is not easy. If you wanted for example to mark red the cells where a value is > 100, then you would just use an Excel conditional format instead. The recommended order of preference would be:}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain  1.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{
+\par \pard\plain \s96{\listtext\pard\plain  1.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{
 If you can do it with Excel conditional formats, then use that.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain  2.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{
+\par \pard\plain \s96{\listtext\pard\plain  2.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{
 If you can\u8217\'92t use conditional formats then use formats defined in the config sheet}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain  3.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{
+\par \pard\plain \s96{\listtext\pard\plain  3.\tab}\ilvl1\ls2 \fi-360\li1440\lin1440{
 For more complex formats where you can\u8217\'92t use any of the above (like for example if the color of the cell is stored in the database, or the rules are too complex to code them in a conditional format or the config sheet), then use user defined formats.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720\sb0\sa200{
-{\*\bkmkstart user-defined-formats}{\*\bkmkstart concepts}You can use user defined formats to format rows, columns or cells. As format cell has more priority than format row, in this example there are cells which override the row format.{\*\bkmkend user-defined-formats}{\*\bkmkend concepts}}
+\par \pard\plain \s96{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720\sb180\sa180{
+{\*\bkmkstart _71db981fd8c45f5fb9460fab778cc6e725a04d0}{\*\bkmkstart _concepts}You can use user defined formats to format rows, columns or cells. As format cell has more priority than format row, in this example there are cells which override the row format.{\*\bkmkend _71db981fd8c45f5fb9460fab778cc6e725a04d0}{\*\bkmkend _concepts}}
 \par }

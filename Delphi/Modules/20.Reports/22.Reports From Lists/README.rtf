@@ -128,21 +128,21 @@
 }{\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}\deftab720
 \hyphauto1\viewscale100\formshade\nobrkwrptbl\paperh15840\paperw12240\margl1440\margr1440\margt1440\margb1440\sectd\sbknone\sftnnar\saftnnrlc\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\ftnbj\ftnstart1\ftnrestart\ftnnar\fet\aftnrstcont\aftnstart1\aftnnrlc\htmautsp
 {\*\ftnsep\chftnsep}\pgndec\pard\plain \s1\keep\sb360\sa80\keepn\cf18\rtlch\af8\afs40\ltrch\hich\af5\afs40\dbch\af8\loch\f5\fs40\keep\sb360\sa80\keepn{
-{\*\bkmkstart using-listt-as-datasource}Using List<T> as datasource}
+{\*\bkmkstart _f82d0e224234a3f00b81f3276beb5751eaf321a}Using List<T> as datasource}
 \par \pard\plain \s88{
 Most of the demos here use datasets as datasources. This is just for convenience, so we share the same data layer in all demos, and also because the focus is in the Excel templates, not so much in the data layer. But you can use any TList<T> and TArray<T> as a datasource in a FlexCel report, and this is what we will show here.}
 \par \pard\plain \s2\keep\sb160\sa80\keepn\cf18\rtlch\af8\afs32\ltrch\hich\af5\afs32\dbch\af8\loch\f5\fs32{
-{\*\bkmkstart concepts}Concepts}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+{\*\bkmkstart _concepts}Concepts}
+\par \pard\plain \s88{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 How to run a report from a TList<> of objects.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+\par \pard\plain \s88{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 When using TList<T> and TArray<T> as datasource, you can use any public property of T in the report, any public field and any public function which has no parameters. So if type T has a public property "LastName", you can access it with <#dt.LastName>.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{\rtlch\ab\ltrch\b
+\par \pard\plain \s88{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{\rtlch\ab\ltrch\b
 Master detail with implicit relationships}{
 . When a public property of a collection of objects is other collection of objects, the property is considered as a detail of the main collection. In this example "Elements" is a property of "Categories", and so there is an implicit relationship between them.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720\sb0\sa200{\rtlch\ab\ltrch\b
+\par \pard\plain \s88{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720\sb180\sa180{\rtlch\ab\ltrch\b
 Master detail with explicit relationships.}{
  While when using TLists you will normally use implicit relationships, you can also relate any two collections of objects with a relationship, as you could with datasets. In this example, "ElementName" is explicitly related to "Elements" by calling }{{\field{\*\fldinst HYPERLINK "https://doc.tmssoftware.com/flexcel/vcl/api/FlexCel.Report/TFlexCelReport/AddRelationship.html" }{\fldrslt {\cf20
 TFlexCelReport.AddRelationship}{}}}
-.{\*\bkmkend using-listt-as-datasource}{\*\bkmkend concepts}}
+.{\*\bkmkend _f82d0e224234a3f00b81f3276beb5751eaf321a}{\*\bkmkend _concepts}}
 \par }

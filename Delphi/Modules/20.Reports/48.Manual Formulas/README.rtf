@@ -128,25 +128,25 @@
 }{\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}\deftab720
 \hyphauto1\viewscale100\formshade\nobrkwrptbl\paperh15840\paperw12240\margl1440\margr1440\margt1440\margb1440\sectd\sbknone\sftnnar\saftnnrlc\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\ftnbj\ftnstart1\ftnrestart\ftnnar\fet\aftnrstcont\aftnstart1\aftnnrlc\htmautsp
 {\*\ftnsep\chftnsep}\pgndec\pard\plain \s1\keep\sb360\sa80\keepn\cf18\rtlch\af8\afs40\ltrch\hich\af5\afs40\dbch\af8\loch\f5\fs40\keep\sb360\sa80\keepn{
-{\*\bkmkstart manual-formulas}Manual formulas}
+{\*\bkmkstart _d76d5612cfa2c84f00e78820a2e8924ddb268e3}Manual formulas}
 \par \pard\plain \s88{
 Here we will create a small fully functional Minesweeper in Excel, and without any macros.}
 \par \pard\plain \s84\sb180\sa180{
 Most of the time, you will just want to write the formulas directly on the report, and let FlexCel change them when inserting rows. But sometimes, you might want to create a formula using flexcel tags. You can do it by using <#formula> and <#ref> tags, but don't do it unless you really need to.}
 \par \pard\plain \s2\keep\sb160\sa80\keepn\cf18\rtlch\af8\afs32\ltrch\hich\af5\afs32\dbch\af8\loch\f5\fs32{
-{\*\bkmkstart concepts}Concepts}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+{\*\bkmkstart _concepts}Concepts}
+\par \pard\plain \s88{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 How to replace <#tags> inside a formula.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+\par \pard\plain \s88{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 When you use the <#}{{\field{\*\fldinst HYPERLINK "https://doc.tmssoftware.com/flexcel/vcl/guides/reports-tag-reference.html#formula" }{\fldrslt {\cf20
 Formula}{}}}
 > tag, formulas are just strings on the template. So we could define inside a cell: "<#formula>=b3", but then if we want to change the template, and insert a row below row 1, the string will still be "<#formula>=b3". That is why we need to use a <#}{{\field{\*\fldinst HYPERLINK "https://doc.tmssoftware.com/flexcel/vcl/guides/reports-tag-reference.html#ref" }{\fldrslt {\cf20
 Ref}{}}}
 > tag. For example <#formula>=<#ref(0;-1)> on cell c3 will point to b3, but if you insert a row below row 1, it will point to b4 as it should be.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
+\par \pard\plain \s88{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720{
 There is never a real need to use the <#formula> tag, you can always workaround it. On this particular case we used it so we could change the font, (since it is not possible to change the font on a conditional format), but we could have also used the approach we used on the }{{\field{\*\fldinst HYPERLINK "https://doc.tmssoftware.com/flexcel/vcl/samples/delphi/reports/expression-parameters/index.html" }{\fldrslt {\cf20
 Expression Parameters}{}}}
  demo. In fact, it might have been better that way (by adding the <#format range> tag in the data). But this demo is to show how to use this feature, it is up to you to decide if it is worth or not.}
-\par \pard\plain \s0\widctlpar\sb0\sa200\ltrpar\hyphpar0\cf0\kerning0\rtlch\af8\afs24\alang1025\ltrch\hich\af4\afs24\alang1033\dbch\af8\langfe2052\loch\f4\fs24\lang1033{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720\sb0\sa200{
-{\*\bkmkstart manual-formulas}{\*\bkmkstart concepts}How to use conditional formatting, locked cells and data validation to make a nice application.{\*\bkmkend manual-formulas}{\*\bkmkend concepts}}
+\par \pard\plain \s88{\listtext\pard\plain \rtlch\af10\ltrch \u-3913\'3f\tab}\ilvl0\ls1 \fi-360\li720\lin720\sb180\sa180{
+{\*\bkmkstart _d76d5612cfa2c84f00e78820a2e8924ddb268e3}{\*\bkmkstart _concepts}How to use conditional formatting, locked cells and data validation to make a nice application.{\*\bkmkend _d76d5612cfa2c84f00e78820a2e8924ddb268e3}{\*\bkmkend _concepts}}
 \par }
